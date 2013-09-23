@@ -1,0 +1,15 @@
+\begin{thebibliography}{1}
+
+\bibitem{kautz1998blackbox}
+Henry Kautz and Bart Selman.
+\newblock Blackbox: A new approach to the application of theorem proving to
+  problem solving.
+\newblock In {\em AIPS98 Workshop on Planning as Combinatorial Search}, volume
+  58260, pages 58--60, 1998.
+
+\bibitem{hoffmann2001fast}
+J.~Hoffmann.
+\newblock {The fast-forward planning system}.
+\newblock {\em AI magazine}, 22(3), 2001.
+
+\end{thebibliography}
