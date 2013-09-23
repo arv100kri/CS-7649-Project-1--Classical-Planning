@@ -48,8 +48,8 @@
 		(isLeft locationE locationF)
 		(isLeft locationF locationG)
 		(isLeft locationK locationL)
-		(isLeft locationL locationm)
-		(isLeft locationO locationM)
+		(isLeft locationL locationM)
+		(isLeft locationN locationO)
 
 		(isRight locationB locationA)
 		(isRight locationC locationB)
@@ -57,8 +57,8 @@
 		(isRight locationF locationE)
 		(isRight locationG locationF)
 		(isRight locationL locationK)
-		(isRight locationm locationL)
-		(isRight locationM locationO)
+		(isRight locationM locationL)
+		(isRight locationO locationN)
 
 		(isUp locationA locationD)
 		(isUp locationB locationE)
