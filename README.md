@@ -3,8 +3,8 @@ RIP_7649_Project1
 
 Classical Planning Assignment - 1
 
-Luis Gustavo Souza Silva (luisgustavo.silva@gatech.edu)
-Arvind Krishnaa Jagannathan (arvind.krishnaa@gatech.edu)
+1. Luis Gustavo Souza Silva (luisgustavo.silva@gatech.edu)
+2. Arvind Krishnaa Jagannathan (arvind.krishnaa@gatech.edu)
 
 To-Do
 ======
