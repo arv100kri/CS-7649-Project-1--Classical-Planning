@@ -128,7 +128,7 @@
 
 		(in locationI)
 		(boxAt locationK)
-		(boxAt locationH)
+		(boxAt locationM)
 		(boxAt locationO)
 	)
 	(:goal (and

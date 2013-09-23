@@ -5,12 +5,12 @@
 (define (domain skoban)
   (:requirements :strips)
 	(:predicates  (LOCATION ?loc)
-								(at ?loc)						;;true if there is a box at location
-								(in ?loc)						;;true if robot is at location
-								(boxAt ?loc)				;;true if no box at location
+								(at ?loc)			;;true if there is a box at location
+								(in ?loc)			;;true if robot is at location
+								(boxAt ?loc)		;;true if no box at location
 								(isLeft ?loc ?loc)	;;true if loc(1) is at left of loc(2)
 								(isRight ?loc ?loc)	;;true if loc(1) is at right of loc(2)
-								(isUp ?loc ?loc)		;;true if loc(1) is at up of loc(2)
+								(isUp ?loc ?loc)	;;true if loc(1) is at up of loc(2)
 								(isDown ?loc ?loc)	;;true if loc(1) is at down of loc(2)
 	)
 	;;---------------------
