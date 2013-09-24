@@ -1,5 +1,5 @@
 //============================================================================
-// Name        : Sokoban.cpp
+// Name        : Normalized.cpp
 // Author      : Stango
 // Version     :
 // Copyright   : GeorgiaTech
@@ -21,7 +21,7 @@ typedef		long long LL;
 typedef		vector<LL> VLL;
 
 vector <string> Graph, CleanGraph;
-int				Row, Column;
+int				Row, Column, Boxes;
 map <LL, int>	StateNo;
 int				MaximumPower;
 vector <VLL>	State;
@@ -30,14 +30,14 @@ LL				inital, target;
 vector <int>	Lst;
 int				targetrange;
 bool			getAns;
-int				res = -1;
+int				res = -1, dimen;
 
 void	ParseState(int sta[], LL s)
 {
-	for (int i = 7; i >= 0; i --)
+	for (int i = dimen - 1; i >= 0; i --)
 	{
 		sta[i] = s & ((1<<MaximumPower) - 1);
-		cout << sta[i] << endl;
+		//cout << sta[i] << endl;
 		s >>= MaximumPower;
 	}
 }
@@ -54,15 +54,15 @@ int		AddStateComponent (LL sta)
 	int		IDD = getStateID(sta);
 	if (getStateID(sta) != -1) return IDD;
 	int		staid = -1;
-	int		a[8];
+	int		a[dimen];
 	ParseState(a, sta);
-		for (int i = 0; i < 8; i ++) cout << a[i] << " ";
-		cout << endl;
+    for (int i = 0; i < dimen; i ++) cout << a[i] << " ";
+    cout << endl;
 
 	vector <LL>		statecomponent;
 	LL	boxsta = 0;
 	vector <string>	G(CleanGraph);
-	for (int i = 0; i < 3; i ++)
+	for (int i = 0; i < Boxes; i ++)
 	{
 		G[a[2 * i]][a[2 * i + 1]] = 'B';
 		boxsta <<= MaximumPower;
@@ -72,7 +72,7 @@ int		AddStateComponent (LL sta)
 	}
 	boxsta <<= (2 * MaximumPower);
 
-	int	stx = a[6], sty = a[7];
+	int	stx = a[dimen - 2], sty = a[dimen - 1];
 	bool	reach[Row][Column];
 	memset(reach, 0, sizeof(reach));
 	reach[stx][sty] = true;
@@ -133,7 +133,8 @@ void	init()
 	freopen ("sokoban.in", "r", stdin);
 	freopen ("sokoban.out", "w", stdout);
 
-	cin >> Row >> Column;
+	cin >> Row >> Column >> Boxes;
+    dimen = Boxes * 2 + 2;
 	for (int i = 0; i < Row; i ++) {
 		string	tmp;
 		cin >> tmp;
@@ -144,6 +145,7 @@ void	init()
 	int		tmp = max(Row, Column), tmp2 = 1;
 	MaximumPower = 1;
 	for (; tmp2 < tmp; MaximumPower ++, tmp2 *= 2);
+    //cout << MaximumPower << endl;
 
 	// Get the inital state and target state
 
@@ -216,14 +218,14 @@ void	bfs()
 
 	for (int head = 0; head < Lst.size(); head ++)
 	{
-		int		curnode = Lst[0];
+		int		curnode = Lst[head];
 		cout << "Node : " << curnode << endl;
 		int		sz = State[curnode].size();
 
 		vector <string>	G(CleanGraph);
-		int		a[8];
+		int		a[dimen];
 		ParseState(a, State[curnode][0]);
-		for (int i = 0; i < 3; i ++) G[a[2 * i]][a[2 * i + 1]] = 'B';
+		for (int i = 0; i < Boxes; i ++) G[a[2 * i]][a[2 * i + 1]] = 'B';
 
 		for (int i = 0; i < sz; i ++)
 		{
@@ -237,7 +239,7 @@ void	bfs()
 			int		direc[4][2] = {{1, 0},{0, 1},{-1, 0},{0, -1}};
 			for (int j = 0; j < 4; j ++)
 				if (G[PersonX + direc[j][0]][PersonY + direc[j][1]] == 'B' &&
-						G[PersonX + 2 * direc[j][0]][PersonY + 2 * direc[j][1]] == '*')
+                    G[PersonX + 2 * direc[j][0]][PersonY + 2 * direc[j][1]] == '*')
 				{
 					G[PersonX + 2 * direc[j][0]][PersonY + 2 * direc[j][1]] = 'B';
 					G[PersonX + direc[j][0]][PersonY + direc[j][1]] = 'M';
@@ -246,16 +248,16 @@ void	bfs()
 					int		pp, qq;
 					for (int lv1 = 0; lv1 < Row; lv1 ++)
 						for (int lv2 = 0; lv2 < Column; lv2 ++)
-						if (G[lv1][lv2] == 'B')
-						{
-							nextsta <<= MaximumPower;
-							nextsta |= lv1;
-							nextsta <<= MaximumPower;
-							nextsta |= lv2;
-						} else if (G[lv1][lv2] == 'M') {
-							pp = lv1;
-							qq = lv2;
-						}
+                            if (G[lv1][lv2] == 'B')
+                            {
+                                nextsta <<= MaximumPower;
+                                nextsta |= lv1;
+                                nextsta <<= MaximumPower;
+                                nextsta |= lv2;
+                            } else if (G[lv1][lv2] == 'M') {
+                                pp = lv1;
+                                qq = lv2;
+                            }
 					nextsta <<= MaximumPower;
 					nextsta |= pp;
 					nextsta <<= MaximumPower;
@@ -264,6 +266,7 @@ void	bfs()
 					int		nextid = getStateID(nextsta);
 					if (nextid < targetrange && nextid > 0)
 					{
+						cout << "Accomplished: " << nextid << endl;
 						opt[nextid] = opt[curnode] + 1;
 						res = opt[nextid];
 						getAns = true;
@@ -272,7 +275,7 @@ void	bfs()
 					else if (nextid == -1)
 					{
 						int		newid = AddStateComponent(nextsta);
-						cout << newid << endl;
+						cout << "New State ID: " << newid << endl;
 						opt[newid] = opt[curnode] + 1;
 						Lst.push_back(newid);
 					}
