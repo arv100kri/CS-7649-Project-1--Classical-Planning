@@ -1,0 +1,22 @@
+step    0: MOVE-DOWN LOCATIONE LOCATIONC
+        1: MOVE-RIGHT LOCATIONF LOCATIONE
+        2: MOVE-RIGHT LOCATIONG LOCATIONF
+        3: MOVE-DOWN LOCATIONK LOCATIONG
+        4: PUSH-LEFT LOCATIONJ LOCATIONK LOCATIONI
+        5: MOVE-UP LOCATIONF LOCATIONJ
+        6: MOVE-LEFT LOCATIONE LOCATIONF
+        7: MOVE-LEFT LOCATIOND LOCATIONE
+        8: MOVE-DOWN LOCATIONH LOCATIOND
+        9: MOVE-DOWN LOCATIONL LOCATIONH
+       10: MOVE-RIGHT LOCATIONM LOCATIONL
+       11: PUSH-UP LOCATIONI LOCATIONM LOCATIONE
+       12: PUSH-UP LOCATIONE LOCATIONI LOCATIONC
+       13: PUSH-UP LOCATIONC LOCATIONE LOCATIONB
+     
+
+time spent:    0.00 seconds instantiating 48 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 38 facts and 48 actions
+               0.00 seconds creating final representation with 37 relevant facts
+               0.00 seconds building connectivity graph
+               0.00 seconds searching, evaluating 47 states, to a max depth of 4
+               0.00 seconds total time
