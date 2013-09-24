@@ -12,4 +12,9 @@ J.~Hoffmann.
 \newblock {The fast-forward planning system}.
 \newblock {\em AI magazine}, 22(3), 2001.
 
+\bibitem{kautz1996encoding}
+Henry Kautz, David McAllester, and Bart Selman.
+\newblock Encoding plans in propositional logic.
+\newblock {\em KR}, 96:374--384, 1996.
+
 \end{thebibliography}

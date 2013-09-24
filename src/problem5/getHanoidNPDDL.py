@@ -34,12 +34,18 @@ for i in range(1,N+1):
         initial_state += "(smaller d%i d%i)" % (i,j)
     initial_state += "\n"
 
+# The two other poles and smallest disk is clear
 initial_state += "    (clear p1)(clear p2)(clear d1)\n    "
+# All the disks
 for i in range(1,N+1):
     initial_state += "(disk d%i)"%i
 initial_state += "\n    "
+
+# Smaller disk is on the larger disk
 for i in range(1,N):
     initial_state += "(on d%i d%i)" % (i,i+1)
+
+# Largest disk is on the pole
 initial_state += "(on d%i p3)\n" % N
 
 statement += "  (:init \n%s  )\n" % initial_state
