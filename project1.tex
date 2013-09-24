@@ -59,6 +59,7 @@ FF uses the enforced hill climbing algorithm to search for valid solutions. Usin
 
 Thus in summary both \textit{\textbf{FF}} and \textit{\textbf{Blackbox}} algorithms use the \textsc{GraphPlan} algorithm, however \textit{Blackbox} uses it in a more direct way, to set up the SAT problem. In \textit{FF}, \textsc{GraphPlan} is used simply as a heuristic measure for the enforced hill climbing algorithm.
 \subsubsection*{2. Which planner was fastest?}
+\label{subsubsec_2}
 Both the algorithms were run on the same Linux box, and using the \textit{time} command the time taken for them to produce plans were measure. Clearly the \textbf{FF} algorithm was the fastest among the two, with the following time measures \\
 \begin{itemize}
 \item FF - 0.004s
@@ -89,15 +90,98 @@ Its pretty obvious that the length of a plan in case of the Towers of Hanoi prob
   \label{fig2}
 \end{figure}
 
+The skoban's domain definition was created with the guideline idea of keeping it simple. Then, we followed the steps:
+
+\begin{enumerate}
+\item Identify the constants
+\item Identify the fluents
+\item Identify the actions
+\end{enumerate} 
+
+The first step is to identify the constants we evaluate possible elements that could be part of the domain. From this, constants like \textit{robot}, \textit{box} and \textit{location} appeared. However the problem only have one robot and is more natural to think about each box by its location instead of any kind of specific identification. Because of this, we moved on with only the \textit{location} constant.
+
+The second step is to identify fluents related to this problem. We had a lot of possible fluents, most of them were related to the idea of using the constants already eliminated. However, to keep it simple, the fluents used were:
+
+\begin{itemize}
+\item \textbf{in(?loc)} - true if the robot is at location loc;
+\item \textbf{boxAt(?loc)} - true if there is a box at location loc;
+\item \textbf{isLeft(?loc ?loc)} - true if loc(1) is at left of loc(2);
+\item \textbf{isRight(?loc ?loc)} - true if loc(1) is at right of loc(2);
+\item \textbf{isUp(?loc ?loc)} - true if loc(1) is at up of loc(2);
+\item \textbf{isDown(?loc ?loc)} - true if loc(1) is at down of loc(2).
+\end{itemize} 
+
+Finally, the last step is to identify the actions. For the skoban domain, the robot can move or push a box in the up, down, right and left directions, provided that there is no box on the way. After defining each action in respect to its preconditions, add list and delete list we could define the following:
+
+\begin{itemize}
+\item \textbf{MOVE-<UP,DOWN,RIGHT or LEFT>(?loc-to ?loc-from)};
+\item \textbf{PUSH-<UP,DOWN,RIGHT or LEFT>(?box-loc ?loc ?loc-to)}.
+\end{itemize} 
+
+Done that, the next part of the question was to define each problem using this domain. For that, each grid position, from top to botton, and left to right, receivied a nickname of a alphabet letter. Then, all the constraints of linking these grid positions were defined using the fluent \textit{isUp}, \textit{isDown}, \textit{isRight}, \textit{isLeft} and the initial and goal state using the fluents \textit{in} and \textit{boxAt}.
+
 \subsection{Questions}
-\subsubsection*{1. Show successful plans from at least one planner on the three Sokoban problems in Figure \ref{fig2}
-(1-3). The challenge problem is optional}
+\subsubsection*{1. Show successful plans from at least one planner on the three Sokoban problems in Figure \ref{fig2} (1-3). The challenge problem is optional}
+Using the PDDL definitions for the domain, the FF planner was able to find solutions for all the problems and to the challenge. The result plan of each problem is shown on the Figures \ref{fig_prob2_1}, \ref{fig_prob2_2}, \ref{fig_prob2_3} and \ref{fig_prob2_challenge}.
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[scale = 1.0]{images/FF_Solution_p2_1}
+    \caption{Sokoban Problem 2.1}
+  \label{fig_prob2_1}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[scale = 1.0]{images/FF_Solution_p2_2}
+    \caption{Sokoban Problem 2.2}
+  \label{fig_prob2_2}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[scale = 0.5]{images/FF_Solution_p2_3}
+    \caption{Sokoban Problem 2.3}
+  \label{fig_prob2_3}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[scale = 0.7]{images/FF_Solution_p2_challenge}
+    \caption{Sokoban Challenge}
+  \label{fig_prob2_challenge}
+\end{figure}
+
+In order to make the solutions more readable and easier to verify, lets consider that when a robot moves for up, down, right or left direction it will be represented by a lowercase \textbf{u}, \textbf{d}, \textbf{r} or \textbf{l}, respectibvely. For the push actions of moving the box up, down, right or left, the capital letters \textbf{U}, \textbf{D}, \textbf{R} and \textbf{L} will be used. Thus, the solutions found can be represented as the strings shown below.
+
+\begin{tabular}{ c l }
+  &\\
+  \textbf{Problem 2.1} & drrdLullddrUUU\\
+  &\\
+  \textbf{Problem 2.2} & urrDulldRdRluurDrDDDulUruLdlUru\\
+  &\\
+  \textbf{Problem 2.3} & rddrruuLLrrddrruuLLrruuurrdddLLddlluuRlddrruUllddlluu\\
+                       & RRddrruuUUddddlluuRlddrruUllllddlluuRRRRddrruuuddd\\
+                       & lluuRlddrruU\\
+  &\\
+  \textbf{Challenge}   & lldlluRRdddlUruulldRdrruruLLrddlluRuruulDDDlluRdrUrrd\\
+                       & LdLdlUrruullDRddlUruuruulDD\\
+\end{tabular}
+
 \subsubsection*{2. Compare the performance of two planners on this domain. Which one works better? Does this
 make sense, why?}
+
+As an overview, the \textit{FF}'s planner perfomed better than \textit{Blackbox}. The \textit{FF}'s planner was able to find results for all problems, including challenge, in few seconds. On the other hand, the \textit{Blackbox} only managed to find the results from the first two problems and stopped on the others after using all the hardware resources. These results were expected since, as stated in Section \ref{subsubsec_2}, the \textit{FF}'s planner have a lower asymptotic complexity and use an heuristic function to choose the best option of what expand next. Thus, is more likely to have better time and space complexities than the \textit{Blackbox}.
+
 \subsubsection*{3. Clearly PDDL was not intended for this sort of application. Discuss the challenges in expressing geometric constraints in semantic planning}
+
+While solving this problem is possible to notice that are two approachs. The first one requires a previous knowledge of a solution, and the developer states that a specific box goes to a specific location. The second approach, there is no kind of identification for the boxes, and this is the one we used as a solution. Independently of the approach, the domain contains a grid on wich the robot should move. Thus, it is necessary to come up with a way to express when the robot can, or cannot, move between two locations if there is a wall or a box in between. Also, is necessary to express when the robot is allowed to do something, like moving between two empty adjacent squares. Thus, all these logic expressions were used to represent geometric constraints like collisions between the robot and the walls or boxes.
+
 \subsubsection*{4. In many cases, geometric and dynamic planning are insufficient to describe a domain. Give
 an example of a problem that is best suited for semantic (classical) planning. Explain why a
 semantic representation would be desirable}
+
+The classical planners have a variety of best suited problems, like in logistics, manofacturing, and management. One example is the DART system used for militray logistics. Logistics are better expressed by a set of logical expressions to specify complex operations not related to the kinect motion.
 
 %------------------------------------End of Problem 2 -------------------------------------------------%
 
