@@ -128,10 +128,10 @@ int		AddStateComponent (LL sta)
 }
 
 
-void	init()
+void	init(char *input, char *output)
 {
-	freopen ("sokoban.in", "r", stdin);
-	freopen ("sokoban.out", "w", stdout);
+	freopen (input, "r", stdin);
+	freopen (output, "w", stdout);
 
 	cin >> Row >> Column >> Boxes;
     dimen = Boxes * 2 + 2;
@@ -288,9 +288,13 @@ void	bfs()
 }
 
 
-int		main()
+int		main(int argc, char **argv)
 {
-	init ();
+	if (argc < 3) {
+		cout<<"Usage: sokoban <input_file> <output_file>"<<endl;
+		exit(1);
+	}
+	init (argv[1], argv[2]);
 	bfs  ();
 	cout << "ans : " << res << endl;
 	return 0;

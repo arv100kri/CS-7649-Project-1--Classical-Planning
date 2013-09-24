@@ -1,0 +1,5938 @@
+Inital
+2 3 3 2 5 2 3 5 
+Target
+4 2 4 3 4 4 1 3 
+Target
+Target
+Target
+Target
+Target
+Target
+Target
+Target
+Target
+Target
+Target
+4 2 4 3 4 4 5 2 
+Target
+Target
+Target
+Target
+Search Begin
+Node : 0
+Next Sta
+3 2 3 3 5 2 2 3 
+New State ID: 3
+Next Sta
+2 3 3 3 5 2 3 2 
+New State ID: 4
+Next Sta
+1 3 3 2 5 2 2 3 
+New State ID: 5
+Next Sta
+2 3 3 1 5 2 3 2 
+New State ID: 6
+Next Sta
+2 3 3 2 6 2 5 2 
+New State ID: 7
+Next Sta
+2 3 3 2 4 2 5 2 
+New State ID: 8
+Node : 3
+Next Sta
+3 2 4 3 5 2 3 3 
+New State ID: 9
+Next Sta
+3 2 3 3 6 2 5 2 
+New State ID: 10
+Next Sta
+Next Sta
+3 2 3 3 4 2 5 2 
+New State ID: 11
+Node : 4
+Next Sta
+2 3 3 4 5 2 3 3 
+New State ID: 12
+Next Sta
+Next Sta
+2 3 3 3 6 2 5 2 
+New State ID: 13
+Next Sta
+2 3 3 3 4 2 5 2 
+New State ID: 14
+Node : 5
+Next Sta
+1 3 3 3 5 2 3 2 
+New State ID: 15
+Next Sta
+1 3 3 1 5 2 3 2 
+New State ID: 16
+Next Sta
+1 3 3 2 6 2 5 2 
+New State ID: 17
+Next Sta
+1 3 3 2 4 2 5 2 
+New State ID: 18
+Node : 6
+Next Sta
+3 1 3 3 5 2 2 3 
+New State ID: 19
+Next Sta
+Next Sta
+2 3 3 1 6 2 5 2 
+New State ID: 20
+Next Sta
+2 3 3 1 4 2 5 2 
+New State ID: 21
+Node : 7
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 8
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 3 3 2 4 1 4 2 
+New State ID: 22
+Node : 9
+Next Sta
+3 2 5 2 5 3 4 3 
+New State ID: 23
+Next Sta
+3 1 4 3 5 2 3 2 
+New State ID: 24
+Next Sta
+3 2 4 2 5 2 4 3 
+New State ID: 25
+Next Sta
+Next Sta
+3 2 4 2 4 3 5 2 
+New State ID: 26
+Node : 10
+Next Sta
+3 2 4 3 6 2 3 3 
+New State ID: 27
+Next Sta
+Node : 11
+Next Sta
+Next Sta
+Next Sta
+3 2 3 3 4 1 4 2 
+New State ID: 28
+Node : 12
+Next Sta
+2 3 3 5 5 2 3 4 
+New State ID: 29
+Next Sta
+1 3 3 4 5 2 2 3 
+New State ID: 30
+Next Sta
+Next Sta
+2 3 3 4 6 2 5 2 
+New State ID: 31
+Next Sta
+2 3 2 4 5 2 3 4 
+New State ID: 32
+Next Sta
+2 3 3 4 4 2 5 2 
+New State ID: 33
+Node : 13
+Next Sta
+Next Sta
+Node : 14
+Next Sta
+Next Sta
+2 3 3 3 4 1 4 2 
+New State ID: 34
+Next Sta
+2 3 3 2 3 3 4 2 
+New State ID: 35
+Node : 15
+Next Sta
+1 3 4 3 5 2 3 3 
+New State ID: 36
+Next Sta
+Next Sta
+Next Sta
+1 3 3 3 6 2 5 2 
+New State ID: 37
+Next Sta
+1 3 2 3 5 2 3 3 
+New State ID: 38
+Next Sta
+1 3 3 3 4 2 5 2 
+New State ID: 39
+Node : 16
+Next Sta
+1 3 3 1 6 2 5 2 
+New State ID: 40
+Next Sta
+1 3 3 1 4 2 5 2 
+New State ID: 41
+Node : 17
+Next Sta
+Next Sta
+Node : 18
+Next Sta
+Next Sta
+1 3 3 2 4 1 4 2 
+New State ID: 42
+Node : 19
+Next Sta
+Next Sta
+3 1 3 4 5 2 3 3 
+New State ID: 43
+Next Sta
+3 1 3 2 5 2 3 3 
+New State ID: 44
+Next Sta
+3 1 3 3 6 2 5 2 
+New State ID: 45
+Next Sta
+Next Sta
+3 1 3 3 4 2 5 2 
+New State ID: 46
+Node : 20
+Next Sta
+Next Sta
+Node : 21
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 3 3 1 4 1 4 2 
+New State ID: 47
+Next Sta
+2 3 3 1 3 2 4 2 
+New State ID: 48
+Node : 22
+Next Sta
+Next Sta
+Next Sta
+Node : 23
+Next Sta
+3 3 5 2 5 3 3 2 
+New State ID: 49
+Next Sta
+3 1 5 2 5 3 3 2 
+New State ID: 50
+Next Sta
+3 2 5 3 6 2 5 2 
+New State ID: 51
+Next Sta
+3 2 5 2 6 3 5 3 
+New State ID: 52
+Node : 24
+Next Sta
+Next Sta
+3 1 4 3 6 2 5 2 
+New State ID: 53
+Next Sta
+3 1 4 4 5 2 4 3 
+New State ID: 54
+Next Sta
+3 1 4 2 5 2 4 3 
+New State ID: 55
+Next Sta
+Next Sta
+3 1 4 2 4 3 5 2 
+New State ID: 56
+Node : 25
+Next Sta
+Next Sta
+3 2 4 1 5 2 4 2 
+New State ID: 57
+Node : 26
+Next Sta
+3 2 4 2 5 3 4 3 
+New State ID: 58
+Next Sta
+Next Sta
+Node : 27
+Next Sta
+3 3 4 3 6 2 3 2 
+New State ID: 59
+Next Sta
+Next Sta
+Next Sta
+3 2 4 4 6 2 4 3 
+New State ID: 60
+Next Sta
+3 2 4 2 6 2 4 3 
+New State ID: 61
+Next Sta
+Node : 28
+Next Sta
+3 2 4 1 4 3 3 3 
+New State ID: 62
+Next Sta
+Node : 29
+Next Sta
+3 3 3 5 5 2 2 3 
+New State ID: 63
+Next Sta
+1 3 3 5 5 2 2 3 
+New State ID: 64
+Next Sta
+2 3 3 5 6 2 5 2 
+New State ID: 65
+Next Sta
+2 3 3 5 4 2 5 2 
+New State ID: 66
+Node : 30
+Next Sta
+1 3 4 4 5 2 3 4 
+New State ID: 67
+Next Sta
+Next Sta
+Next Sta
+1 3 3 4 6 2 5 2 
+New State ID: 68
+Next Sta
+1 3 2 4 5 2 3 4 
+New State ID: 69
+Next Sta
+1 3 3 4 4 2 5 2 
+New State ID: 70
+Node : 31
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 3 2 4 6 2 3 4 
+New State ID: 71
+Node : 32
+Next Sta
+Next Sta
+1 4 2 3 5 2 2 4 
+New State ID: 72
+Next Sta
+Next Sta
+2 3 2 4 4 2 5 2 
+New State ID: 73
+Node : 33
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 3 3 4 4 3 4 2 
+New State ID: 74
+Next Sta
+2 3 3 4 4 1 4 2 
+New State ID: 75
+Next Sta
+Next Sta
+2 3 3 2 3 4 4 2 
+New State ID: 76
+Node : 34
+Next Sta
+Next Sta
+Node : 35
+Node : 36
+Next Sta
+1 3 5 2 5 3 4 3 
+New State ID: 77
+Next Sta
+1 3 4 3 6 2 5 2 
+New State ID: 78
+Next Sta
+Next Sta
+1 3 4 2 5 2 4 3 
+New State ID: 79
+Next Sta
+Next Sta
+1 3 4 2 4 3 5 2 
+New State ID: 80
+Node : 37
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+1 3 2 3 6 2 3 3 
+New State ID: 81
+Node : 38
+Next Sta
+Next Sta
+1 3 2 3 4 2 5 2 
+New State ID: 82
+Node : 39
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+1 3 3 3 4 1 4 2 
+New State ID: 83
+Next Sta
+1 3 3 2 3 3 4 2 
+New State ID: 84
+Node : 40
+Node : 41
+Next Sta
+Next Sta
+1 3 3 1 4 1 4 2 
+New State ID: 85
+Next Sta
+1 3 3 1 3 2 4 2 
+New State ID: 86
+Node : 42
+Next Sta
+Node : 43
+Next Sta
+Next Sta
+3 1 3 5 5 2 3 4 
+New State ID: 87
+Next Sta
+Next Sta
+3 1 3 4 6 2 5 2 
+New State ID: 88
+Next Sta
+2 4 3 1 5 2 3 4 
+New State ID: 89
+Next Sta
+3 1 3 4 4 2 5 2 
+New State ID: 90
+Node : 44
+Next Sta
+3 1 3 2 6 2 5 2 
+New State ID: 91
+Next Sta
+3 1 3 2 4 2 5 2 
+New State ID: 92
+Node : 45
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 46
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+3 1 3 3 4 1 4 2 
+New State ID: 93
+Next Sta
+3 1 3 2 3 3 4 2 
+New State ID: 94
+Node : 47
+Next Sta
+Next Sta
+Node : 48
+Next Sta
+Next Sta
+Node : 49
+Next Sta
+4 3 5 2 5 3 3 3 
+New State ID: 95
+Next Sta
+3 4 5 2 5 3 3 3 
+New State ID: 96
+Next Sta
+Next Sta
+3 3 5 3 6 2 5 2 
+New State ID: 97
+Next Sta
+3 3 5 2 6 3 5 3 
+New State ID: 98
+Next Sta
+2 3 5 2 5 3 3 3 
+New State ID: 99
+Node : 50
+Next Sta
+3 1 5 3 6 2 5 2 
+New State ID: 100
+Next Sta
+3 1 5 2 6 3 5 3 
+New State ID: 101
+Node : 51
+Next Sta
+Next Sta
+Next Sta
+3 2 6 2 6 3 5 3 
+New State ID: 102
+Next Sta
+3 2 5 4 6 2 5 3 
+New State ID: 103
+Next Sta
+3 2 5 2 6 2 5 3 
+New State ID: 104
+Node : 52
+Next Sta
+Next Sta
+Next Sta
+Node : 53
+Next Sta
+Next Sta
+3 1 4 4 6 2 4 3 
+New State ID: 105
+Next Sta
+3 1 4 2 6 2 4 3 
+New State ID: 106
+Next Sta
+Node : 54
+Next Sta
+3 1 5 2 5 4 4 4 
+New State ID: 107
+Next Sta
+Next Sta
+3 1 4 5 5 2 4 4 
+New State ID: 108
+Next Sta
+Next Sta
+Next Sta
+3 1 4 2 4 4 5 2 
+New State ID: 109
+Node : 55
+Next Sta
+3 1 4 1 5 2 4 2 
+New State ID: 110
+Node : 56
+Next Sta
+Next Sta
+3 1 4 2 5 3 4 3 
+New State ID: 111
+Next Sta
+3 1 3 2 4 3 4 2 
+New State ID: 112
+Next Sta
+Node : 57
+Next Sta
+Next Sta
+3 2 4 1 6 2 5 2 
+New State ID: 113
+Next Sta
+3 2 4 1 4 2 5 2 
+New State ID: 114
+Node : 58
+Next Sta
+Next Sta
+3 2 4 2 6 3 5 3 
+New State ID: 115
+Next Sta
+3 2 4 1 5 3 4 2 
+New State ID: 116
+Next Sta
+Node : 59
+Next Sta
+3 4 4 3 6 2 3 3 
+New State ID: 117
+Next Sta
+Next Sta
+3 3 4 4 6 2 4 3 
+New State ID: 118
+Next Sta
+3 3 4 2 6 2 4 3 
+New State ID: 119
+Node : 60
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+3 2 4 5 6 2 4 4 
+New State ID: 120
+Next Sta
+Next Sta
+3 2 3 4 6 2 4 4 
+New State ID: 121
+Node : 61
+Next Sta
+Next Sta
+Node : 62
+Next Sta
+Next Sta
+3 1 4 1 4 3 3 2 
+New State ID: 122
+Next Sta
+3 2 4 1 4 4 4 3 
+New State ID: 123
+Next Sta
+Next Sta
+Node : 63
+Next Sta
+3 5 4 3 5 2 3 3 
+New State ID: 124
+Next Sta
+3 4 3 5 5 2 3 3 
+New State ID: 125
+Next Sta
+3 2 3 5 5 2 3 3 
+New State ID: 126
+Next Sta
+3 3 3 5 6 2 5 2 
+New State ID: 127
+Next Sta
+Next Sta
+3 3 3 5 4 2 5 2 
+New State ID: 128
+Node : 64
+Next Sta
+1 3 3 5 6 2 5 2 
+New State ID: 129
+Next Sta
+1 3 3 5 4 2 5 2 
+New State ID: 130
+Node : 65
+Next Sta
+Next Sta
+Node : 66
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 3 3 5 4 3 4 2 
+New State ID: 131
+Next Sta
+2 3 3 5 4 1 4 2 
+New State ID: 132
+Next Sta
+2 3 3 2 3 5 4 2 
+New State ID: 133
+Node : 67
+Next Sta
+1 3 5 2 5 4 4 4 
+New State ID: 134
+Next Sta
+1 3 4 4 6 2 5 2 
+New State ID: 135
+Next Sta
+1 3 4 5 5 2 4 4 
+New State ID: 136
+Next Sta
+Next Sta
+Next Sta
+1 3 4 2 4 4 5 2 
+New State ID: 137
+Node : 68
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+1 3 2 4 6 2 3 4 
+New State ID: 138
+Node : 69
+Next Sta
+1 3 1 4 5 2 2 4 
+New State ID: 139
+Next Sta
+Next Sta
+1 3 2 4 4 2 5 2 
+New State ID: 140
+Node : 70
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+1 3 3 4 4 3 4 2 
+New State ID: 141
+Next Sta
+1 3 3 4 4 1 4 2 
+New State ID: 142
+Next Sta
+Next Sta
+1 3 3 2 3 4 4 2 
+New State ID: 143
+Node : 71
+Next Sta
+Next Sta
+1 4 2 3 6 2 2 4 
+New State ID: 144
+Node : 72
+Next Sta
+Next Sta
+Next Sta
+1 4 2 3 4 2 5 2 
+New State ID: 145
+Node : 73
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 3 2 4 4 3 4 2 
+New State ID: 146
+Next Sta
+2 3 2 4 4 1 4 2 
+New State ID: 147
+Next Sta
+2 3 2 4 3 2 4 2 
+New State ID: 148
+Node : 74
+Next Sta
+2 3 3 4 5 3 4 3 
+New State ID: 149
+Next Sta
+Next Sta
+Next Sta
+2 3 3 3 4 3 3 4 
+New State ID: 150
+Next Sta
+2 3 3 4 4 4 4 3 
+New State ID: 151
+Next Sta
+Next Sta
+Next Sta
+2 3 3 3 3 4 4 3 
+New State ID: 152
+Node : 75
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 76
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 3 3 1 3 4 3 2 
+New State ID: 153
+Next Sta
+Next Sta
+Node : 77
+Next Sta
+1 3 5 3 6 2 5 2 
+New State ID: 154
+Next Sta
+1 3 5 2 6 3 5 3 
+New State ID: 155
+Node : 78
+Next Sta
+Next Sta
+Next Sta
+1 3 4 2 6 2 4 3 
+New State ID: 156
+Next Sta
+Node : 79
+Next Sta
+Next Sta
+1 3 4 1 5 2 4 2 
+New State ID: 157
+Node : 80
+Next Sta
+Next Sta
+1 3 4 2 5 3 4 3 
+New State ID: 158
+Next Sta
+1 3 3 2 4 3 4 2 
+New State ID: 159
+Next Sta
+Node : 81
+Node : 82
+Next Sta
+Next Sta
+1 3 2 3 4 3 4 2 
+New State ID: 160
+Next Sta
+1 3 2 3 4 1 4 2 
+New State ID: 161
+Next Sta
+1 3 2 3 3 2 4 2 
+New State ID: 162
+Node : 83
+Next Sta
+1 3 4 1 4 3 3 3 
+New State ID: 163
+Next Sta
+Next Sta
+Next Sta
+Node : 84
+Next Sta
+Next Sta
+Node : 85
+Node : 86
+Node : 87
+Next Sta
+3 1 3 5 6 2 5 2 
+New State ID: 164
+Next Sta
+3 1 3 5 4 2 5 2 
+New State ID: 165
+Node : 88
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 4 3 1 6 2 3 4 
+New State ID: 166
+Node : 89
+Next Sta
+Next Sta
+1 4 3 1 5 2 2 4 
+New State ID: 167
+Next Sta
+Next Sta
+2 4 3 1 4 2 5 2 
+New State ID: 168
+Node : 90
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+3 1 3 4 4 1 4 2 
+New State ID: 169
+Next Sta
+Next Sta
+3 1 3 2 3 4 4 2 
+New State ID: 170
+Node : 91
+Node : 92
+Next Sta
+3 1 3 2 4 1 4 2 
+New State ID: 171
+Node : 93
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 94
+Next Sta
+Next Sta
+Node : 95
+Next Sta
+4 3 5 3 6 2 5 2 
+New State ID: 172
+Next Sta
+4 4 5 2 5 3 4 3 
+New State ID: 173
+Next Sta
+4 2 5 2 5 3 4 3 
+New State ID: 174
+Node : 96
+Next Sta
+Next Sta
+3 5 5 2 5 3 3 4 
+New State ID: 175
+Next Sta
+Next Sta
+3 4 5 3 6 2 5 2 
+New State ID: 176
+Next Sta
+3 4 5 2 6 3 5 3 
+New State ID: 177
+Next Sta
+2 4 5 2 5 3 3 4 
+New State ID: 178
+Node : 97
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+3 3 6 2 6 3 5 3 
+New State ID: 179
+Next Sta
+2 3 5 3 6 2 3 3 
+New State ID: 180
+Next Sta
+3 3 5 4 6 2 5 3 
+New State ID: 181
+Next Sta
+3 3 5 2 6 2 5 3 
+New State ID: 182
+Node : 98
+Next Sta
+4 3 5 2 6 3 3 3 
+New State ID: 183
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 3 5 2 6 3 3 3 
+New State ID: 184
+Node : 99
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 100
+Next Sta
+3 1 6 2 6 3 5 3 
+New State ID: 185
+Next Sta
+3 1 5 4 6 2 5 3 
+New State ID: 186
+Next Sta
+3 1 5 2 6 2 5 3 
+New State ID: 187
+Node : 101
+Next Sta
+Node : 102
+Next Sta
+Next Sta
+Node : 103
+Next Sta
+Next Sta
+Node : 104
+Next Sta
+Next Sta
+Node : 105
+Next Sta
+Next Sta
+3 1 4 5 6 2 4 4 
+New State ID: 188
+Next Sta
+Next Sta
+Node : 106
+Next Sta
+Next Sta
+3 1 4 1 6 2 4 2 
+New State ID: 189
+Next Sta
+Node : 107
+Next Sta
+Next Sta
+3 1 4 2 5 4 5 2 
+New State ID: 190
+Node : 108
+Next Sta
+Next Sta
+3 1 4 2 4 5 5 2 
+New State ID: 191
+Node : 109
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+3 1 4 1 4 4 4 2 
+New State ID: 192
+Next Sta
+Next Sta
+3 1 3 2 4 4 4 2 
+New State ID: 193
+Next Sta
+Node : 110
+Next Sta
+Next Sta
+3 1 4 1 4 2 5 2 
+New State ID: 194
+Node : 111
+Next Sta
+Next Sta
+3 1 4 2 6 3 5 3 
+New State ID: 195
+Next Sta
+3 1 4 1 5 3 4 2 
+New State ID: 196
+Next Sta
+Node : 112
+Next Sta
+3 1 3 2 5 3 4 3 
+New State ID: 197
+Next Sta
+Next Sta
+Next Sta
+Node : 113
+Next Sta
+Node : 114
+Next Sta
+Node : 115
+Next Sta
+Next Sta
+3 2 4 1 6 3 4 2 
+New State ID: 198
+Node : 116
+Next Sta
+Next Sta
+Next Sta
+3 2 4 1 5 4 5 3 
+New State ID: 199
+Next Sta
+Next Sta
+Node : 117
+Next Sta
+4 3 4 4 6 2 3 4 
+New State ID: 200
+Next Sta
+Next Sta
+3 5 4 3 6 2 3 4 
+New State ID: 201
+Next Sta
+Next Sta
+3 4 4 4 6 2 4 3 
+New State ID: 202
+Next Sta
+2 4 4 3 6 2 3 4 
+New State ID: 203
+Next Sta
+3 4 4 2 6 2 4 3 
+New State ID: 204
+Next Sta
+3 3 3 4 6 2 4 3 
+New State ID: 205
+Node : 118
+Next Sta
+Next Sta
+3 3 4 5 6 2 4 4 
+New State ID: 206
+Next Sta
+2 3 4 4 6 2 3 3 
+New State ID: 207
+Next Sta
+Node : 119
+Next Sta
+4 2 4 3 6 2 3 3 
+New State ID: 208
+Next Sta
+Next Sta
+2 3 4 2 6 2 3 3 
+New State ID: 209
+Next Sta
+3 3 4 1 6 2 4 2 
+New State ID: 210
+Next Sta
+Node : 120
+Next Sta
+Next Sta
+Node : 121
+Next Sta
+Next Sta
+Next Sta
+3 2 3 5 6 2 3 4 
+New State ID: 211
+Next Sta
+Next Sta
+Next Sta
+2 4 3 2 6 2 3 4 
+New State ID: 212
+Node : 122
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 123
+Next Sta
+Next Sta
+Next Sta
+3 2 4 1 4 5 4 4 
+New State ID: 213
+Next Sta
+Next Sta
+3 2 3 4 4 1 4 4 
+New State ID: 214
+Node : 124
+Next Sta
+Next Sta
+Next Sta
+3 5 4 4 5 2 4 3 
+New State ID: 215
+Next Sta
+3 5 4 2 5 2 4 3 
+New State ID: 216
+Next Sta
+Next Sta
+3 5 4 2 4 3 5 2 
+New State ID: 217
+Node : 125
+Next Sta
+Next Sta
+3 4 3 5 6 2 5 2 
+New State ID: 218
+Next Sta
+2 4 3 5 5 2 3 4 
+New State ID: 219
+Next Sta
+3 4 3 5 4 2 5 2 
+New State ID: 220
+Node : 126
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+3 2 3 5 4 2 5 2 
+New State ID: 221
+Node : 127
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 128
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+3 3 3 5 4 1 4 2 
+New State ID: 222
+Next Sta
+3 2 3 3 3 5 4 2 
+New State ID: 223
+Node : 129
+Node : 130
+Next Sta
+Next Sta
+1 3 3 5 4 3 4 2 
+New State ID: 224
+Next Sta
+1 3 3 5 4 1 4 2 
+New State ID: 225
+Next Sta
+1 3 3 2 3 5 4 2 
+New State ID: 226
+Node : 131
+Next Sta
+3 3 3 5 4 3 2 3 
+New State ID: 227
+Next Sta
+2 3 3 5 5 3 4 3 
+New State ID: 228
+Next Sta
+Next Sta
+2 3 3 5 4 4 4 3 
+New State ID: 229
+Next Sta
+Next Sta
+2 3 3 3 3 5 4 3 
+New State ID: 230
+Node : 132
+Next Sta
+Next Sta
+Node : 133
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 3 3 1 3 5 3 2 
+New State ID: 231
+Node : 134
+Next Sta
+1 3 5 4 6 2 5 2 
+New State ID: 232
+Next Sta
+1 3 4 2 5 4 5 2 
+New State ID: 233
+Node : 135
+Next Sta
+Next Sta
+1 3 4 5 6 2 4 4 
+New State ID: 234
+Next Sta
+Next Sta
+Node : 136
+Next Sta
+Next Sta
+1 3 4 2 4 5 5 2 
+New State ID: 235
+Node : 137
+Next Sta
+Next Sta
+Next Sta
+1 3 4 3 4 4 4 2 
+New State ID: 236
+Next Sta
+Next Sta
+1 3 4 1 4 4 4 2 
+New State ID: 237
+Next Sta
+Next Sta
+1 3 3 2 4 4 4 2 
+New State ID: 238
+Next Sta
+Node : 138
+Next Sta
+1 3 1 4 6 2 2 4 
+New State ID: 239
+Node : 139
+Next Sta
+Next Sta
+1 3 1 4 4 2 5 2 
+New State ID: 240
+Node : 140
+Next Sta
+Next Sta
+Next Sta
+1 3 2 4 4 3 4 2 
+New State ID: 241
+Next Sta
+1 3 2 4 4 1 4 2 
+New State ID: 242
+Next Sta
+1 3 2 4 3 2 4 2 
+New State ID: 243
+Node : 141
+Next Sta
+Next Sta
+1 3 3 4 5 3 4 3 
+New State ID: 244
+Next Sta
+Next Sta
+1 3 3 3 4 3 3 4 
+New State ID: 245
+Next Sta
+1 3 3 4 4 4 4 3 
+New State ID: 246
+Next Sta
+Next Sta
+Next Sta
+1 3 3 3 3 4 4 3 
+New State ID: 247
+Node : 142
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 143
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+1 3 3 1 3 4 3 2 
+New State ID: 248
+Next Sta
+Next Sta
+Node : 144
+Next Sta
+Node : 145
+Next Sta
+Next Sta
+Next Sta
+1 4 2 3 4 3 4 2 
+New State ID: 249
+Next Sta
+1 4 2 3 4 1 4 2 
+New State ID: 250
+Next Sta
+1 4 2 3 3 2 4 2 
+New State ID: 251
+Node : 146
+Next Sta
+2 3 2 4 5 3 4 3 
+New State ID: 252
+Next Sta
+Next Sta
+Next Sta
+2 3 2 4 4 4 4 3 
+New State ID: 253
+Next Sta
+Next Sta
+2 3 2 4 3 3 4 3 
+New State ID: 254
+Node : 147
+Next Sta
+Next Sta
+Node : 148
+Next Sta
+Next Sta
+Next Sta
+2 3 2 4 3 1 3 2 
+New State ID: 255
+Next Sta
+Node : 149
+Next Sta
+Next Sta
+Next Sta
+2 3 3 3 5 3 3 4 
+New State ID: 256
+Next Sta
+2 3 3 4 6 3 5 3 
+New State ID: 257
+Next Sta
+Next Sta
+2 3 3 4 5 4 5 3 
+New State ID: 258
+Next Sta
+Next Sta
+Node : 150
+Next Sta
+Next Sta
+2 3 3 2 4 3 3 3 
+New State ID: 259
+Next Sta
+2 3 3 3 4 4 4 3 
+New State ID: 260
+Next Sta
+Node : 151
+Next Sta
+Next Sta
+Next Sta
+2 3 3 4 4 5 4 4 
+New State ID: 261
+Node : 152
+Next Sta
+Node : 153
+Next Sta
+Next Sta
+Next Sta
+2 3 3 1 3 3 3 4 
+New State ID: 262
+Next Sta
+Node : 154
+Next Sta
+1 3 6 2 6 3 5 3 
+New State ID: 263
+Next Sta
+Next Sta
+1 3 5 2 6 2 5 3 
+New State ID: 264
+Node : 155
+Next Sta
+Node : 156
+Next Sta
+Next Sta
+Next Sta
+1 3 4 1 6 2 4 2 
+New State ID: 265
+Next Sta
+Node : 157
+Next Sta
+Next Sta
+1 3 4 1 4 2 5 2 
+New State ID: 266
+Node : 158
+Next Sta
+Next Sta
+1 3 4 3 5 3 4 2 
+New State ID: 267
+Next Sta
+1 3 4 2 6 3 5 3 
+New State ID: 268
+Next Sta
+1 3 4 1 5 3 4 2 
+New State ID: 269
+Next Sta
+Node : 159
+Next Sta
+Next Sta
+1 3 3 2 5 3 4 3 
+New State ID: 270
+Next Sta
+1 3 3 1 4 3 3 2 
+New State ID: 271
+Next Sta
+Next Sta
+Next Sta
+Node : 160
+Next Sta
+1 3 2 3 5 3 4 3 
+New State ID: 272
+Next Sta
+1 3 2 3 4 4 4 3 
+New State ID: 273
+Next Sta
+Next Sta
+1 3 2 3 3 3 4 3 
+New State ID: 274
+Node : 161
+Node : 162
+Next Sta
+Next Sta
+1 3 2 3 3 1 3 2 
+New State ID: 275
+Node : 163
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 164
+Node : 165
+Next Sta
+Next Sta
+3 1 3 5 4 1 4 2 
+New State ID: 276
+Next Sta
+3 1 3 2 3 5 4 2 
+New State ID: 277
+Node : 166
+Next Sta
+Next Sta
+1 4 3 1 6 2 2 4 
+New State ID: 278
+Node : 167
+Next Sta
+Next Sta
+1 4 3 1 4 2 5 2 
+New State ID: 279
+Node : 168
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 4 3 1 4 1 4 2 
+New State ID: 280
+Next Sta
+2 4 3 1 3 2 4 2 
+New State ID: 281
+Node : 169
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 170
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 171
+Node : 172
+Next Sta
+4 4 5 3 6 2 4 3 
+New State ID: 282
+Next Sta
+4 2 5 3 6 2 4 3 
+New State ID: 283
+Next Sta
+4 3 5 4 6 2 5 3 
+New State ID: 284
+Next Sta
+4 3 5 2 6 2 5 3 
+New State ID: 285
+Node : 173
+Next Sta
+5 2 5 3 5 4 4 4 
+New State ID: 286
+Next Sta
+Next Sta
+4 4 5 2 6 3 5 3 
+New State ID: 287
+Next Sta
+4 5 5 2 5 3 4 4 
+New State ID: 288
+Next Sta
+Node : 174
+Next Sta
+Next Sta
+4 2 5 2 6 3 5 3 
+New State ID: 289
+Next Sta
+4 1 5 2 5 3 4 2 
+New State ID: 290
+Node : 175
+Next Sta
+3 5 5 3 6 2 5 2 
+New State ID: 291
+Next Sta
+3 5 5 2 6 3 5 3 
+New State ID: 292
+Node : 176
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+3 4 6 2 6 3 5 3 
+New State ID: 293
+Next Sta
+2 4 5 3 6 2 3 4 
+New State ID: 294
+Next Sta
+3 4 5 4 6 2 5 3 
+New State ID: 295
+Next Sta
+3 4 5 2 6 2 5 3 
+New State ID: 296
+Node : 177
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 4 5 2 6 3 3 4 
+New State ID: 297
+Node : 178
+Next Sta
+Next Sta
+1 4 5 2 5 3 2 4 
+New State ID: 298
+Next Sta
+Next Sta
+Node : 179
+Next Sta
+4 3 6 2 6 3 3 3 
+New State ID: 299
+Next Sta
+Next Sta
+Next Sta
+2 3 6 2 6 3 3 3 
+New State ID: 300
+Node : 180
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 3 5 4 6 2 5 3 
+New State ID: 301
+Next Sta
+2 3 5 2 6 2 5 3 
+New State ID: 302
+Node : 181
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 182
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 183
+Next Sta
+5 2 5 3 6 3 4 3 
+New State ID: 303
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 184
+Next Sta
+Next Sta
+Next Sta
+Node : 185
+Node : 186
+Node : 187
+Node : 188
+Node : 189
+Node : 190
+Next Sta
+Next Sta
+3 1 4 1 5 4 4 2 
+New State ID: 304
+Next Sta
+3 1 3 2 5 4 4 2 
+New State ID: 305
+Node : 191
+Next Sta
+Next Sta
+3 1 4 1 4 5 4 2 
+New State ID: 306
+Next Sta
+3 1 3 2 4 5 4 2 
+New State ID: 307
+Node : 192
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 193
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 194
+Next Sta
+Next Sta
+Node : 195
+Next Sta
+Next Sta
+3 1 4 1 6 3 4 2 
+New State ID: 308
+Next Sta
+3 1 3 2 6 3 4 2 
+New State ID: 309
+Node : 196
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 197
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 198
+Next Sta
+Node : 199
+Next Sta
+Node : 200
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 201
+Next Sta
+Next Sta
+3 5 4 4 6 2 4 3 
+New State ID: 310
+Next Sta
+3 5 4 2 6 2 4 3 
+New State ID: 311
+Next Sta
+Node : 202
+Next Sta
+Next Sta
+3 4 4 5 6 2 4 4 
+New State ID: 312
+Node : 203
+Next Sta
+Next Sta
+Next Sta
+1 4 4 3 6 2 2 4 
+New State ID: 313
+Next Sta
+2 4 4 4 6 2 4 3 
+New State ID: 314
+Next Sta
+2 4 4 2 6 2 4 3 
+New State ID: 315
+Next Sta
+2 4 3 3 6 2 4 3 
+New State ID: 316
+Node : 204
+Next Sta
+4 2 4 4 6 2 3 4 
+New State ID: 317
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+3 4 4 1 6 2 4 2 
+New State ID: 318
+Next Sta
+Next Sta
+Node : 205
+Next Sta
+Next Sta
+Node : 206
+Next Sta
+4 3 4 5 6 2 3 3 
+New State ID: 319
+Next Sta
+Next Sta
+Next Sta
+2 3 4 5 6 2 3 3 
+New State ID: 320
+Node : 207
+Next Sta
+3 3 4 4 6 2 2 3 
+New State ID: 321
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 3 4 3 6 2 4 4 
+New State ID: 322
+Next Sta
+Node : 208
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 209
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 3 4 1 6 2 4 2 
+New State ID: 323
+Next Sta
+Node : 210
+Next Sta
+4 1 4 3 6 2 3 3 
+New State ID: 324
+Next Sta
+Next Sta
+Next Sta
+Node : 211
+Next Sta
+Next Sta
+Node : 212
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+1 4 3 2 6 2 2 4 
+New State ID: 325
+Node : 213
+Next Sta
+Node : 214
+Next Sta
+Next Sta
+3 2 3 5 4 1 3 4 
+New State ID: 326
+Next Sta
+Next Sta
+Next Sta
+2 4 3 2 4 1 3 4 
+New State ID: 327
+Node : 215
+Next Sta
+3 5 5 2 5 4 4 4 
+New State ID: 328
+Next Sta
+Next Sta
+3 5 4 5 5 2 4 4 
+New State ID: 329
+Next Sta
+Next Sta
+3 5 4 2 4 4 5 2 
+New State ID: 330
+Node : 216
+Next Sta
+Next Sta
+3 5 4 1 5 2 4 2 
+New State ID: 331
+Node : 217
+Next Sta
+Next Sta
+3 5 4 2 5 3 4 3 
+New State ID: 332
+Next Sta
+3 2 3 5 4 3 4 2 
+New State ID: 333
+Next Sta
+Node : 218
+Next Sta
+Next Sta
+2 4 3 5 6 2 3 4 
+New State ID: 334
+Node : 219
+Next Sta
+Next Sta
+1 4 3 5 5 2 2 4 
+New State ID: 335
+Next Sta
+Next Sta
+2 4 3 5 4 2 5 2 
+New State ID: 336
+Node : 220
+Next Sta
+Next Sta
+Next Sta
+3 4 3 5 4 3 4 2 
+New State ID: 337
+Next Sta
+3 4 3 5 4 1 4 2 
+New State ID: 338
+Next Sta
+Next Sta
+3 2 3 4 3 5 4 2 
+New State ID: 339
+Node : 221
+Next Sta
+Next Sta
+Node : 222
+Next Sta
+3 5 4 1 4 3 3 3 
+New State ID: 340
+Next Sta
+Next Sta
+Next Sta
+Node : 223
+Next Sta
+Next Sta
+Node : 224
+Next Sta
+1 3 3 5 5 3 4 3 
+New State ID: 341
+Next Sta
+1 3 3 5 4 4 4 3 
+New State ID: 342
+Next Sta
+Next Sta
+1 3 3 3 3 5 4 3 
+New State ID: 343
+Node : 225
+Node : 226
+Next Sta
+Next Sta
+1 3 3 1 3 5 3 2 
+New State ID: 344
+Node : 227
+Next Sta
+Next Sta
+Next Sta
+3 3 3 5 4 4 4 3 
+New State ID: 345
+Next Sta
+Node : 228
+Next Sta
+3 3 3 5 5 3 2 3 
+New State ID: 346
+Next Sta
+Next Sta
+2 3 3 5 6 3 5 3 
+New State ID: 347
+Next Sta
+2 3 3 5 5 4 5 3 
+New State ID: 348
+Next Sta
+Next Sta
+Node : 229
+Next Sta
+3 3 3 5 4 4 2 3 
+New State ID: 349
+Next Sta
+Next Sta
+Next Sta
+2 3 3 5 4 5 4 4 
+New State ID: 350
+Next Sta
+2 3 3 4 3 5 4 4 
+New State ID: 351
+Node : 230
+Next Sta
+Next Sta
+Node : 231
+Next Sta
+3 1 3 3 3 5 2 3 
+New State ID: 352
+Next Sta
+Node : 232
+Node : 233
+Next Sta
+Next Sta
+1 3 4 3 5 4 4 2 
+New State ID: 353
+Next Sta
+1 3 4 1 5 4 4 2 
+New State ID: 354
+Next Sta
+1 3 3 2 5 4 4 2 
+New State ID: 355
+Node : 234
+Node : 235
+Next Sta
+Next Sta
+1 3 4 3 4 5 4 2 
+New State ID: 356
+Next Sta
+1 3 4 1 4 5 4 2 
+New State ID: 357
+Next Sta
+1 3 3 2 4 5 4 2 
+New State ID: 358
+Node : 236
+Next Sta
+1 3 4 4 5 3 4 3 
+New State ID: 359
+Next Sta
+Next Sta
+1 3 3 3 4 4 4 3 
+New State ID: 360
+Next Sta
+Node : 237
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 238
+Next Sta
+Next Sta
+1 3 3 1 4 4 3 2 
+New State ID: 361
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 239
+Node : 240
+Next Sta
+Next Sta
+1 3 1 4 4 3 4 2 
+New State ID: 362
+Next Sta
+1 3 1 4 4 1 4 2 
+New State ID: 363
+Next Sta
+1 3 1 4 3 2 4 2 
+New State ID: 364
+Node : 241
+Next Sta
+1 3 2 4 5 3 4 3 
+New State ID: 365
+Next Sta
+Next Sta
+1 3 2 4 4 4 4 3 
+New State ID: 366
+Next Sta
+Next Sta
+1 3 2 4 3 3 4 3 
+New State ID: 367
+Node : 242
+Next Sta
+Node : 243
+Next Sta
+Next Sta
+1 3 2 4 3 1 3 2 
+New State ID: 368
+Next Sta
+Node : 244
+Next Sta
+Next Sta
+Next Sta
+1 3 3 3 5 3 3 4 
+New State ID: 369
+Next Sta
+1 3 3 4 6 3 5 3 
+New State ID: 370
+Next Sta
+Next Sta
+1 3 3 4 5 4 5 3 
+New State ID: 371
+Next Sta
+Next Sta
+Node : 245
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 246
+Next Sta
+Next Sta
+1 3 3 4 4 5 4 4 
+New State ID: 372
+Node : 247
+Next Sta
+1 3 2 3 3 4 3 3 
+New State ID: 373
+Next Sta
+Node : 248
+Next Sta
+Next Sta
+Next Sta
+1 3 3 1 3 3 3 4 
+New State ID: 374
+Next Sta
+Node : 249
+Next Sta
+1 4 2 3 5 3 4 3 
+New State ID: 375
+Next Sta
+Next Sta
+1 4 2 3 4 4 4 3 
+New State ID: 376
+Next Sta
+Next Sta
+1 4 2 3 3 3 4 3 
+New State ID: 377
+Node : 250
+Next Sta
+Node : 251
+Next Sta
+Next Sta
+Next Sta
+1 4 2 3 3 1 3 2 
+New State ID: 378
+Node : 252
+Next Sta
+Next Sta
+Next Sta
+2 3 2 4 6 3 5 3 
+New State ID: 379
+Next Sta
+2 3 2 4 5 4 5 3 
+New State ID: 380
+Next Sta
+Next Sta
+Node : 253
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 3 2 4 4 5 4 4 
+New State ID: 381
+Next Sta
+Next Sta
+2 3 2 4 3 4 4 4 
+New State ID: 382
+Node : 254
+Next Sta
+Next Sta
+Next Sta
+Node : 255
+Next Sta
+Next Sta
+Node : 256
+Next Sta
+Next Sta
+2 3 3 2 5 3 3 3 
+New State ID: 383
+Next Sta
+2 3 3 3 6 3 5 3 
+New State ID: 384
+Next Sta
+2 3 3 3 5 4 5 3 
+New State ID: 385
+Next Sta
+Next Sta
+Node : 257
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 258
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 259
+Next Sta
+3 2 3 3 4 3 2 3 
+New State ID: 386
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 3 3 1 4 3 3 2 
+New State ID: 387
+Next Sta
+2 3 3 2 4 4 4 3 
+New State ID: 388
+Next Sta
+Next Sta
+Node : 260
+Next Sta
+Next Sta
+2 3 3 3 4 5 4 4 
+New State ID: 389
+Next Sta
+Node : 261
+Next Sta
+Next Sta
+Next Sta
+Node : 262
+Next Sta
+Next Sta
+Node : 263
+Node : 264
+Node : 265
+Node : 266
+Next Sta
+Next Sta
+Node : 267
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 268
+Next Sta
+Next Sta
+1 3 4 3 6 3 4 2 
+New State ID: 390
+Next Sta
+1 3 4 1 6 3 4 2 
+New State ID: 391
+Next Sta
+1 3 3 2 6 3 4 2 
+New State ID: 392
+Node : 269
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 270
+Next Sta
+Next Sta
+1 3 3 1 5 3 3 2 
+New State ID: 393
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 271
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 272
+Next Sta
+1 3 2 3 6 3 5 3 
+New State ID: 394
+Next Sta
+1 3 2 3 5 4 5 3 
+New State ID: 395
+Next Sta
+Next Sta
+Node : 273
+Next Sta
+Next Sta
+1 3 2 3 4 5 4 4 
+New State ID: 396
+Next Sta
+Next Sta
+Node : 274
+Next Sta
+Next Sta
+Node : 275
+Node : 276
+Node : 277
+Node : 278
+Node : 279
+Next Sta
+Next Sta
+1 4 3 1 4 1 4 2 
+New State ID: 397
+Next Sta
+1 4 3 1 3 2 4 2 
+New State ID: 398
+Node : 280
+Next Sta
+Next Sta
+Node : 281
+Next Sta
+Next Sta
+Node : 282
+Next Sta
+5 3 5 4 6 2 4 4 
+New State ID: 399
+Next Sta
+4 4 6 2 6 3 5 3 
+New State ID: 400
+Next Sta
+4 5 5 3 6 2 4 4 
+New State ID: 401
+Next Sta
+Next Sta
+4 4 5 4 6 2 5 3 
+New State ID: 402
+Node : 283
+Next Sta
+5 2 5 3 6 2 4 2 
+New State ID: 403
+Next Sta
+Next Sta
+4 2 6 2 6 3 5 3 
+New State ID: 404
+Next Sta
+4 1 5 3 6 2 4 2 
+New State ID: 405
+Next Sta
+4 2 5 2 6 2 5 3 
+New State ID: 406
+Node : 284
+Next Sta
+Next Sta
+Next Sta
+4 2 5 4 6 2 4 3 
+New State ID: 407
+Next Sta
+Node : 285
+Next Sta
+Next Sta
+4 4 5 2 6 2 4 3 
+New State ID: 408
+Next Sta
+Next Sta
+Node : 286
+Next Sta
+Next Sta
+5 2 5 4 6 3 5 3 
+New State ID: 409
+Node : 287
+Next Sta
+Next Sta
+Next Sta
+4 5 5 2 6 3 4 4 
+New State ID: 410
+Next Sta
+Next Sta
+Node : 288
+Next Sta
+Next Sta
+Node : 289
+Next Sta
+Next Sta
+4 1 5 2 6 3 4 2 
+New State ID: 411
+Node : 290
+Next Sta
+Next Sta
+Node : 291
+Next Sta
+3 5 6 2 6 3 5 3 
+New State ID: 412
+Next Sta
+3 5 5 4 6 2 5 3 
+New State ID: 413
+Next Sta
+3 5 5 2 6 2 5 3 
+New State ID: 414
+Node : 292
+Next Sta
+Node : 293
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 4 6 2 6 3 3 4 
+New State ID: 415
+Node : 294
+Next Sta
+Next Sta
+1 4 5 3 6 2 2 4 
+New State ID: 416
+Next Sta
+Next Sta
+2 4 5 4 6 2 5 3 
+New State ID: 417
+Next Sta
+2 4 5 2 6 2 5 3 
+New State ID: 418
+Node : 295
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 296
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 297
+Next Sta
+Next Sta
+1 4 5 2 6 3 2 4 
+New State ID: 419
+Next Sta
+Node : 298
+Next Sta
+Next Sta
+Node : 299
+Next Sta
+5 3 6 2 6 3 4 3 
+New State ID: 420
+Next Sta
+Next Sta
+Next Sta
+Node : 300
+Next Sta
+Next Sta
+Node : 301
+Next Sta
+Next Sta
+Node : 302
+Next Sta
+Next Sta
+Node : 303
+Next Sta
+Node : 304
+Node : 305
+Node : 306
+Node : 307
+Node : 308
+Node : 309
+Node : 310
+Next Sta
+Next Sta
+3 5 4 5 6 2 4 4 
+New State ID: 421
+Next Sta
+Node : 311
+Next Sta
+Next Sta
+Next Sta
+3 5 4 1 6 2 4 2 
+New State ID: 422
+Next Sta
+Node : 312
+Next Sta
+4 4 4 5 6 2 3 4 
+New State ID: 423
+Next Sta
+Next Sta
+2 4 4 5 6 2 3 4 
+New State ID: 424
+Node : 313
+Next Sta
+Next Sta
+1 4 4 4 6 2 4 3 
+New State ID: 425
+Next Sta
+1 4 4 2 6 2 4 3 
+New State ID: 426
+Next Sta
+1 4 3 3 6 2 4 3 
+New State ID: 427
+Node : 314
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 4 3 4 6 2 4 4 
+New State ID: 428
+Node : 315
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 4 4 1 6 2 4 2 
+New State ID: 429
+Next Sta
+Node : 316
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 317
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+4 2 4 5 6 2 4 4 
+New State ID: 430
+Next Sta
+4 1 4 4 6 2 4 2 
+New State ID: 431
+Next Sta
+Next Sta
+Next Sta
+Node : 318
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 319
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 320
+Next Sta
+Next Sta
+Node : 321
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 322
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 323
+Next Sta
+Next Sta
+Node : 324
+Next Sta
+Next Sta
+Next Sta
+4 1 4 2 6 2 4 3 
+New State ID: 432
+Next Sta
+Node : 325
+Next Sta
+Next Sta
+Node : 326
+Next Sta
+Node : 327
+Next Sta
+Next Sta
+Next Sta
+1 4 3 2 4 1 2 4 
+New State ID: 433
+Node : 328
+Next Sta
+Next Sta
+3 5 4 2 5 4 5 2 
+New State ID: 434
+Node : 329
+Next Sta
+Next Sta
+3 5 4 2 4 5 5 2 
+New State ID: 435
+Node : 330
+Next Sta
+Next Sta
+Next Sta
+3 5 4 3 4 4 4 2 
+New State ID: 436
+Next Sta
+Next Sta
+3 5 4 1 4 4 4 2 
+New State ID: 437
+Next Sta
+3 2 3 5 4 4 4 2 
+New State ID: 438
+Next Sta
+Node : 331
+Next Sta
+Next Sta
+3 5 4 1 4 2 5 2 
+New State ID: 439
+Node : 332
+Next Sta
+Next Sta
+3 5 4 3 5 3 4 2 
+New State ID: 440
+Next Sta
+3 5 4 2 6 3 5 3 
+New State ID: 441
+Next Sta
+3 5 4 1 5 3 4 2 
+New State ID: 442
+Next Sta
+Node : 333
+Next Sta
+Next Sta
+3 2 3 5 5 3 4 3 
+New State ID: 443
+Next Sta
+3 1 3 5 4 3 3 2 
+New State ID: 444
+Next Sta
+Next Sta
+Next Sta
+Node : 334
+Next Sta
+Next Sta
+1 4 3 5 6 2 2 4 
+New State ID: 445
+Node : 335
+Next Sta
+Next Sta
+1 4 3 5 4 2 5 2 
+New State ID: 446
+Node : 336
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 4 3 5 4 3 4 2 
+New State ID: 447
+Next Sta
+2 4 3 5 4 1 4 2 
+New State ID: 448
+Next Sta
+2 4 3 2 3 5 4 2 
+New State ID: 449
+Node : 337
+Next Sta
+Next Sta
+3 4 3 5 5 3 4 3 
+New State ID: 450
+Next Sta
+3 4 3 5 4 4 4 3 
+New State ID: 451
+Next Sta
+Next Sta
+Next Sta
+3 3 3 4 3 5 4 3 
+New State ID: 452
+Node : 338
+Next Sta
+Next Sta
+Node : 339
+Next Sta
+Next Sta
+Next Sta
+3 1 3 4 3 5 3 2 
+New State ID: 453
+Next Sta
+Node : 340
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 341
+Next Sta
+1 3 3 5 6 3 5 3 
+New State ID: 454
+Next Sta
+1 3 3 5 5 4 5 3 
+New State ID: 455
+Next Sta
+Next Sta
+Node : 342
+Next Sta
+Next Sta
+1 3 3 5 4 5 4 4 
+New State ID: 456
+Next Sta
+1 3 3 4 3 5 4 4 
+New State ID: 457
+Node : 343
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+1 3 2 3 3 5 3 3 
+New State ID: 458
+Node : 344
+Node : 345
+Next Sta
+Next Sta
+3 3 3 5 4 5 4 4 
+New State ID: 459
+Next Sta
+Next Sta
+Node : 346
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+3 3 3 5 6 3 5 3 
+New State ID: 460
+Next Sta
+Next Sta
+3 3 3 5 5 4 5 3 
+New State ID: 461
+Next Sta
+Next Sta
+Node : 347
+Next Sta
+Next Sta
+Node : 348
+Next Sta
+Next Sta
+Node : 349
+Next Sta
+Next Sta
+Next Sta
+Node : 350
+Next Sta
+Next Sta
+Node : 351
+Next Sta
+Next Sta
+2 3 2 4 3 5 3 4 
+New State ID: 462
+Node : 352
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 353
+Next Sta
+1 3 5 3 5 4 4 3 
+New State ID: 463
+Next Sta
+1 3 4 4 5 4 4 3 
+New State ID: 464
+Next Sta
+Next Sta
+1 3 3 3 5 4 4 3 
+New State ID: 465
+Node : 354
+Node : 355
+Next Sta
+Next Sta
+1 3 3 1 5 4 3 2 
+New State ID: 466
+Node : 356
+Next Sta
+1 3 4 5 5 3 4 3 
+New State ID: 467
+Next Sta
+1 3 4 4 4 5 4 3 
+New State ID: 468
+Next Sta
+Next Sta
+1 3 3 3 4 5 4 3 
+New State ID: 469
+Node : 357
+Node : 358
+Next Sta
+Next Sta
+1 3 3 1 4 5 3 2 
+New State ID: 470
+Node : 359
+Next Sta
+Next Sta
+1 3 4 4 6 3 5 3 
+New State ID: 471
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 360
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 361
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 362
+Next Sta
+1 3 1 4 5 3 4 3 
+New State ID: 472
+Next Sta
+1 3 1 4 4 4 4 3 
+New State ID: 473
+Next Sta
+Next Sta
+1 3 1 4 3 3 4 3 
+New State ID: 474
+Node : 363
+Node : 364
+Next Sta
+Next Sta
+1 3 1 4 3 1 3 2 
+New State ID: 475
+Node : 365
+Next Sta
+Next Sta
+1 3 2 4 6 3 5 3 
+New State ID: 476
+Next Sta
+1 3 2 4 5 4 5 3 
+New State ID: 477
+Next Sta
+Next Sta
+Node : 366
+Next Sta
+Next Sta
+Next Sta
+1 3 2 4 4 5 4 4 
+New State ID: 478
+Next Sta
+Next Sta
+1 3 2 4 3 4 4 4 
+New State ID: 479
+Node : 367
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+1 3 2 3 2 4 3 3 
+New State ID: 480
+Node : 368
+Next Sta
+Node : 369
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+1 3 3 3 6 3 5 3 
+New State ID: 481
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 370
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 371
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 372
+Next Sta
+Next Sta
+Next Sta
+Node : 373
+Next Sta
+Next Sta
+Next Sta
+Node : 374
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 375
+Next Sta
+Next Sta
+1 4 2 3 6 3 5 3 
+New State ID: 482
+Next Sta
+1 4 2 3 5 4 5 3 
+New State ID: 483
+Next Sta
+Next Sta
+Node : 376
+Next Sta
+Next Sta
+Next Sta
+1 4 2 3 4 5 4 4 
+New State ID: 484
+Next Sta
+Next Sta
+1 4 2 3 3 4 4 4 
+New State ID: 485
+Node : 377
+Next Sta
+Next Sta
+Node : 378
+Next Sta
+Node : 379
+Next Sta
+Next Sta
+Node : 380
+Next Sta
+Next Sta
+Node : 381
+Next Sta
+Next Sta
+Node : 382
+Next Sta
+Next Sta
+Next Sta
+Node : 383
+Next Sta
+3 2 3 3 5 3 2 3 
+New State ID: 486
+Next Sta
+Next Sta
+Next Sta
+2 3 3 1 5 3 3 2 
+New State ID: 487
+Next Sta
+2 3 3 2 6 3 5 3 
+New State ID: 488
+Next Sta
+2 3 3 2 5 4 5 3 
+New State ID: 489
+Next Sta
+Next Sta
+Node : 384
+Next Sta
+Next Sta
+Node : 385
+Next Sta
+Next Sta
+Node : 386
+Next Sta
+3 2 3 3 4 4 4 3 
+New State ID: 490
+Next Sta
+Node : 387
+Next Sta
+3 1 3 3 4 3 2 3 
+New State ID: 491
+Next Sta
+Next Sta
+Next Sta
+2 3 3 1 4 4 4 3 
+New State ID: 492
+Next Sta
+Next Sta
+Node : 388
+Next Sta
+3 2 3 3 4 4 2 3 
+New State ID: 493
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 3 3 2 4 5 4 4 
+New State ID: 494
+Next Sta
+Next Sta
+Node : 389
+Next Sta
+Next Sta
+Node : 390
+Next Sta
+1 3 5 3 6 3 4 3 
+New State ID: 495
+Next Sta
+Next Sta
+Next Sta
+Node : 391
+Node : 392
+Next Sta
+Next Sta
+1 3 3 1 6 3 3 2 
+New State ID: 496
+Node : 393
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 394
+Node : 395
+Node : 396
+Node : 397
+Node : 398
+Node : 399
+Next Sta
+5 4 6 2 6 3 5 3 
+New State ID: 497
+Node : 400
+Next Sta
+Next Sta
+4 5 6 2 6 3 4 4 
+New State ID: 498
+Next Sta
+Next Sta
+Node : 401
+Next Sta
+Next Sta
+4 5 5 4 6 2 5 3 
+New State ID: 499
+Next Sta
+4 5 5 2 6 2 5 3 
+New State ID: 500
+Node : 402
+Next Sta
+Next Sta
+Node : 403
+Next Sta
+5 2 6 2 6 3 5 3 
+New State ID: 501
+Node : 404
+Next Sta
+Next Sta
+Next Sta
+4 1 6 2 6 3 4 2 
+New State ID: 502
+Next Sta
+Node : 405
+Next Sta
+Next Sta
+4 1 5 4 6 2 5 3 
+New State ID: 503
+Next Sta
+4 1 5 2 6 2 5 3 
+New State ID: 504
+Node : 406
+Next Sta
+Next Sta
+Node : 407
+Next Sta
+5 2 5 4 6 2 4 2 
+New State ID: 505
+Next Sta
+Next Sta
+Next Sta
+Node : 408
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 409
+Next Sta
+Node : 410
+Next Sta
+Node : 411
+Next Sta
+Node : 412
+Node : 413
+Node : 414
+Node : 415
+Next Sta
+Next Sta
+1 4 6 2 6 3 2 4 
+New State ID: 506
+Node : 416
+Next Sta
+Next Sta
+1 4 5 4 6 2 5 3 
+New State ID: 507
+Next Sta
+1 4 5 2 6 2 5 3 
+New State ID: 508
+Node : 417
+Next Sta
+Next Sta
+Node : 418
+Next Sta
+Next Sta
+Node : 419
+Next Sta
+Node : 420
+Next Sta
+Next Sta
+Node : 421
+Node : 422
+Node : 423
+Next Sta
+Next Sta
+Node : 424
+Next Sta
+Next Sta
+1 4 4 5 6 2 2 4 
+New State ID: 509
+Node : 425
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+1 4 3 4 6 2 4 4 
+New State ID: 510
+Node : 426
+Next Sta
+Next Sta
+Next Sta
+1 4 4 1 6 2 4 2 
+New State ID: 511
+Next Sta
+Node : 427
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 428
+Next Sta
+Next Sta
+Node : 429
+Next Sta
+Next Sta
+Node : 430
+Next Sta
+Next Sta
+Next Sta
+4 1 4 5 6 2 4 2 
+New State ID: 512
+Next Sta
+Node : 431
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 432
+Next Sta
+Next Sta
+Node : 433
+Next Sta
+Node : 434
+Next Sta
+Next Sta
+3 5 4 3 5 4 4 2 
+New State ID: 513
+Next Sta
+3 5 4 1 5 4 4 2 
+New State ID: 514
+Next Sta
+3 2 3 5 5 4 4 2 
+New State ID: 515
+Node : 435
+Next Sta
+Next Sta
+3 5 4 3 4 5 4 2 
+New State ID: 516
+Next Sta
+3 5 4 1 4 5 4 2 
+New State ID: 517
+Next Sta
+3 2 3 5 4 5 4 2 
+New State ID: 518
+Node : 436
+Next Sta
+3 5 4 4 5 3 4 3 
+New State ID: 519
+Next Sta
+Next Sta
+Next Sta
+Node : 437
+Next Sta
+Next Sta
+Next Sta
+Node : 438
+Next Sta
+Next Sta
+3 1 3 5 4 4 3 2 
+New State ID: 520
+Next Sta
+Next Sta
+Next Sta
+Node : 439
+Next Sta
+Next Sta
+Node : 440
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 441
+Next Sta
+Next Sta
+3 5 4 3 6 3 4 2 
+New State ID: 521
+Next Sta
+3 5 4 1 6 3 4 2 
+New State ID: 522
+Next Sta
+3 2 3 5 6 3 4 2 
+New State ID: 523
+Node : 442
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 443
+Next Sta
+Next Sta
+3 1 3 5 5 3 3 2 
+New State ID: 524
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 444
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 445
+Node : 446
+Next Sta
+Next Sta
+1 4 3 5 4 3 4 2 
+New State ID: 525
+Next Sta
+1 4 3 5 4 1 4 2 
+New State ID: 526
+Next Sta
+1 4 3 2 3 5 4 2 
+New State ID: 527
+Node : 447
+Next Sta
+Next Sta
+2 4 3 5 5 3 4 3 
+New State ID: 528
+Next Sta
+Next Sta
+2 4 3 5 4 4 4 3 
+New State ID: 529
+Next Sta
+Next Sta
+2 4 3 3 3 5 4 3 
+New State ID: 530
+Node : 448
+Next Sta
+Next Sta
+Node : 449
+Next Sta
+Next Sta
+Next Sta
+2 4 3 1 3 5 3 2 
+New State ID: 531
+Next Sta
+Node : 450
+Next Sta
+Next Sta
+3 4 3 5 6 3 5 3 
+New State ID: 532
+Next Sta
+Next Sta
+3 4 3 5 5 4 5 3 
+New State ID: 533
+Next Sta
+Next Sta
+Node : 451
+Next Sta
+3 4 3 5 4 5 4 4 
+New State ID: 534
+Node : 452
+Next Sta
+Next Sta
+Node : 453
+Next Sta
+Next Sta
+Node : 454
+Node : 455
+Node : 456
+Node : 457
+Next Sta
+Next Sta
+1 3 2 4 3 5 3 4 
+New State ID: 535
+Node : 458
+Node : 459
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 460
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 461
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 462
+Next Sta
+Next Sta
+1 4 2 3 3 5 2 4 
+New State ID: 536
+Node : 463
+Next Sta
+1 3 5 4 6 3 5 3 
+New State ID: 537
+Next Sta
+Node : 464
+Next Sta
+1 3 4 5 5 4 4 4 
+New State ID: 538
+Next Sta
+Node : 465
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 466
+Node : 467
+Next Sta
+1 3 4 5 6 3 5 3 
+New State ID: 539
+Next Sta
+Next Sta
+Next Sta
+Node : 468
+Next Sta
+Next Sta
+Node : 469
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 470
+Node : 471
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 472
+Next Sta
+1 3 1 4 6 3 5 3 
+New State ID: 540
+Next Sta
+1 3 1 4 5 4 5 3 
+New State ID: 541
+Next Sta
+Next Sta
+Node : 473
+Next Sta
+Next Sta
+1 3 1 4 4 5 4 4 
+New State ID: 542
+Next Sta
+Next Sta
+1 3 1 4 3 4 4 4 
+New State ID: 543
+Node : 474
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+1 3 1 4 2 3 3 3 
+New State ID: 544
+Node : 475
+Node : 476
+Next Sta
+Node : 477
+Next Sta
+Node : 478
+Next Sta
+Node : 479
+Next Sta
+Next Sta
+Node : 480
+Next Sta
+Node : 481
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 482
+Next Sta
+Node : 483
+Next Sta
+Node : 484
+Next Sta
+Node : 485
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+1 4 2 3 2 4 3 4 
+New State ID: 545
+Node : 486
+Next Sta
+3 2 4 3 5 3 3 3 
+New State ID: 546
+Next Sta
+3 2 3 3 6 3 5 3 
+New State ID: 547
+Next Sta
+Next Sta
+3 2 3 3 5 4 5 3 
+New State ID: 548
+Next Sta
+Next Sta
+Node : 487
+Next Sta
+3 1 3 3 5 3 2 3 
+New State ID: 549
+Next Sta
+Next Sta
+2 3 3 1 6 3 5 3 
+New State ID: 550
+Next Sta
+2 3 3 1 5 4 5 3 
+New State ID: 551
+Next Sta
+Next Sta
+Node : 488
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 489
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 490
+Next Sta
+3 2 3 3 4 5 4 4 
+New State ID: 552
+Next Sta
+Next Sta
+3 2 3 3 3 4 4 4 
+New State ID: 553
+Node : 491
+Next Sta
+3 1 3 4 4 3 3 3 
+New State ID: 554
+Next Sta
+Next Sta
+3 1 3 3 4 4 4 3 
+New State ID: 555
+Next Sta
+Node : 492
+Next Sta
+3 1 3 3 4 4 2 3 
+New State ID: 556
+Next Sta
+Next Sta
+Next Sta
+2 3 3 1 4 5 4 4 
+New State ID: 557
+Next Sta
+Next Sta
+Node : 493
+Next Sta
+3 2 4 3 4 4 3 3 
+New State ID: 558
+Next Sta
+Next Sta
+Node : 494
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 495
+Next Sta
+Next Sta
+Node : 496
+Node : 497
+Node : 498
+Node : 499
+Node : 500
+Node : 501
+Node : 502
+Node : 503
+Node : 504
+Node : 505
+Node : 506
+Node : 507
+Node : 508
+Node : 509
+Node : 510
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+1 4 2 4 6 2 3 4 
+New State ID: 559
+Node : 511
+Node : 512
+Node : 513
+Next Sta
+3 5 5 3 5 4 4 3 
+New State ID: 560
+Next Sta
+3 5 4 4 5 4 4 3 
+New State ID: 561
+Next Sta
+Next Sta
+Node : 514
+Node : 515
+Next Sta
+Next Sta
+3 1 3 5 5 4 3 2 
+New State ID: 562
+Node : 516
+Next Sta
+3 5 4 5 5 3 4 3 
+New State ID: 563
+Next Sta
+3 5 4 4 4 5 4 3 
+New State ID: 564
+Next Sta
+Next Sta
+Node : 517
+Node : 518
+Next Sta
+Next Sta
+3 1 3 5 4 5 3 2 
+New State ID: 565
+Node : 519
+Next Sta
+Next Sta
+3 5 4 4 6 3 5 3 
+New State ID: 566
+Next Sta
+Next Sta
+Next Sta
+Node : 520
+Next Sta
+Next Sta
+Next Sta
+Node : 521
+Next Sta
+3 5 5 3 6 3 4 3 
+New State ID: 567
+Next Sta
+Next Sta
+Next Sta
+Node : 522
+Node : 523
+Next Sta
+Next Sta
+3 1 3 5 6 3 3 2 
+New State ID: 568
+Node : 524
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 525
+Next Sta
+1 4 3 5 5 3 4 3 
+New State ID: 569
+Next Sta
+1 4 3 5 4 4 4 3 
+New State ID: 570
+Next Sta
+Next Sta
+1 4 3 3 3 5 4 3 
+New State ID: 571
+Node : 526
+Node : 527
+Next Sta
+Next Sta
+1 4 3 1 3 5 3 2 
+New State ID: 572
+Node : 528
+Next Sta
+Next Sta
+Next Sta
+2 4 3 5 6 3 5 3 
+New State ID: 573
+Next Sta
+2 4 3 5 5 4 5 3 
+New State ID: 574
+Next Sta
+Next Sta
+Node : 529
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 4 3 5 4 5 4 4 
+New State ID: 575
+Next Sta
+2 4 3 4 3 5 4 4 
+New State ID: 576
+Node : 530
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 531
+Next Sta
+Next Sta
+Node : 532
+Next Sta
+Next Sta
+Node : 533
+Next Sta
+Next Sta
+Node : 534
+Next Sta
+Next Sta
+Node : 535
+Next Sta
+1 3 1 4 3 5 2 4 
+New State ID: 577
+Node : 536
+Next Sta
+Node : 537
+Node : 538
+Node : 539
+Node : 540
+Node : 541
+Node : 542
+Node : 543
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+1 3 1 4 2 4 3 4 
+New State ID: 578
+Node : 544
+Node : 545
+Next Sta
+Node : 546
+Next Sta
+3 1 4 3 5 3 3 2 
+New State ID: 579
+Next Sta
+Next Sta
+Node : 547
+Next Sta
+3 2 4 3 6 3 3 3 
+New State ID: 580
+Next Sta
+Node : 548
+Next Sta
+3 2 4 3 5 4 3 3 
+New State ID: 581
+Next Sta
+Node : 549
+Next Sta
+Next Sta
+3 1 3 4 5 3 3 3 
+New State ID: 582
+Next Sta
+Next Sta
+3 1 3 3 6 3 5 3 
+New State ID: 583
+Next Sta
+Next Sta
+3 1 3 3 5 4 5 3 
+New State ID: 584
+Next Sta
+Next Sta
+Node : 550
+Next Sta
+Next Sta
+Node : 551
+Next Sta
+Next Sta
+Node : 552
+Next Sta
+3 2 4 3 4 5 3 3 
+New State ID: 585
+Next Sta
+Node : 553
+Next Sta
+Next Sta
+2 4 3 2 3 3 3 4 
+New State ID: 586
+Node : 554
+Next Sta
+3 1 4 3 4 4 3 4 
+New State ID: 587
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+3 1 3 4 4 4 4 3 
+New State ID: 588
+Next Sta
+2 4 3 1 4 3 3 4 
+New State ID: 589
+Next Sta
+Next Sta
+3 1 3 3 3 4 4 3 
+New State ID: 590
+Node : 555
+Next Sta
+Next Sta
+3 1 3 3 4 5 4 4 
+New State ID: 591
+Next Sta
+Next Sta
+Node : 556
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 557
+Next Sta
+Next Sta
+Node : 558
+Next Sta
+3 2 4 4 5 3 4 3 
+New State ID: 592
+Next Sta
+Next Sta
+Node : 559
+Node : 560
+Next Sta
+3 5 5 4 6 3 5 3 
+New State ID: 593
+Next Sta
+Node : 561
+Next Sta
+3 5 4 5 5 4 4 4 
+New State ID: 594
+Node : 562
+Node : 563
+Next Sta
+3 5 4 5 6 3 5 3 
+New State ID: 595
+Next Sta
+Next Sta
+Next Sta
+Node : 564
+Next Sta
+Next Sta
+Node : 565
+Node : 566
+Next Sta
+Next Sta
+Next Sta
+Node : 567
+Next Sta
+Next Sta
+Node : 568
+Node : 569
+Next Sta
+1 4 3 5 6 3 5 3 
+New State ID: 596
+Next Sta
+1 4 3 5 5 4 5 3 
+New State ID: 597
+Next Sta
+Next Sta
+Node : 570
+Next Sta
+Next Sta
+1 4 3 5 4 5 4 4 
+New State ID: 598
+Next Sta
+1 4 3 4 3 5 4 4 
+New State ID: 599
+Node : 571
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 572
+Node : 573
+Next Sta
+Next Sta
+Node : 574
+Next Sta
+Next Sta
+Node : 575
+Next Sta
+Next Sta
+Node : 576
+Node : 577
+Node : 578
+Node : 579
+Next Sta
+3 1 4 4 5 3 4 3 
+New State ID: 600
+Next Sta
+Next Sta
+3 1 4 3 5 4 5 3 
+New State ID: 601
+Next Sta
+Node : 580
+Next Sta
+3 3 4 3 6 3 3 2 
+New State ID: 602
+Next Sta
+3 2 5 3 6 3 4 3 
+New State ID: 603
+Next Sta
+3 1 4 3 6 3 3 2 
+New State ID: 604
+Next Sta
+3 2 4 4 6 3 4 3 
+New State ID: 605
+Next Sta
+Next Sta
+Node : 581
+Next Sta
+3 2 5 3 5 4 4 3 
+New State ID: 606
+Next Sta
+Next Sta
+3 2 4 2 5 4 4 3 
+New State ID: 607
+Node : 582
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+3 1 3 4 6 3 5 3 
+New State ID: 608
+Next Sta
+2 4 3 1 5 3 3 4 
+New State ID: 609
+Next Sta
+3 1 3 4 5 4 5 3 
+New State ID: 610
+Next Sta
+Next Sta
+Node : 583
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 584
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 585
+Next Sta
+3 3 4 3 4 5 3 2 
+New State ID: 611
+Next Sta
+3 2 4 5 5 3 4 3 
+New State ID: 612
+Next Sta
+3 1 4 3 4 5 3 2 
+New State ID: 613
+Next Sta
+3 2 4 4 4 5 4 3 
+New State ID: 614
+Next Sta
+3 2 4 2 4 5 4 3 
+New State ID: 615
+Next Sta
+Node : 586
+Next Sta
+1 4 3 2 3 3 2 4 
+New State ID: 616
+Next Sta
+Node : 587
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 588
+Next Sta
+Next Sta
+3 1 3 4 4 5 4 4 
+New State ID: 617
+Node : 589
+Next Sta
+Next Sta
+Next Sta
+1 4 3 1 4 3 2 4 
+New State ID: 618
+Next Sta
+2 4 3 1 4 4 4 3 
+New State ID: 619
+Next Sta
+Next Sta
+2 4 3 1 3 3 4 3 
+New State ID: 620
+Node : 590
+Next Sta
+Next Sta
+Node : 591
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 592
+Next Sta
+3 3 4 4 5 3 3 2 
+New State ID: 621
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+3 2 4 4 5 4 5 3 
+New State ID: 622
+Next Sta
+3 2 4 3 4 4 5 3 
+New State ID: 623
+Node : 593
+Node : 594
+Node : 595
+Node : 596
+Node : 597
+Node : 598
+Node : 599
+Next Sta
+Next Sta
+1 4 2 4 3 5 3 4 
+New State ID: 624
+Node : 600
+Next Sta
+3 1 5 3 5 4 4 4 
+New State ID: 625
+Next Sta
+3 1 4 4 6 3 5 3 
+New State ID: 626
+Next Sta
+3 1 4 5 5 3 4 4 
+New State ID: 627
+Next Sta
+Next Sta
+3 1 4 4 5 4 5 3 
+New State ID: 628
+Next Sta
+Node : 601
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 602
+Next Sta
+3 4 4 3 6 3 3 3 
+New State ID: 629
+Next Sta
+Next Sta
+3 3 4 4 6 3 4 3 
+New State ID: 630
+Next Sta
+3 3 4 2 6 3 4 3 
+New State ID: 631
+Node : 603
+Next Sta
+3 3 5 3 6 3 3 2 
+New State ID: 632
+Next Sta
+3 1 5 3 6 3 3 2 
+New State ID: 633
+Next Sta
+3 2 5 4 6 3 5 3 
+New State ID: 634
+Next Sta
+Node : 604
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 605
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+3 2 4 5 6 3 4 4 
+New State ID: 635
+Next Sta
+Next Sta
+3 2 3 4 6 3 4 4 
+New State ID: 636
+Node : 606
+Next Sta
+3 3 5 3 5 4 3 2 
+New State ID: 637
+Next Sta
+Next Sta
+Next Sta
+3 2 4 3 5 4 5 3 
+New State ID: 638
+Node : 607
+Next Sta
+Next Sta
+Node : 608
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 4 3 1 6 3 3 4 
+New State ID: 639
+Node : 609
+Next Sta
+Next Sta
+1 4 3 1 5 3 2 4 
+New State ID: 640
+Next Sta
+Next Sta
+2 4 3 1 5 4 5 3 
+New State ID: 641
+Next Sta
+Next Sta
+Node : 610
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 611
+Next Sta
+3 4 4 3 4 5 3 3 
+New State ID: 642
+Next Sta
+Next Sta
+3 3 4 4 4 5 4 3 
+New State ID: 643
+Next Sta
+3 3 4 2 4 5 4 3 
+New State ID: 644
+Node : 612
+Next Sta
+3 3 4 5 5 3 3 2 
+New State ID: 645
+Next Sta
+Next Sta
+Next Sta
+3 2 4 5 5 4 5 3 
+New State ID: 646
+Next Sta
+3 2 4 5 5 2 5 3 
+New State ID: 647
+Next Sta
+Node : 613
+Next Sta
+Next Sta
+3 1 4 4 4 5 4 3 
+New State ID: 648
+Next Sta
+Next Sta
+Node : 614
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+3 2 3 4 4 5 4 4 
+New State ID: 649
+Node : 615
+Next Sta
+Next Sta
+Node : 616
+Next Sta
+1 4 3 2 4 3 3 3 
+New State ID: 650
+Next Sta
+Node : 617
+Next Sta
+Next Sta
+Next Sta
+2 4 3 1 4 5 3 4 
+New State ID: 651
+Node : 618
+Next Sta
+Next Sta
+1 4 3 1 4 4 4 3 
+New State ID: 652
+Next Sta
+Next Sta
+1 4 3 1 3 3 4 3 
+New State ID: 653
+Node : 619
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 4 3 1 3 4 4 4 
+New State ID: 654
+Node : 620
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 621
+Next Sta
+3 4 4 4 5 3 3 3 
+New State ID: 655
+Next Sta
+Next Sta
+Next Sta
+2 3 4 4 5 3 3 3 
+New State ID: 656
+Next Sta
+3 3 4 4 5 4 5 3 
+New State ID: 657
+Next Sta
+3 3 4 3 4 4 5 3 
+New State ID: 658
+Node : 622
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 623
+Next Sta
+Next Sta
+Next Sta
+3 2 3 4 4 3 4 4 
+New State ID: 659
+Node : 624
+Node : 625
+Next Sta
+3 1 5 4 6 3 5 3 
+New State ID: 660
+Next Sta
+Node : 626
+Next Sta
+Next Sta
+3 1 4 5 6 3 4 4 
+New State ID: 661
+Next Sta
+Next Sta
+Node : 627
+Next Sta
+Next Sta
+3 1 4 5 5 4 5 3 
+New State ID: 662
+Next Sta
+Next Sta
+Node : 628
+Next Sta
+Next Sta
+Node : 629
+Next Sta
+4 3 4 4 6 3 3 4 
+New State ID: 663
+Next Sta
+3 4 5 3 6 3 4 3 
+New State ID: 664
+Next Sta
+Next Sta
+Next Sta
+3 4 4 4 6 3 4 3 
+New State ID: 665
+Next Sta
+2 4 4 3 6 3 3 4 
+New State ID: 666
+Next Sta
+3 4 4 2 6 3 4 3 
+New State ID: 667
+Next Sta
+3 3 3 4 6 3 4 3 
+New State ID: 668
+Node : 630
+Next Sta
+Next Sta
+3 3 4 5 6 3 4 4 
+New State ID: 669
+Next Sta
+2 3 4 4 6 3 3 3 
+New State ID: 670
+Next Sta
+Node : 631
+Next Sta
+4 2 4 3 6 3 3 3 
+New State ID: 671
+Next Sta
+Next Sta
+2 3 4 2 6 3 3 3 
+New State ID: 672
+Next Sta
+3 3 4 1 6 3 4 2 
+New State ID: 673
+Next Sta
+Node : 632
+Next Sta
+4 3 5 3 6 3 3 3 
+New State ID: 674
+Next Sta
+Next Sta
+Next Sta
+2 3 5 3 6 3 3 3 
+New State ID: 675
+Next Sta
+3 3 5 4 6 3 5 3 
+New State ID: 676
+Next Sta
+Node : 633
+Next Sta
+Next Sta
+Node : 634
+Next Sta
+Next Sta
+Node : 635
+Next Sta
+Next Sta
+Node : 636
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 4 3 2 6 3 3 4 
+New State ID: 677
+Node : 637
+Next Sta
+4 3 5 3 5 4 3 3 
+New State ID: 678
+Next Sta
+3 4 5 3 5 4 3 3 
+New State ID: 679
+Next Sta
+Next Sta
+Next Sta
+2 3 5 3 5 4 3 3 
+New State ID: 680
+Next Sta
+3 3 4 3 5 4 5 3 
+New State ID: 681
+Node : 638
+Next Sta
+Next Sta
+Next Sta
+Node : 639
+Next Sta
+Next Sta
+1 4 3 1 6 3 2 4 
+New State ID: 682
+Node : 640
+Next Sta
+Next Sta
+1 4 3 1 5 4 5 3 
+New State ID: 683
+Next Sta
+Next Sta
+Node : 641
+Next Sta
+Next Sta
+Node : 642
+Next Sta
+4 3 4 4 4 5 3 4 
+New State ID: 684
+Next Sta
+3 4 4 5 5 3 4 3 
+New State ID: 685
+Next Sta
+Next Sta
+3 4 4 4 4 5 4 3 
+New State ID: 686
+Next Sta
+2 4 4 3 4 5 3 4 
+New State ID: 687
+Next Sta
+3 4 4 2 4 5 4 3 
+New State ID: 688
+Next Sta
+3 3 3 4 4 5 4 3 
+New State ID: 689
+Node : 643
+Next Sta
+Next Sta
+2 3 4 4 4 5 3 3 
+New State ID: 690
+Next Sta
+Node : 644
+Next Sta
+4 2 4 3 4 5 3 3 
+New State ID: 691
+Next Sta
+Next Sta
+2 3 4 2 4 5 3 3 
+New State ID: 692
+Next Sta
+3 3 4 1 4 5 4 2 
+New State ID: 693
+Next Sta
+Node : 645
+Next Sta
+4 3 4 5 5 3 3 3 
+New State ID: 694
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 3 4 5 5 3 3 3 
+New State ID: 695
+Next Sta
+3 3 4 5 5 4 5 3 
+New State ID: 696
+Next Sta
+3 3 4 5 5 2 5 3 
+New State ID: 697
+Next Sta
+Node : 646
+Next Sta
+Next Sta
+Node : 647
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 648
+Next Sta
+Next Sta
+Node : 649
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 4 3 2 4 5 3 4 
+New State ID: 698
+Node : 650
+Next Sta
+1 4 3 3 4 3 3 2 
+New State ID: 699
+Next Sta
+1 4 3 2 5 3 4 3 
+New State ID: 700
+Next Sta
+Next Sta
+1 4 3 2 4 4 4 3 
+New State ID: 701
+Next Sta
+1 4 3 2 4 2 4 3 
+New State ID: 702
+Next Sta
+Node : 651
+Next Sta
+Next Sta
+1 4 3 1 4 5 2 4 
+New State ID: 703
+Node : 652
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+1 4 3 1 3 4 4 4 
+New State ID: 704
+Node : 653
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 654
+Next Sta
+Next Sta
+Node : 655
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+3 4 4 4 5 4 5 3 
+New State ID: 705
+Next Sta
+3 4 4 3 4 4 5 3 
+New State ID: 706
+Node : 656
+Next Sta
+3 3 4 4 5 3 2 3 
+New State ID: 707
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 3 4 3 5 3 4 4 
+New State ID: 708
+Next Sta
+2 3 4 4 5 4 5 3 
+New State ID: 709
+Next Sta
+2 3 4 3 4 4 5 3 
+New State ID: 710
+Node : 657
+Next Sta
+Next Sta
+Next Sta
+Node : 658
+Next Sta
+Next Sta
+3 3 3 4 4 3 4 4 
+New State ID: 711
+Node : 659
+Next Sta
+Next Sta
+Next Sta
+3 2 3 4 4 4 4 3 
+New State ID: 712
+Next Sta
+2 4 3 2 4 3 3 4 
+New State ID: 713
+Next Sta
+3 2 3 4 4 2 4 3 
+New State ID: 714
+Next Sta
+Node : 660
+Node : 661
+Node : 662
+Node : 663
+Next Sta
+4 4 5 3 6 3 4 3 
+New State ID: 715
+Next Sta
+4 3 5 4 6 3 4 4 
+New State ID: 716
+Next Sta
+Next Sta
+Node : 664
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 4 5 3 6 3 3 4 
+New State ID: 717
+Next Sta
+3 4 5 4 6 3 5 3 
+New State ID: 718
+Next Sta
+Node : 665
+Next Sta
+Next Sta
+3 4 4 5 6 3 4 4 
+New State ID: 719
+Node : 666
+Next Sta
+Next Sta
+Next Sta
+1 4 4 3 6 3 2 4 
+New State ID: 720
+Next Sta
+2 4 4 4 6 3 4 3 
+New State ID: 721
+Next Sta
+2 4 4 2 6 3 4 3 
+New State ID: 722
+Next Sta
+2 4 3 3 6 3 4 3 
+New State ID: 723
+Node : 667
+Next Sta
+4 2 4 4 6 3 3 4 
+New State ID: 724
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+3 4 4 1 6 3 4 2 
+New State ID: 725
+Next Sta
+Next Sta
+Node : 668
+Next Sta
+Next Sta
+Node : 669
+Next Sta
+4 3 4 5 6 3 3 3 
+New State ID: 726
+Next Sta
+Next Sta
+Next Sta
+2 3 4 5 6 3 3 3 
+New State ID: 727
+Node : 670
+Next Sta
+3 3 4 4 6 3 2 3 
+New State ID: 728
+Next Sta
+Next Sta
+2 3 5 4 6 3 4 4 
+New State ID: 729
+Next Sta
+Next Sta
+2 3 4 3 6 3 4 4 
+New State ID: 730
+Next Sta
+Node : 671
+Next Sta
+Next Sta
+4 2 5 3 6 3 4 3 
+New State ID: 731
+Next Sta
+Next Sta
+Node : 672
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 3 4 1 6 3 4 2 
+New State ID: 732
+Next Sta
+Node : 673
+Next Sta
+4 1 4 3 6 3 3 3 
+New State ID: 733
+Next Sta
+Next Sta
+Next Sta
+Node : 674
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 675
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 676
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 677
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+1 4 3 2 6 3 2 4 
+New State ID: 734
+Node : 678
+Next Sta
+4 4 5 3 5 4 4 3 
+New State ID: 735
+Next Sta
+4 2 5 3 5 4 4 3 
+New State ID: 736
+Node : 679
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 4 5 3 5 4 3 4 
+New State ID: 737
+Next Sta
+3 4 4 3 5 4 5 3 
+New State ID: 738
+Node : 680
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 3 4 3 5 4 5 3 
+New State ID: 739
+Node : 681
+Next Sta
+Next Sta
+Node : 682
+Node : 683
+Node : 684
+Next Sta
+4 4 4 5 5 3 4 3 
+New State ID: 740
+Next Sta
+4 3 4 5 5 4 4 4 
+New State ID: 741
+Next Sta
+Next Sta
+Node : 685
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 4 4 5 5 3 3 4 
+New State ID: 742
+Next Sta
+3 4 4 5 5 4 5 3 
+New State ID: 743
+Next Sta
+3 4 4 5 5 2 5 3 
+New State ID: 744
+Next Sta
+Node : 686
+Next Sta
+Node : 687
+Next Sta
+Next Sta
+Next Sta
+1 4 4 3 4 5 2 4 
+New State ID: 745
+Next Sta
+2 4 4 4 4 5 4 3 
+New State ID: 746
+Next Sta
+2 4 4 2 4 5 4 3 
+New State ID: 747
+Next Sta
+2 4 3 3 4 5 4 3 
+New State ID: 748
+Node : 688
+Next Sta
+4 2 4 4 4 5 3 4 
+New State ID: 749
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+3 4 4 1 4 5 4 2 
+New State ID: 750
+Next Sta
+Next Sta
+Node : 689
+Next Sta
+Next Sta
+Node : 690
+Next Sta
+3 3 4 4 4 5 2 3 
+New State ID: 751
+Next Sta
+Next Sta
+2 3 4 5 5 4 4 4 
+New State ID: 752
+Next Sta
+Node : 691
+Next Sta
+4 3 4 5 5 2 4 2 
+New State ID: 753
+Next Sta
+4 2 4 5 5 3 4 3 
+New State ID: 754
+Next Sta
+Next Sta
+Node : 692
+Next Sta
+Next Sta
+2 3 4 5 5 2 4 2 
+New State ID: 755
+Next Sta
+Next Sta
+2 3 4 3 4 5 4 2 
+New State ID: 756
+Next Sta
+2 3 4 1 4 5 4 2 
+New State ID: 757
+Next Sta
+Node : 693
+Next Sta
+4 1 4 3 4 5 3 3 
+New State ID: 758
+Next Sta
+Next Sta
+Next Sta
+Node : 694
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 695
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 696
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 697
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 698
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+1 4 3 2 4 5 2 4 
+New State ID: 759
+Node : 699
+Next Sta
+1 4 3 4 4 3 3 3 
+New State ID: 760
+Next Sta
+Next Sta
+1 4 3 3 4 4 4 3 
+New State ID: 761
+Next Sta
+1 4 3 3 4 2 4 3 
+New State ID: 762
+Node : 700
+Next Sta
+1 4 3 3 5 3 3 2 
+New State ID: 763
+Next Sta
+Next Sta
+Next Sta
+1 4 3 2 5 4 5 3 
+New State ID: 764
+Next Sta
+1 4 3 2 5 2 5 3 
+New State ID: 765
+Next Sta
+Node : 701
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+1 4 3 2 3 4 4 4 
+New State ID: 766
+Node : 702
+Next Sta
+Next Sta
+Node : 703
+Node : 704
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+1 4 2 4 3 1 3 4 
+New State ID: 767
+Node : 705
+Next Sta
+Next Sta
+Node : 706
+Next Sta
+Next Sta
+Next Sta
+3 3 3 4 4 4 4 3 
+New State ID: 768
+Node : 707
+Next Sta
+4 3 4 4 5 3 3 3 
+New State ID: 769
+Next Sta
+Next Sta
+Next Sta
+3 3 4 3 5 3 4 4 
+New State ID: 770
+Node : 708
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 3 4 2 5 3 4 3 
+New State ID: 771
+Next Sta
+Next Sta
+2 3 4 3 5 2 5 3 
+New State ID: 772
+Node : 709
+Next Sta
+3 3 4 4 5 4 2 3 
+New State ID: 773
+Next Sta
+Next Sta
+Next Sta
+Node : 710
+Next Sta
+3 3 4 3 4 4 2 3 
+New State ID: 774
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 711
+Next Sta
+Next Sta
+2 4 3 3 4 3 3 4 
+New State ID: 775
+Next Sta
+3 3 3 4 4 2 4 3 
+New State ID: 776
+Node : 712
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 713
+Next Sta
+3 2 3 4 4 3 2 4 
+New State ID: 777
+Next Sta
+Next Sta
+2 4 3 2 5 3 4 3 
+New State ID: 778
+Next Sta
+Next Sta
+Next Sta
+2 4 3 2 4 4 4 3 
+New State ID: 779
+Next Sta
+2 4 3 2 4 2 4 3 
+New State ID: 780
+Next Sta
+Node : 714
+Next Sta
+3 2 4 2 4 4 3 4 
+New State ID: 781
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 715
+Next Sta
+5 3 5 4 6 3 4 4 
+New State ID: 782
+Next Sta
+4 5 5 3 6 3 4 4 
+New State ID: 783
+Next Sta
+Next Sta
+4 4 5 4 6 3 5 3 
+New State ID: 784
+Node : 716
+Next Sta
+Next Sta
+Next Sta
+4 2 5 4 6 3 4 3 
+New State ID: 785
+Next Sta
+Node : 717
+Next Sta
+Next Sta
+1 4 5 3 6 3 2 4 
+New State ID: 786
+Next Sta
+2 4 5 4 6 3 5 3 
+New State ID: 787
+Next Sta
+Node : 718
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 719
+Next Sta
+4 4 4 5 6 3 3 4 
+New State ID: 788
+Next Sta
+Next Sta
+2 4 4 5 6 3 3 4 
+New State ID: 789
+Node : 720
+Next Sta
+Next Sta
+1 4 4 4 6 3 4 3 
+New State ID: 790
+Next Sta
+1 4 4 2 6 3 4 3 
+New State ID: 791
+Next Sta
+1 4 3 3 6 3 4 3 
+New State ID: 792
+Node : 721
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 4 3 4 6 3 4 4 
+New State ID: 793
+Node : 722
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 4 4 1 6 3 4 2 
+New State ID: 794
+Next Sta
+Node : 723
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 724
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+4 2 4 5 6 3 4 4 
+New State ID: 795
+Next Sta
+4 1 4 4 6 3 4 2 
+New State ID: 796
+Next Sta
+Next Sta
+Next Sta
+Node : 725
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 726
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 727
+Next Sta
+Next Sta
+Node : 728
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 729
+Next Sta
+Next Sta
+Node : 730
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 731
+Next Sta
+Next Sta
+Next Sta
+4 1 5 3 6 3 4 2 
+New State ID: 797
+Next Sta
+Node : 732
+Next Sta
+Next Sta
+Node : 733
+Next Sta
+Next Sta
+Next Sta
+4 1 4 2 6 3 4 3 
+New State ID: 798
+Next Sta
+Node : 734
+Next Sta
+Next Sta
+Node : 735
+Next Sta
+Next Sta
+4 5 5 3 5 4 4 4 
+New State ID: 799
+Next Sta
+Next Sta
+4 3 4 4 5 4 5 3 
+New State ID: 800
+Node : 736
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+4 1 5 3 5 4 4 2 
+New State ID: 801
+Node : 737
+Next Sta
+Next Sta
+1 4 5 3 5 4 2 4 
+New State ID: 802
+Next Sta
+Next Sta
+2 4 4 3 5 4 5 3 
+New State ID: 803
+Node : 738
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+3 3 3 4 5 4 4 3 
+New State ID: 804
+Node : 739
+Next Sta
+3 3 4 3 5 4 2 3 
+New State ID: 805
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 3 4 2 5 4 4 3 
+New State ID: 806
+Next Sta
+Node : 740
+Next Sta
+Next Sta
+Next Sta
+4 4 4 5 5 4 5 3 
+New State ID: 807
+Next Sta
+Node : 741
+Next Sta
+Next Sta
+Next Sta
+4 2 4 5 5 4 4 3 
+New State ID: 808
+Next Sta
+Node : 742
+Next Sta
+Next Sta
+1 4 4 5 5 3 2 4 
+New State ID: 809
+Next Sta
+Next Sta
+2 4 4 5 5 4 5 3 
+New State ID: 810
+Next Sta
+2 4 4 5 5 2 5 3 
+New State ID: 811
+Next Sta
+Node : 743
+Next Sta
+Next Sta
+Next Sta
+Node : 744
+Next Sta
+4 4 4 5 5 2 3 4 
+New State ID: 812
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 745
+Next Sta
+Next Sta
+1 4 4 4 4 5 4 3 
+New State ID: 813
+Next Sta
+1 4 4 2 4 5 4 3 
+New State ID: 814
+Next Sta
+1 4 3 3 4 5 4 3 
+New State ID: 815
+Node : 746
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 4 3 4 4 5 4 4 
+New State ID: 816
+Node : 747
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 4 4 1 4 5 4 2 
+New State ID: 817
+Next Sta
+Node : 748
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 749
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+4 1 4 4 4 5 4 2 
+New State ID: 818
+Next Sta
+Next Sta
+Node : 750
+Next Sta
+Next Sta
+Next Sta
+Node : 751
+Next Sta
+Next Sta
+Next Sta
+Node : 752
+Next Sta
+Next Sta
+Node : 753
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+4 2 4 5 5 2 4 3 
+New State ID: 819
+Next Sta
+Next Sta
+Node : 754
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+4 1 4 5 5 3 4 2 
+New State ID: 820
+Next Sta
+Node : 755
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 756
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 757
+Next Sta
+Next Sta
+Node : 758
+Next Sta
+Next Sta
+Next Sta
+4 1 4 2 4 5 4 3 
+New State ID: 821
+Next Sta
+Node : 759
+Next Sta
+Next Sta
+Node : 760
+Next Sta
+1 4 4 3 4 4 3 4 
+New State ID: 822
+Next Sta
+1 4 3 4 5 3 4 3 
+New State ID: 823
+Next Sta
+Next Sta
+Next Sta
+1 4 3 4 4 4 4 3 
+New State ID: 824
+Next Sta
+1 4 2 4 4 3 3 4 
+New State ID: 825
+Next Sta
+1 4 3 4 4 2 4 3 
+New State ID: 826
+Next Sta
+1 4 3 3 3 4 4 3 
+New State ID: 827
+Node : 761
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 762
+Next Sta
+1 4 4 2 4 3 3 3 
+New State ID: 828
+Next Sta
+Next Sta
+Next Sta
+1 4 3 3 4 1 4 2 
+New State ID: 829
+Next Sta
+Node : 763
+Next Sta
+1 4 4 3 5 3 3 3 
+New State ID: 830
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+1 4 3 3 5 4 5 3 
+New State ID: 831
+Next Sta
+1 4 3 3 5 2 5 3 
+New State ID: 832
+Next Sta
+Node : 764
+Next Sta
+Next Sta
+Node : 765
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 766
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+1 4 2 4 3 2 3 4 
+New State ID: 833
+Node : 767
+Node : 768
+Next Sta
+Next Sta
+Node : 769
+Next Sta
+Next Sta
+Node : 770
+Next Sta
+Next Sta
+3 3 4 2 5 3 4 3 
+New State ID: 834
+Next Sta
+3 3 4 3 5 2 5 3 
+New State ID: 835
+Node : 771
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 3 4 1 5 3 4 2 
+New State ID: 836
+Next Sta
+2 3 4 2 5 2 5 3 
+New State ID: 837
+Node : 772
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 3 4 4 5 2 4 3 
+New State ID: 838
+Next Sta
+Next Sta
+Next Sta
+2 3 4 2 4 3 5 2 
+New State ID: 839
+Node : 773
+Next Sta
+Next Sta
+Next Sta
+Node : 774
+Next Sta
+Next Sta
+Node : 775
+Next Sta
+2 4 3 4 4 3 3 3 
+New State ID: 840
+Next Sta
+Next Sta
+Next Sta
+2 4 3 3 4 4 4 3 
+New State ID: 841
+Next Sta
+2 4 3 3 4 2 4 3 
+New State ID: 842
+Node : 776
+Next Sta
+Next Sta
+3 3 3 4 4 1 4 2 
+New State ID: 843
+Next Sta
+Next Sta
+Node : 777
+Next Sta
+Next Sta
+3 2 3 4 5 3 4 3 
+New State ID: 844
+Next Sta
+Next Sta
+Node : 778
+Next Sta
+Next Sta
+2 4 3 3 5 3 3 2 
+New State ID: 845
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 4 3 2 5 4 5 3 
+New State ID: 846
+Next Sta
+2 4 3 2 5 2 5 3 
+New State ID: 847
+Next Sta
+Node : 779
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 4 3 2 3 4 4 4 
+New State ID: 848
+Node : 780
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 781
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 782
+Node : 783
+Next Sta
+4 5 5 4 6 3 5 3 
+New State ID: 849
+Next Sta
+Node : 784
+Next Sta
+Next Sta
+Node : 785
+Next Sta
+Next Sta
+Next Sta
+4 1 5 4 6 3 4 2 
+New State ID: 850
+Next Sta
+Node : 786
+Next Sta
+1 4 5 4 6 3 5 3 
+New State ID: 851
+Next Sta
+Node : 787
+Next Sta
+Next Sta
+Node : 788
+Next Sta
+Next Sta
+Node : 789
+Next Sta
+Next Sta
+1 4 4 5 6 3 2 4 
+New State ID: 852
+Node : 790
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+1 4 3 4 6 3 4 4 
+New State ID: 853
+Node : 791
+Next Sta
+Next Sta
+Next Sta
+1 4 4 1 6 3 4 2 
+New State ID: 854
+Next Sta
+Node : 792
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 793
+Next Sta
+Next Sta
+Node : 794
+Next Sta
+Next Sta
+Node : 795
+Next Sta
+Next Sta
+Next Sta
+4 1 4 5 6 3 4 2 
+New State ID: 855
+Next Sta
+Node : 796
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 797
+Next Sta
+Next Sta
+Node : 798
+Next Sta
+Next Sta
+Node : 799
+Next Sta
+Next Sta
+Node : 800
+Next Sta
+Next Sta
+Node : 801
+Next Sta
+Next Sta
+4 1 4 3 5 4 5 3 
+New State ID: 856
+Node : 802
+Next Sta
+Next Sta
+1 4 4 3 5 4 5 3 
+New State ID: 857
+Node : 803
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 4 4 4 5 4 4 3 
+New State ID: 858
+Next Sta
+2 4 4 2 5 4 4 3 
+New State ID: 859
+Next Sta
+2 4 3 3 5 4 4 3 
+New State ID: 860
+Node : 804
+Next Sta
+Next Sta
+Node : 805
+Next Sta
+Next Sta
+3 3 4 2 5 4 4 3 
+New State ID: 861
+Node : 806
+Next Sta
+Next Sta
+2 3 5 2 5 4 4 2 
+New State ID: 862
+Next Sta
+Next Sta
+Next Sta
+2 3 4 1 5 4 4 2 
+New State ID: 863
+Next Sta
+Node : 807
+Node : 808
+Next Sta
+4 5 5 2 5 4 4 2 
+New State ID: 864
+Next Sta
+Next Sta
+4 1 4 5 5 4 4 2 
+New State ID: 865
+Next Sta
+Node : 809
+Next Sta
+Next Sta
+1 4 4 5 5 4 5 3 
+New State ID: 866
+Next Sta
+1 4 4 5 5 2 5 3 
+New State ID: 867
+Next Sta
+Node : 810
+Next Sta
+Next Sta
+Node : 811
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 812
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 813
+Next Sta
+Next Sta
+1 4 3 4 4 5 4 4 
+New State ID: 868
+Node : 814
+Next Sta
+Next Sta
+Next Sta
+1 4 4 1 4 5 4 2 
+New State ID: 869
+Next Sta
+Node : 815
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 816
+Next Sta
+Node : 817
+Next Sta
+Next Sta
+Node : 818
+Next Sta
+Next Sta
+Node : 819
+Next Sta
+Next Sta
+4 1 4 5 5 2 4 2 
+New State ID: 870
+Node : 820
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 821
+Next Sta
+Next Sta
+Node : 822
+Next Sta
+1 4 4 4 5 3 4 3 
+New State ID: 871
+Next Sta
+Next Sta
+Next Sta
+Node : 823
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+1 4 2 4 5 3 3 4 
+New State ID: 872
+Next Sta
+1 4 3 4 5 4 5 3 
+New State ID: 873
+Next Sta
+1 4 3 4 5 2 5 3 
+New State ID: 874
+Next Sta
+Node : 824
+Next Sta
+Next Sta
+Node : 825
+Next Sta
+Next Sta
+1 4 2 4 4 4 4 3 
+New State ID: 875
+Next Sta
+1 4 2 4 4 2 4 3 
+New State ID: 876
+Next Sta
+1 4 2 4 3 3 4 3 
+New State ID: 877
+Node : 826
+Next Sta
+1 4 4 2 4 4 3 4 
+New State ID: 878
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+1 4 3 4 4 1 4 2 
+New State ID: 879
+Next Sta
+Next Sta
+Node : 827
+Next Sta
+Next Sta
+Node : 828
+Next Sta
+1 4 4 3 5 2 4 2 
+New State ID: 880
+Next Sta
+1 4 4 2 5 3 4 3 
+New State ID: 881
+Next Sta
+Next Sta
+Node : 829
+Next Sta
+1 4 4 1 4 3 3 3 
+New State ID: 882
+Next Sta
+Next Sta
+Next Sta
+Node : 830
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 831
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 832
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 833
+Next Sta
+Next Sta
+Node : 834
+Next Sta
+4 2 4 3 5 3 3 3 
+New State ID: 883
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+3 3 4 1 5 3 4 2 
+New State ID: 884
+Next Sta
+3 3 4 2 5 2 5 3 
+New State ID: 885
+Node : 835
+Next Sta
+Next Sta
+Next Sta
+3 3 4 2 4 3 5 2 
+New State ID: 886
+Node : 836
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 3 4 1 5 2 5 3 
+New State ID: 887
+Next Sta
+2 3 4 1 4 3 5 3 
+New State ID: 888
+Node : 837
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 838
+Next Sta
+3 3 4 4 5 2 2 3 
+New State ID: 889
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 3 4 2 4 4 5 2 
+New State ID: 890
+Node : 839
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 840
+Next Sta
+2 4 3 4 5 3 4 3 
+New State ID: 891
+Next Sta
+Next Sta
+Next Sta
+2 4 3 4 4 4 4 3 
+New State ID: 892
+Next Sta
+2 4 3 4 4 2 4 3 
+New State ID: 893
+Next Sta
+2 4 3 3 3 4 4 3 
+New State ID: 894
+Node : 841
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 842
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 4 3 3 4 1 4 2 
+New State ID: 895
+Next Sta
+Node : 843
+Next Sta
+Next Sta
+Node : 844
+Next Sta
+Next Sta
+3 3 3 4 5 3 3 2 
+New State ID: 896
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+3 2 3 4 5 4 5 3 
+New State ID: 897
+Next Sta
+3 2 3 4 5 2 5 3 
+New State ID: 898
+Next Sta
+Node : 845
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 4 3 3 5 2 5 3 
+New State ID: 899
+Next Sta
+Node : 846
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 847
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 848
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 849
+Node : 850
+Node : 851
+Node : 852
+Node : 853
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+1 4 2 4 6 3 3 4 
+New State ID: 900
+Node : 854
+Node : 855
+Node : 856
+Next Sta
+Next Sta
+4 1 4 4 5 4 4 3 
+New State ID: 901
+Next Sta
+4 1 4 2 5 4 4 3 
+New State ID: 902
+Next Sta
+3 3 4 1 5 4 4 3 
+New State ID: 903
+Node : 857
+Next Sta
+Next Sta
+1 4 4 4 5 4 4 3 
+New State ID: 904
+Next Sta
+1 4 4 2 5 4 4 3 
+New State ID: 905
+Next Sta
+Node : 858
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 859
+Next Sta
+3 4 4 2 5 4 2 4 
+New State ID: 906
+Next Sta
+2 4 5 2 5 4 4 2 
+New State ID: 907
+Next Sta
+Next Sta
+Next Sta
+2 4 4 1 5 4 4 2 
+New State ID: 908
+Next Sta
+Node : 860
+Next Sta
+2 4 3 4 5 4 3 3 
+New State ID: 909
+Next Sta
+Next Sta
+Next Sta
+Node : 861
+Next Sta
+4 2 4 3 5 4 3 3 
+New State ID: 910
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 862
+Next Sta
+3 3 5 2 5 4 2 3 
+New State ID: 911
+Next Sta
+Next Sta
+Next Sta
+Node : 863
+Next Sta
+Next Sta
+Node : 864
+Next Sta
+Next Sta
+Node : 865
+Node : 866
+Node : 867
+Next Sta
+Next Sta
+Node : 868
+Next Sta
+Next Sta
+Next Sta
+1 4 2 4 4 5 3 4 
+New State ID: 912
+Node : 869
+Node : 870
+Next Sta
+Next Sta
+Node : 871
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 872
+Next Sta
+Next Sta
+1 4 2 4 5 4 5 3 
+New State ID: 913
+Next Sta
+1 4 2 4 5 2 5 3 
+New State ID: 914
+Next Sta
+Node : 873
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 874
+Next Sta
+1 4 4 4 5 2 3 4 
+New State ID: 915
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 875
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+1 4 2 4 3 4 4 4 
+New State ID: 916
+Node : 876
+Next Sta
+Next Sta
+Next Sta
+1 4 2 4 4 1 4 2 
+New State ID: 917
+Next Sta
+Node : 877
+Next Sta
+Next Sta
+Next Sta
+Node : 878
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+1 4 4 1 4 4 4 2 
+New State ID: 918
+Next Sta
+Next Sta
+Next Sta
+Node : 879
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 880
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+1 4 4 2 5 2 4 3 
+New State ID: 919
+Next Sta
+Next Sta
+Node : 881
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+1 4 4 1 5 3 4 2 
+New State ID: 920
+Next Sta
+Node : 882
+Next Sta
+Next Sta
+Next Sta
+1 4 4 1 4 2 4 3 
+New State ID: 921
+Next Sta
+Node : 883
+Next Sta
+Next Sta
+4 2 4 3 5 2 5 3 
+New State ID: 922
+Node : 884
+Next Sta
+4 1 4 3 5 3 3 3 
+New State ID: 923
+Next Sta
+3 4 4 1 5 3 3 3 
+New State ID: 924
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+3 3 4 1 5 2 5 3 
+New State ID: 925
+Next Sta
+3 3 4 1 4 3 5 3 
+New State ID: 926
+Node : 885
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 886
+Next Sta
+Next Sta
+Node : 887
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 3 4 1 4 2 5 2 
+New State ID: 927
+Node : 888
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 3 4 1 4 4 4 3 
+New State ID: 928
+Next Sta
+Next Sta
+Node : 889
+Next Sta
+4 3 4 4 5 2 3 3 
+New State ID: 929
+Next Sta
+Next Sta
+3 2 4 4 5 2 3 3 
+New State ID: 930
+Next Sta
+Node : 890
+Next Sta
+3 3 4 2 4 4 2 3 
+New State ID: 931
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 891
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 4 3 4 5 2 5 3 
+New State ID: 932
+Next Sta
+Node : 892
+Next Sta
+Next Sta
+Node : 893
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 4 3 4 4 1 4 2 
+New State ID: 933
+Next Sta
+Node : 894
+Next Sta
+Node : 895
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 896
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+3 3 3 4 5 2 5 3 
+New State ID: 934
+Next Sta
+Node : 897
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 898
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 899
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 900
+Node : 901
+Next Sta
+Next Sta
+Node : 902
+Next Sta
+4 1 5 2 5 4 4 2 
+New State ID: 935
+Next Sta
+Node : 903
+Next Sta
+Next Sta
+3 4 4 1 5 4 3 3 
+New State ID: 936
+Next Sta
+Next Sta
+Node : 904
+Next Sta
+Next Sta
+Node : 905
+Next Sta
+1 4 5 2 5 4 4 2 
+New State ID: 937
+Next Sta
+Next Sta
+1 4 4 1 5 4 4 2 
+New State ID: 938
+Next Sta
+Node : 906
+Next Sta
+4 2 4 4 5 4 3 4 
+New State ID: 939
+Next Sta
+3 4 5 2 5 4 4 2 
+New State ID: 940
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 907
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 908
+Next Sta
+Next Sta
+Node : 909
+Next Sta
+Next Sta
+Node : 910
+Next Sta
+4 3 5 2 5 4 4 2 
+New State ID: 941
+Next Sta
+Node : 911
+Next Sta
+Next Sta
+Next Sta
+3 2 5 2 5 4 3 3 
+New State ID: 942
+Next Sta
+Next Sta
+Next Sta
+Node : 912
+Node : 913
+Node : 914
+Next Sta
+Next Sta
+Node : 915
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 916
+Next Sta
+Next Sta
+Node : 917
+Node : 918
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 919
+Next Sta
+Next Sta
+1 4 4 1 5 2 4 2 
+New State ID: 943
+Node : 920
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 921
+Next Sta
+Next Sta
+Node : 922
+Next Sta
+Next Sta
+Node : 923
+Next Sta
+4 1 4 4 5 3 4 3 
+New State ID: 944
+Next Sta
+4 1 4 2 5 3 4 3 
+New State ID: 945
+Next Sta
+Next Sta
+4 1 4 3 5 2 5 3 
+New State ID: 946
+Node : 924
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+2 4 4 1 5 3 3 4 
+New State ID: 947
+Next Sta
+Next Sta
+3 4 4 1 5 2 5 3 
+New State ID: 948
+Next Sta
+3 4 4 1 4 3 5 3 
+New State ID: 949
+Node : 925
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+3 3 4 1 4 2 5 2 
+New State ID: 950
+Node : 926
+Next Sta
+Next Sta
+Next Sta
+3 3 4 1 4 4 4 3 
+New State ID: 951
+Next Sta
+Node : 927
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 928
+Next Sta
+3 3 4 1 4 4 2 3 
+New State ID: 952
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 929
+Next Sta
+Next Sta
+Next Sta
+Node : 930
+Next Sta
+3 3 4 4 5 2 3 2 
+New State ID: 953
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Next Sta
+Node : 931
+Next Sta
+Accomplished: 1
+ans : 18
