@@ -18,6 +18,7 @@ CS 4649/7649: RIP - Robot Intelligence - Planning}
 \usepackage{hyperref}
 \usepackage{xcolor}
 \usepackage{amsmath}
+\usepackage{subcaption}
 \hypersetup{
   colorlinks,
   citecolor=Violet,
@@ -58,6 +59,15 @@ At each layer of the solution sub-graph, clauses/fluents can be resolved away to
 FF uses the enforced hill climbing algorithm to search for valid solutions. Using the length of the relaxed \textsc{GraphPlan} solution as a heuristic, the enforced hill climbing algorithm evaluates the direct successors of a search state S. Until a state ($S\prime$) is found with a better heuristic evaluation than $S$, the search goes one step further.
 
 Thus in summary both \textit{\textbf{FF}} and \textit{\textbf{Blackbox}} algorithms use the \textsc{GraphPlan} algorithm, however \textit{Blackbox} uses it in a more direct way, to set up the SAT problem. In \textit{FF}, \textsc{GraphPlan} is used simply as a heuristic measure for the enforced hill climbing algorithm.
+Both the planners generated the same plan, which is in Figure \ref{plan1}.
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[scale = 0.5]{images/hanoi-3}
+    \caption{Plan for Towers of Hanoi with 3 disks}
+  \label{plan1}
+\end{figure}
+
 \subsubsection*{2. Which planner was fastest?}
 \label{subsubsec_2}
 Both the algorithms were run on the same Linux box, and using the \textit{time} command the time taken for them to produce plans were measure. Clearly the \textbf{FF} algorithm was the fastest among the two, with the following time measures \\
@@ -90,7 +100,7 @@ Its pretty obvious that the length of a plan in case of the Towers of Hanoi prob
   \label{fig2}
 \end{figure}
 
-The skoban's domain definition was created with the guideline idea of keeping it simple. Then, we followed the steps:
+The Sokoban's domain definition was created with the guideline idea of keeping it simple. Then, we followed the steps:
 
 \begin{enumerate}
 \item Identify the constants
@@ -111,48 +121,70 @@ The second step is to identify fluents related to this problem. We had a lot of 
 \item \textbf{isDown(?loc ?loc)} - true if loc(1) is at down of loc(2).
 \end{itemize} 
 
-Finally, the last step is to identify the actions. For the skoban domain, the robot can move or push a box in the up, down, right and left directions, provided that there is no box on the way. After defining each action in respect to its preconditions, add list and delete list we could define the following:
+Finally, the last step is to identify the actions. For the Sokoban domain, the robot can move or push a box in the up, down, right and left directions, provided that there is no box on the way. After defining each action in respect to its preconditions, add list and delete list we could define the following:
 
 \begin{itemize}
 \item \textbf{MOVE-<UP,DOWN,RIGHT or LEFT>(?loc-to ?loc-from)};
 \item \textbf{PUSH-<UP,DOWN,RIGHT or LEFT>(?box-loc ?loc ?loc-to)}.
 \end{itemize} 
 
-Done that, the next part of the question was to define each problem using this domain. For that, each grid position, from top to botton, and left to right, receivied a nickname of a alphabet letter. Then, all the constraints of linking these grid positions were defined using the fluent \textit{isUp}, \textit{isDown}, \textit{isRight}, \textit{isLeft} and the initial and goal state using the fluents \textit{in} and \textit{boxAt}.
+Done that, the next part of the question was to define each problem using this domain. For that, each grid position, from top to botton, and left to right, received a nickname of a alphabet letter. Then, all the constraints of linking these grid positions were defined using the fluent \textit{isUp}, \textit{isDown}, \textit{isRight}, \textit{isLeft} and the initial and goal state using the fluents \textit{in} and \textit{boxAt}.
 
 \subsection{Questions}
 \subsubsection*{1. Show successful plans from at least one planner on the three Sokoban problems in Figure \ref{fig2} (1-3). The challenge problem is optional}
 Using the PDDL definitions for the domain, the FF planner was able to find solutions for all the problems and to the challenge. The result plan of each problem is shown on the Figures \ref{fig_prob2_1}, \ref{fig_prob2_2}, \ref{fig_prob2_3} and \ref{fig_prob2_challenge}.
 
-\begin{figure}[h]
+\begin{figure}[h!]
   \centering
-    \includegraphics[scale = 1.0]{images/FF_Solution_p2_1}
+    \includegraphics[scale = 0.4]{images/FF_Solution_p2_1}
     \caption{Sokoban Problem 2.1}
   \label{fig_prob2_1}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[h!]
   \centering
-    \includegraphics[scale = 1.0]{images/FF_Solution_p2_2}
+    \includegraphics[scale = 0.4]{images/FF_Solution_p2_2}
     \caption{Sokoban Problem 2.2}
   \label{fig_prob2_2}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure} [h!]
+\centering
+\begin{subfigure}{.5\textwidth}
   \centering
-    \includegraphics[scale = 0.5]{images/FF_Solution_p2_3}
-    \caption{Sokoban Problem 2.3}
-  \label{fig_prob2_3}
+  \includegraphics[scale = 0.3]{images/FF_Solution_p2_3_1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[scale = 0.3]{images/FF_Solution_p2_3_2}
+\end{subfigure}\\
+\begin{subfigure}{\textwidth}
+  \centering
+  \includegraphics[scale = 0.3]{images/FF_Solution_p2_3_3}
+\end{subfigure}%
+\caption{Sokoban Problem 2.3}
+\label{fig_prob2_3}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure} [h!]
+\centering
+\begin{subfigure}{.5\textwidth}
   \centering
-    \includegraphics[scale = 0.7]{images/FF_Solution_p2_challenge}
-    \caption{Sokoban Challenge}
-  \label{fig_prob2_challenge}
+  \includegraphics[scale = 0.3]{images/FF_Solution_p2_challenge_1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[scale = 0.3]{images/FF_Solution_p2_challenge_2}
+\end{subfigure}\\
+\begin{subfigure}{\textwidth}
+  \centering
+  \includegraphics[scale = 0.3]{images/FF_Solution_p2_challenge_3}
+\end{subfigure}%
+\caption{Sokoban Challenge}
+\label{fig_prob2_challenge}
 \end{figure}
 
-In order to make the solutions more readable and easier to verify, lets consider that when a robot moves for up, down, right or left direction it will be represented by a lowercase \textbf{u}, \textbf{d}, \textbf{r} or \textbf{l}, respectibvely. For the push actions of moving the box up, down, right or left, the capital letters \textbf{U}, \textbf{D}, \textbf{R} and \textbf{L} will be used. Thus, the solutions found can be represented as the strings shown below.
+In order to make the solutions more readable and easier to verify, lets consider that when a robot moves for up, down, right or left direction it will be represented by a lowercase \textbf{u}, \textbf{d}, \textbf{r} or \textbf{l}, respectively. For the push actions of moving the box up, down, right or left, the capital letters \textbf{U}, \textbf{D}, \textbf{R} and \textbf{L} will be used. Thus, the solutions found can be represented as the strings shown below.
 
 \begin{tabular}{ c l }
   &\\
@@ -171,17 +203,17 @@ In order to make the solutions more readable and easier to verify, lets consider
 \subsubsection*{2. Compare the performance of two planners on this domain. Which one works better? Does this
 make sense, why?}
 
-As an overview, the \textit{FF}'s planner perfomed better than \textit{Blackbox}. The \textit{FF}'s planner was able to find results for all problems, including challenge, in few seconds. On the other hand, the \textit{Blackbox} only managed to find the results from the first two problems and stopped on the others after using all the hardware resources. These results were expected since, as stated in Section \ref{subsubsec_2}, the \textit{FF}'s planner have a lower asymptotic complexity and use an heuristic function to choose the best option of what expand next. Thus, is more likely to have better time and space complexities than the \textit{Blackbox}.
+As an overview, the \textit{FF}'s planner performed better than \textit{Blackbox}. The \textit{FF}'s planner was able to find results for all problems, including challenge, in few seconds. On the other hand, the \textit{Blackbox} only managed to find the results from the first two problems and stopped on the others after using all the hardware resources. These results were expected since, as stated in Section \ref{subsubsec_2}, the \textit{FF}'s planner have a lower asymptotic complexity and use an heuristic function to choose the best option of what expand next. Thus, is more likely to have better time and space complexities than the \textit{Blackbox}.
 
 \subsubsection*{3. Clearly PDDL was not intended for this sort of application. Discuss the challenges in expressing geometric constraints in semantic planning}
 
-While solving this problem is possible to notice that are two approachs. The first one requires a previous knowledge of a solution, and the developer states that a specific box goes to a specific location. The second approach, there is no kind of identification for the boxes, and this is the one we used as a solution. Independently of the approach, the domain contains a grid on wich the robot should move. Thus, it is necessary to come up with a way to express when the robot can, or cannot, move between two locations if there is a wall or a box in between. Also, is necessary to express when the robot is allowed to do something, like moving between two empty adjacent squares. Thus, all these logic expressions were used to represent geometric constraints like collisions between the robot and the walls or boxes.
+While solving this problem is possible to notice that are two approaches. The first one requires a previous knowledge of a solution, and the developer states that a specific box goes to a specific location. The second approach, there is no kind of identification for the boxes, and this is the one we used as a solution. Independently of the approach, the domain contains a grid on which the robot should move. Thus, it is necessary to come up with a way to express when the robot can, or cannot, move between two locations if there is a wall or a box in between. Also, is necessary to express when the robot is allowed to do something, like moving between two empty adjacent squares. Thus, all these logic expressions were used to represent geometric constraints like collisions between the robot and the walls or boxes.
 
 \subsubsection*{4. In many cases, geometric and dynamic planning are insufficient to describe a domain. Give
 an example of a problem that is best suited for semantic (classical) planning. Explain why a
 semantic representation would be desirable}
 
-The classical planners have a variety of best suited problems, like in logistics, manofacturing, and management. One example is the DART system used for militray logistics. Logistics are better expressed by a set of logical expressions to specify complex operations not related to the kinect motion.
+The classical planners have a variety of best suited problems, like in logistics, manofacturing, and management. One example is the DART system used for military logistics. Logistics are better expressed by a set of logical expressions to specify complex operations not related to the kinect motion.
 
 %------------------------------------End of Problem 2 -------------------------------------------------%
 
@@ -217,73 +249,23 @@ Both \textbf{FF} and \textbf{Blackbox} planners were applied onto the PDDL repre
 
 \subsection{Questions}
 \subsubsection*{1. Give successful plans from at least one planner with 6 and 10 disks}
-The plan for the towers of hanoi problem with 6 disk, generated by \textit{FF} is as follows:\\
-\begin{verbatim}
-step    0: MOVE-DISK D1 D2 P2
-        1: MOVE-DISK D2 D3 P1
-        2: MOVE-DISK D1 P2 D2
-        3: MOVE-DISK D3 D4 P2
-        4: MOVE-DISK D1 D2 D4
-        5: MOVE-DISK D2 P1 D3
-        6: MOVE-DISK D1 D4 D2
-        7: MOVE-DISK D4 D5 P1
-        8: MOVE-DISK D1 D2 D4
-        9: MOVE-DISK D2 D3 D5
-       10: MOVE-DISK D1 D4 D2
-       11: MOVE-DISK D3 P2 D4
-       12: MOVE-DISK D1 D2 P2
-       13: MOVE-DISK D2 D5 D3
-       14: MOVE-DISK D1 P2 D2
-       15: MOVE-DISK D5 D6 P2
-       16: MOVE-DISK D1 D2 D6
-       17: MOVE-DISK D2 D3 D5
-       18: MOVE-DISK D1 D6 D2
-       19: MOVE-DISK D3 D4 D6
-       20: MOVE-DISK D1 D2 D4
-       21: MOVE-DISK D2 D5 D3
-       22: MOVE-DISK D1 D4 D2
-       23: MOVE-DISK D4 P1 D5
-       24: MOVE-DISK D1 D2 D4
-       25: MOVE-DISK D2 D3 P1
-       26: MOVE-DISK D1 D4 D2
-       27: MOVE-DISK D3 D6 D4
-       28: MOVE-DISK D1 D2 D6
-       29: MOVE-DISK D2 P1 D3
-       30: MOVE-DISK D1 D6 D2
-       31: MOVE-DISK D6 P3 P1
-       32: MOVE-DISK D1 D2 D6
-       33: MOVE-DISK D2 D3 P3
-       34: MOVE-DISK D1 D6 D2
-       35: MOVE-DISK D3 D4 D6
-       36: MOVE-DISK D1 D2 D4
-       37: MOVE-DISK D2 P3 D3
-       38: MOVE-DISK D1 D4 D2
-       39: MOVE-DISK D4 D5 P3
-       40: MOVE-DISK D1 D2 D4
-       41: MOVE-DISK D2 D3 D5
-       42: MOVE-DISK D1 D4 D2
-       43: MOVE-DISK D3 D6 D4
-       44: MOVE-DISK D1 D2 D6
-       45: MOVE-DISK D2 D5 D3
-       46: MOVE-DISK D1 D6 D2
-       47: MOVE-DISK D5 P2 D6
-       48: MOVE-DISK D1 D2 P2
-       49: MOVE-DISK D2 D3 D5
-       50: MOVE-DISK D1 P2 D2
-       51: MOVE-DISK D3 D4 P2
-       52: MOVE-DISK D1 D2 D4
-       53: MOVE-DISK D2 D5 D3
-       54: MOVE-DISK D1 D4 D2
-       55: MOVE-DISK D4 P3 D5
-       56: MOVE-DISK D1 D2 D4
-       57: MOVE-DISK D2 D3 P3
-       58: MOVE-DISK D1 D4 D2
-       59: MOVE-DISK D3 P2 D4
-       60: MOVE-DISK D1 D2 P2
-       61: MOVE-DISK D2 P3 D3
-       62: MOVE-DISK D1 P2 D2
-\end{verbatim}
-Clearly it has $2^6 - 1$ = 63 steps in the plan. Now the problem with 10 disks will have a plan of $2^10 - 1$ = 1023 steps. The \textit{FF} planner produces a valid plan with 1023 steps, but for the lack of space it is not produced here. The plan is present under the resources directory as ``hanoi-10-solutions''.
+The plan for the towers of hanoi problem with 6 disks, generated by \textit{FF} is shown in Figure \ref{plan6}.
+
+\begin{figure}[h!]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[scale = 0.3]{images/hanoi-6_1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[scale = 0.3]{images/hanoi-6_2}
+\end{subfigure}%
+\caption{Plan for Towers of Hanoi with 6 disks}
+\label{plan6}
+\end{figure}
+
+Clearly it has $2^6 - 1$ = 63 steps in the plan. Now the problem with 10 disks will have a plan of $2^{10} - 1$ = 1023 steps. The \textit{FF} planner produces a valid plan with 1023 steps, but for the lack of space it is not produced here. The plan is present under the resources directory as ``hanoi-10-solutions''.
 
 \subsubsection*{2. Do you notice anything about the structure of the plans? Can you use this to increase the
 efficiency of planning for Towers of Hanoi? Explain}

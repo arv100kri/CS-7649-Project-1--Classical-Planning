@@ -1,3 +1,35 @@
+ff: parsing domain file
+domain 'SKOBAN' defined
+ ... done.
+ff: parsing problem file
+problem 'SKOBAN-2-1' defined
+ ... done.
+
+
+
+Cueing down from goal distance:   10 into depth [1]
+                                   9            [1]
+                                   8            [1][2][3][4]
+                                   7            [1]
+                                   6            [1]
+
+Enforced Hill-climbing failed !
+switching to Best-first Search now.
+
+advancing to distance :   10
+                           9
+                           8
+                           7
+                           6
+                           5
+                           4
+                           3
+                           2
+                           1
+                           0
+
+ff: found legal plan as follows
+
 step    0: MOVE-DOWN LOCATIONE LOCATIONC
         1: MOVE-RIGHT LOCATIONF LOCATIONE
         2: MOVE-RIGHT LOCATIONG LOCATIONF
@@ -20,3 +52,8 @@ time spent:    0.00 seconds instantiating 48 easy, 0 hard action templates
                0.00 seconds building connectivity graph
                0.00 seconds searching, evaluating 47 states, to a max depth of 4
                0.00 seconds total time
+
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.29)  23 SEP 2013 20:24
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.29)  24 SEP 2013 18:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -380,7 +380,12 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 25.
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2012/01/12 v1.1d Sub-captions (AR)
+\c@subfigure=\count130
+\c@subtable=\count131
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 26.
 
 
 LaTeX Warning: Unused global option(s):
@@ -389,32 +394,32 @@ LaTeX Warning: Unused global option(s):
 (./project1.aux)
 \openout1 = `project1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
  (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count130
+\scratchcounter=\count132
 \scratchdimen=\dimen144
 \scratchbox=\box31
-\nofMPsegments=\count131
-\nofMParguments=\count132
+\nofMPsegments=\count133
+\nofMParguments=\count134
 \everyMPshowfont=\toks24
-\MPscratchCnt=\count133
+\MPscratchCnt=\count135
 \MPscratchDim=\dimen145
-\MPnumerator=\count134
-\makeMPintoPDFobject=\count135
+\MPnumerator=\count136
+\makeMPintoPDFobject=\count137
 \everyMPtoPDFconversion=\toks25
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -470,18 +475,18 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring ON on input line 27.
+Package hyperref Info: Link coloring ON on input line 28.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count136
+\c@section@level=\count138
 )
-LaTeX Info: Redefining \ref on input line 27.
-LaTeX Info: Redefining \pageref on input line 27.
-LaTeX Info: Redefining \nameref on input line 27.
+LaTeX Info: Redefining \ref on input line 28.
+LaTeX Info: Redefining \pageref on input line 28.
+LaTeX Info: Redefining \nameref on input line 28.
 
 (./project1.out) (./project1.out)
 \@outlinefile=\write5
@@ -489,89 +494,193 @@ LaTeX Info: Redefining \nameref on input line 27.
 
 
 
-Package xcolor Warning: Incompatible color definition on input line 36.
+Package xcolor Warning: Incompatible color definition on input line 37.
 
 
-Package xcolor Warning: Incompatible color definition on input line 36.
+Package xcolor Warning: Incompatible color definition on input line 37.
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 36.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 37.
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 
-Package xcolor Warning: Incompatible color definition on input line 36.
+Package xcolor Warning: Incompatible color definition on input line 37.
 
 
-Package xcolor Warning: Incompatible color definition on input line 36.
+Package xcolor Warning: Incompatible color definition on input line 37.
 
 
-Package xcolor Warning: Incompatible color definition on input line 36.
+Package xcolor Warning: Incompatible color definition on input line 37.
 
 <images/hanoi1.png, id=41, 396.48125pt x 126.4725pt>
 File: images/hanoi1.png Graphic file (type png)
  <use images/hanoi1.png>
-Package pdftex.def Info: images/hanoi1.png used on input line 40.
+Package pdftex.def Info: images/hanoi1.png used on input line 41.
 (pdftex.def)             Requested size: 118.94528pt x 37.94203pt.
 
 
-Package xcolor Warning: Incompatible color definition on input line 50.
+Package xcolor Warning: Incompatible color definition on input line 51.
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/hanoi1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
+
+Package xcolor Warning: Incompatible color definition on input line 62.
+
+<images/hanoi-3.png, id=72, 759.83875pt x 297.11pt>
+File: images/hanoi-3.png Graphic file (type png)
+ <use images/hanoi-3.png>
+Package pdftex.def Info: images/hanoi-3.png used on input line 66.
+(pdftex.def)             Requested size: 379.91844pt x 148.55463pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 64.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 75.
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 64.
-
-<images/sokoban.png, id=71, 617.30624pt x 461.725pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 75.
+ [2 <./images/hanoi-3.png>] <images/sokoban.png, id=81, 617.30624pt x 461.725pt
+>
 File: images/sokoban.png Graphic file (type png)
- <use images/sokoban.png>
-Package pdftex.def Info: images/sokoban.png used on input line 87.
+
+<use images/sokoban.png>
+Package pdftex.def Info: images/sokoban.png used on input line 98.
 (pdftex.def)             Requested size: 185.1933pt x 138.51857pt.
+ [3 <./images/sokoban.png>]
+
+Package xcolor Warning: Incompatible color definition on input line 134.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Package xcolor Warning: Incompatible color definition on input line 135.
 
 
-Package xcolor Warning: Incompatible color definition on input line 94.
+Package xcolor Warning: Incompatible color definition on input line 135.
 
 
-Package xcolor Warning: Incompatible color definition on input line 107.
+Package xcolor Warning: Incompatible color definition on input line 135.
 
-[2] [3 <./images/sokoban.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 136--137
 
- []
+Package xcolor Warning: Incompatible color definition on input line 135.
 
-[4]
+<images/FF_Solution_p2_1.png, id=95, 770.88pt x 458.71375pt>
+File: images/FF_Solution_p2_1.png Graphic file (type png)
+
+<use images/FF_Solution_p2_1.png>
+Package pdftex.def Info: images/FF_Solution_p2_1.png used on input line 139.
+(pdftex.def)             Requested size: 308.34654pt x 183.48224pt.
+
+<images/FF_Solution_p2_2.png, id=96, 752.8125pt x 754.82pt>
+File: images/FF_Solution_p2_2.png Graphic file (type png)
+
+<use images/FF_Solution_p2_2.png>
+Package pdftex.def Info: images/FF_Solution_p2_2.png used on input line 146.
+(pdftex.def)             Requested size: 301.11966pt x 301.92265pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/FF_Solution_p2_3_1.png, id=97, 469.755pt x 740.7675pt>
+File: images/FF_Solution_p2_3_1.png Graphic file (type png)
+
+<use images/FF_Solution_p2_3_1.png>
+Package pdftex.def Info: images/FF_Solution_p2_3_1.png used on input line 155.
+(pdftex.def)             Requested size: 140.92758pt x 222.23196pt.
+
+<images/FF_Solution_p2_3_2.png, id=98, 455.7025pt x 755.82375pt>
+File: images/FF_Solution_p2_3_2.png Graphic file (type png)
+
+<use images/FF_Solution_p2_3_2.png>
+Package pdftex.def Info: images/FF_Solution_p2_3_2.png used on input line 159.
+(pdftex.def)             Requested size: 136.71179pt x 226.74887pt.
+
+<images/FF_Solution_p2_3_3.png, id=99, 761.84625pt x 758.835pt>
+File: images/FF_Solution_p2_3_3.png Graphic file (type png)
+
+<use images/FF_Solution_p2_3_3.png>
+Package pdftex.def Info: images/FF_Solution_p2_3_3.png used on input line 163.
+(pdftex.def)             Requested size: 228.55563pt x 227.65225pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/FF_Solution_p2_challenge_1.png, id=100, 473.77pt x 741.77126pt>
+File: images/FF_Solution_p2_challenge_1.png Graphic file (type png)
+
+<use images/FF_Solution_p2_challenge_1.png>
+Package pdftex.def Info: images/FF_Solution_p2_challenge_1.png used on input li
+ne 173.
+(pdftex.def)             Requested size: 142.1321pt x 222.5331pt.
+
+<images/FF_Solution_p2_challenge_2.png, id=101, 473.77pt x 742.775pt>
+File: images/FF_Solution_p2_challenge_2.png Graphic file (type png)
+
+<use images/FF_Solution_p2_challenge_2.png>
+Package pdftex.def Info: images/FF_Solution_p2_challenge_2.png used on input li
+ne 177.
+(pdftex.def)             Requested size: 142.1321pt x 222.83421pt.
+
+<images/FF_Solution_p2_challenge_3.png, id=102, 787.94376pt x 138.5175pt>
+File: images/FF_Solution_p2_challenge_3.png Graphic file (type png)
+
+<use images/FF_Solution_p2_challenge_3.png>
+Package pdftex.def Info: images/FF_Solution_p2_challenge_3.png used on input li
+ne 181.
+(pdftex.def)             Requested size: 236.38495pt x 41.55556pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package xcolor Warning: Incompatible color definition on input line 206.
+
+[4 <./images/FF_Solution_p2_1.png>] [5 <./images/FF_Solution_p2_2.png>]
+
+Package xcolor Warning: Incompatible color definition on input line 223.
+
+[6 <./images/FF_Solution_p2_3_1.png> <./images/FF_Solution_p2_3_2.png> <./image
+s/FF_Solution_p2_3_3.png>] [7 <./images/FF_Solution_p2_challenge_1.png> <./imag
+es/FF_Solution_p2_challenge_2.png> <./images/FF_Solution_p2_challenge_3.png>]
+
+Package xcolor Warning: Incompatible color definition on input line 252.
+
+<images/hanoi-6_1.png, id=140, 307.1475pt x 758.835pt>
+File: images/hanoi-6_1.png Graphic file (type png)
+
+<use images/hanoi-6_1.png>
+Package pdftex.def Info: images/hanoi-6_1.png used on input line 258.
+(pdftex.def)             Requested size: 92.14496pt x 227.65225pt.
+
+<images/hanoi-6_2.png, id=141, 769.87625pt x 541.02126pt>
+File: images/hanoi-6_2.png Graphic file (type png)
+
+<use images/hanoi-6_2.png>
+Package pdftex.def Info: images/hanoi-6_2.png used on input line 262.
+(pdftex.def)             Requested size: 230.96466pt x 162.30762pt.
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 212.
- [5] (./project1.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 262.
- [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 262.
+put line 278.
+ [8 <./images/hanoi-6_1.png> <./images/hanoi-6_2.png>] (./project1.bbl [9])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 328.
+ [10]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 328.
  (./project1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 262.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 262.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 328.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 328.
 Package rerunfilecheck Info: File `project1.out' has not changed.
 (rerunfilecheck)             Checksum: 12F6A227DC43D2B79DAA2620A15735E6;499.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 262.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 328.
  ) 
 Here is how much of TeX's memory you used:
- 8983 strings out of 493485
- 132164 string characters out of 3143526
- 237686 words of memory out of 3000000
- 12128 multiletter control sequences out of 15000+200000
+ 9120 strings out of 493485
+ 135115 string characters out of 3143526
+ 236912 words of memory out of 3000000
+ 12239 multiletter control sequences out of 15000+200000
  17482 words of font info for 42 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 36i,7n,38p,774b,439s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,9n,38p,836b,435s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/
@@ -587,10 +696,10 @@ ic/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000
 .pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/tex
 mf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/publi
 c/cm-super/sftt1000.pfb>
-Output written on project1.pdf (6 pages, 303128 bytes).
+Output written on project1.pdf (10 pages, 785963 bytes).
 PDF statistics:
- 188 PDF objects out of 1000 (max. 8388607)
- 159 compressed objects within 2 object streams
- 45 named destinations out of 1000 (max. 500000)
- 75 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 235 PDF objects out of 1000 (max. 8388607)
+ 191 compressed objects within 2 object streams
+ 58 named destinations out of 1000 (max. 500000)
+ 130 words of extra memory for PDF output out of 10000 (max. 10000000)
 
