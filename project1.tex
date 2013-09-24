@@ -11,7 +11,8 @@ CS 4649/7649: RIP - Robot Intelligence - Planning}
 \usepackage[center]{caption}
 \usepackage{algorithm}
 \usepackage[T1]{fontenc}
-\usepackage{algpseudocode}
+\usepackage[noend]{algpseudocode}
+\usepackage{algorithm}
 \usepackage[margin=1in]{geometry}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{hyperref}
@@ -202,9 +203,57 @@ Clearly it has $2^6 - 1$ = 63 steps in the plan. Now the problem with 10 disks w
 
 \subsubsection*{2. Do you notice anything about the structure of the plans? Can you use this to increase the
 efficiency of planning for Towers of Hanoi? Explain}
-\subsubsection*{In a paragraph or two, explain a general planning strategy that would take advantage of
+One observation from the three plans generated (3, 6 and 10 disks) is that whenever there are odd number of initial disks, then the top most disk is moved onto the ``destination'' pole, and when there are even number of initial disks, then the top most disk is moved onto the ``middle'' pole.
+
+Another noticeable aspect of the problem is that the towers of hanoi can be viewed as a simple recursive problem of moving the smaller $n-1$ disks from $P3$ to $P2$ then moving the largest disk from $P3$ to $P1$ followed by moving the $n-1$ disks from $P2$ to $P1$. This can be empirically verified - at every $(2^N - 1)^{th}$ step, if the initial number of disks $n$ are odd, then there will be $N-1$ disks on P2 and largest disk will be on P1. If the initial number of disks $n$ are even, then there will be $N-1$ disks on $P3$ and the largest will be on $P2$. Of course here, $0<N<=n$.
+
+Thus the entire plan can be represented recursively (and efficiently) as: 
+\begin{algorithm}
+  \caption{Towers of Hanoi recursive definition}
+  \begin{algorithmic}[1]
+    \Function{Hanoi-Solver}{$N, P3, P2, P1$}
+    \Comment{Move N disks from P3 to P1 (using P2 as intermediate)}
+		\State \Call{Hanoi-Solver}{$N-1, P3, P1, P2$}
+		\State \Call{Move}{$1, P3, P1$} \Comment{Move the largest disk from P3 to P1}
+	  	\State \Call{Hanoi-Solver}{$N-1, P2, P3, P1$}
+    \EndFunction
+  \end{algorithmic}
+\end{algorithm}
+
+Thus this is a bottom-up approach in constructing a plan. All one needs to define are the ``macro'' propositions \textsc{Hanoi-Solver} and \textsc{Move} (which is applied when there is just the largest disk remaining on $P3$). The planner can then use this base condition (a.k.a ``macro'' proposition) and basically ``un-wind'' the call stack to generate sub-plans. The correct plan is then obtained by simply reversing the ``popped'' elements of the call stack.
+
+
+\subsubsection*{3. In a paragraph or two, explain a general planning strategy that would take advantage of
 problem structure. Make sure your strategy applies to problems other than Towers of Hanoi.
 Would such a planner still be complete?}
+
+A general recursive algorithm takes advantage of whenever there is a possibility of breaking down a problem into multiple smaller, but similarly structured problems, each if solved (and possibly in parallel if there is sufficient independence) can be ``combined'' to get the solution to the original problem. The generic recursive algorithm is:
+
+\begin{algorithm}
+  \caption{Recursive Planner}
+  \begin{algorithmic}[1]
+    \Function{Recursive-Planner}{$Prob_N$}
+    \Comment{Solve a sub-problem}
+    		\If{Some Terminal Condition}
+			\State \Call{Terminal-Operation}{$Prob_1$} \Comment{Some constant terminal operation}
+		\EndIf
+		\State \Call{Recursive-Planner}{$Subset(Prob_N)$}
+    \EndFunction
+  \end{algorithmic}
+\end{algorithm}
+
+There are a whole class of problems to which a recursive planner can be applied. For instance, this algorithm can be used in large scale map navigation problems, where loading an entire terrain in one go may be memory prohibitive.
+
+There are two conditions for a planner to be complete,
+\begin{enumerate}
+\item \textbf{Produces a plan if there is one}: The recursive planner relies on all the sub-goals to complete their execution (or the recursion stack to be empty). So in case all the sub-goals reach their respective terminating condition, then all of them will reach completion (this is from an execution standpoint - different from the notion of completeness). If all the individual problems finish, then the top-level problem, which is basically a composition of these sub-problems will also produce a valid plan.
+
+However, it is possible that even though the entire problem has a solution, one of the sub-problems may never reach completion -- this would cause the original problem to not produce a plan. Hence it cannot always be guaranteed that the planner produces a plan if there is a valid one.
+
+\item \textbf{Reports that there is no plan if there is none}: The same sub-problem non-termination issue exists here as well. In case one of the sub-problems gets ``stuck'', there is no way for the original problem to terminate reporting that there is no plan. 
+\end{enumerate}
+
+However, if some sort of a terminating ``\textit{parameter}'' can be used to force the sub-problems to halt/report no solution. In such a case the ``stack overflow'' issue will be resolved and both the conditions of completeness will be met. Basically, we need to ensure that the sub-problems will be forcibly terminated which will ensure that the main problem will always terminate as well!
 
 %----------------------------------End of Problem 4 ----------------------------------------------------%
 
