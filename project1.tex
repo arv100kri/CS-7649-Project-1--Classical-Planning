@@ -228,8 +228,29 @@ problem. Which was faster? Why?}
 \subsubsection*{3. Prove that your planner was complete. Your instructor has a math background: a proof ``is
 a convincing argument.'' Make sure you address each aspect of completeness and why your
 planner satisfies it. Pictures are always welcome.}
+Basicly our approach is BFS with a little bit branch optimization, and it's easy to prove that it is complete.
+The state is represented by several arguments: the position of every box and the position of the person.
+Our algorithm searches for every possible move of the box, that is, as long as we can make a box move from the current state, we add this new state with the box moved to the new position. 
+(And of course we assert that this new state is a state that we have not discovered yet. This is one of the branch optimizations)
+We keep on doing this until we hit the final state or we run out of states.
+If we hit the final state (with all boxes in designated positions), our algorithm ends and it prints out the plan we are looking for.
+If the set of states is empty and we still don't find a solution, the algorithm also terminates with no solution.
+Since BFS searches for every possible state that is reachable from the original state, if there exists a solution, we can always find it.
+If there is no solution, since our algorithm only search for possible states, it will terminate with no solution.
+\\Also our algorithm is optimal in terms of box moves. This is because every time we add a new state, it is a state that is one box-move away from the previous state.
+Since we are using Breadth First Search, we can gaurantee that our solution uses the least box moves.
+
 \subsubsection*{4. What methods did you use to speed up the planning? Give a short description of each method
 and explain why it did or didn't help on each relevant problem}
+First of all we discard the new state that has already been explored.
+This branch optimization cuts out a lot of useless branches, and it asserts that our algorithm terminates when there is no solution.
+\\Also when checking if the state has been explored, we use hash map. 
+Specifically, we use a large integer to represent the state, and throw the explored states into the hash.
+So this saves the time needed for checking duplicate states.
+\\Another branch optimization is that when we are in a state where one of the boxes has two adjacent sides facing the wall and this box is not in the designated position.
+This box cannot be moved anyway because we need the man on one side of the box and we need the opposite side of the wall to be clear so that we can move. (In this case at least one side of these two is wall)
+Therefore this state is itself a dead state. 
+We will never make it to the final state in this case.
 
 %---------------------------------End of Problem 3 ----------------------------------------------------%
 
