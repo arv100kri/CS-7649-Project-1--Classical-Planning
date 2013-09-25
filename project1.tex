@@ -230,6 +230,8 @@ a convincing argument.'' Make sure you address each aspect of completeness and w
 planner satisfies it. Pictures are always welcome.}
 Basicly our approach is BFS with a little bit branch optimization, and it's easy to prove that it is complete.
 The state is represented by several arguments: the position of every box and the position of the person.
+And all these arguments are combined in one integer.
+We use shift operations in C++ to set and get a specific argument (For example, the position of the person), which saves a lot of space.
 Our algorithm searches for every possible move of the box, that is, as long as we can make a box move from the current state, we add this new state with the box moved to the new position. 
 (And of course we assert that this new state is a state that we have not discovered yet. This is one of the branch optimizations)
 We keep on doing this until we hit the final state or we run out of states.
