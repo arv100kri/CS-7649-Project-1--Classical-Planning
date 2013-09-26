@@ -60,34 +60,38 @@ Running the program
 Participation
 =============
 
-**Luis Gustavo Souza Silva**:
+**Luis Gustavo Souza Silva**
+
 1. Created the PDDL for sokoban domain definition and for the problems and answers related to Project Part-I Sokoban Planner. 
-2. Also, Settled up the enviroment to run Blackbox and FF's planner on Windows machines.
-		* All planners are tested to be working on my box
+2. Also, settled up the enviroment to run Blackbox and FF's planner on Windows machines.
+	* All planners are tested to be working on my box
 
 **Zhengyi Hu**:
 Problem 4: Project Part-II Sokoban Plannner
+
 1. State space compression
 2. Develop a efficiently HASH function
 3. Implement the algorithm
 
 **Zheng Yong**:
 Problem 4: Project Part-II Sokoban Planner
+
 1. Branch optimization
 2. Implement the algorithm
 3. Answer to 4.3 - 4.4 problem.
 
 **Arvind Krishnaa Jagannathan**:
+
 1. Problem 2: Towers of Hanoi (3 disks) - Defined domain and PDDL for initial state and goal state
 2. Problem 5: Towers of Hanoi (N disks) - Defined the states for the problem with 6 and 10 disks.
-		* Wrote a python script to generate the PDDL for a N disk towers of hanoi problem
+	* Wrote a python script to generate the PDDL for a N disk towers of hanoi problem
 3. Problem 4: Project PartII Sokoban Planner
-		* Domain description for the 4 problems
-		* Answer to 4.1 - 4.2 problem
+	* Domain description for the 4 problems
+	* Answer to 4.1 - 4.2 problem
 4. Miscellaneous
-		* Setup Blackbox and FF on Linux box
-		* Performed analysis of the computation metrics (time, space etc.,) wherever required.
-		* All planners are tested to be working on my box
+	* Setup Blackbox and FF on Linux box
+	* Performed analysis of the computation metrics (time, space etc.,) wherever required.
+	* All planners are tested to be working on my box
 
 Useful Links
 =============
