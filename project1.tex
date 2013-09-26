@@ -27,7 +27,7 @@ CS 4649/7649: RIP - Robot Intelligence - Planning}
 %------------------------Included every possible package we might need ------------------------%
 \begin{document}
 \title{\textbf{\doctitle} \\\textsc{Project 1: Classical Sokoban Planner}}
-  \author {Arvind Krishnaa Jagannathan, Zheng Yong, Luis Gustavo, Zhengyi Hu}%Others please check your names here
+  \author {Arvind Krishnaa Jagannathan, Zheng Yong, Luis Gustavo Souza Silva, Zhengyi Hu}%Others please check your names here
    \date{}
 \maketitle
 
@@ -64,7 +64,7 @@ Both the planners generated the same plan, which is in Figure \ref{plan1}.
 \begin{figure}[h!]
   \centering
     \includegraphics[scale = 0.5]{images/hanoi-3}
-    \caption{Plan for Towers of Hanoi with 3 disks}
+    \caption{Plan for Towers of Hanoi with 3 disks (generated from FF planner)}
   \label{plan1}
 \end{figure}
 
@@ -221,14 +221,209 @@ The classical planners have a variety of best suited problems, like in logistics
 
 \section{Project Part II: Sokoban Planner}
 %Assigned to James and Stango%
+In this part of the project, we came up with our own representation of the Sokoban domain. The domain has the following specifications:
+\begin{itemize}
+	\item \textbf{Geometry/Grid}: A world represented as a $M$ x $N$ grid. The Sokoban domain's geometry is defined by $M$ rows and $N$ columns, where each ``cell'' in the map has the same dimensions as the box.
+	\item \textbf{Walls}: A wall is any of the grey boundary of the world, as well as a logical extension of the wall to fit the map. For instance, looking at the first problem in Figure \ref{fig2}, the top most row is entirely made up of walls (although there is some white space in the top right, that cannot be logically reached by the man and hence is a ``wall''. In our representation a wall is defined by the constant $W$.
+	\item \textbf{Boxes}: In the grid for each problem, we define a constant $B$ which corresponds to whether the box is present in that particular cell of the grid. We have assumed again that any box can be moved to any target square.
+	\item \textbf{Target}: This is the target square where any box can be moved. Represented as $D$.
+	\item \textbf{Man}: This represents the starting square in which the man is present. Represented in the grid as $M$.
+	\item \textbf{Empty Squares}: These correspond to squares which are within the boundaries of the ``walls'' and can be occupied by a man or a box. Represented by $*$.
+\end{itemize}
+\textbf{Note}: In our plans, we do not explicitly show the man. Instead we show one or more boxes changing their position with respect to the previous step. Since the man will be in one of the adjacent spaces of the box (left, right, top or bottom) we have effectively treated the man and the box as one ``logical'' unit. This can be verified in the plans as well by tracing the location change of the various boxes.
+
+In other words, we don't have actions such as \textsc{Push}, since we treat the box to be able to \textsc{Move} automatically based on the available white space. However we do respect the geometric constraints of the presence of the man (i.e., the box will not move to a location where a man should have been standing).
+\subsection*{Representation of the Domain}
+Now that we have defined the components of the representation, we have defined the Sokoban domain for each of the 4 problems. Each problem has a ``\textit{input}'' map file which has the following header:
+\begin{verbatim}
+	{Rows} {Columns} {Number of boxes}
+\end{verbatim}
+Below the header is the grid based representation of the domain. The grid is a $Row$ x $Column$ matrix, where each element is a single character as defined previously. The 4 Sokoban problems (including the challenge problem) and their corresponding state representation as per our domain definition are presented in Figures \ref{soko1}, \ref{soko2}, \ref{soko3}, \ref{sokoC} respectively.
+
+\begin{figure} [h!]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[scale = 0.5]{images/sokoban1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[scale = 0.5]{images/sokoban1-plan}
+\end{subfigure}%
+\caption{Sokoban Problem 2.1 and its corresponding representation}
+\label{soko1}
+\end{figure}
+
+\begin{figure} [h!]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[scale = 0.5]{images/sokoban2}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[scale = 0.5]{images/sokoban2-plan}
+\end{subfigure}%
+\caption{Sokoban Problem 2.2 and its corresponding representation}
+\label{soko2}
+\end{figure}
+
+\begin{figure} [h!]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[scale = 0.5]{images/sokoban3}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[scale = 0.5]{images/sokoban3-plan}
+\end{subfigure}%
+\caption{Sokoban Problem 2.3 and its corresponding representation}
+\label{soko3}
+\end{figure}
+
+\begin{figure} [h!]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[scale = 0.5]{images/sokobanC}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[scale = 0.5]{images/sokobanC-plan}
+\end{subfigure}%
+\caption{Sokoban Challenge and its corresponding representation}
+\label{sokoC}
+\end{figure}
+
+\subsubsection*{Brief Outline of the Algorithm}
+The algorithm is a simple implementation of the breadth-first search algorithm. The state is represented by the position of all the boxes and the position of the man (as per the representation). These arguments are integrated into a single \textit{long} integer. 
+
+At the beginning of search, there is only one element in the search queue which is the initial state. Every time we look at a state, we first check if it is the final state (target configuration, where boxes ($B$) are in the places where target squares ($D$) are placed initially). If it is the final state, the program terminates with the solution. If not, we see if we can make any of the boxes move. If one of the boxes can be moved one step away in any direction, we take that move and add the new state into the queue. 
+
+Also, every time we add a new state into the queue we check if the state is already explored (already in the queue). This is done by using a hash map. After adding all possible states that can be derived from the state we are dealing with right now, we move on to the next state in the queue. 
+
+The program also terminates if the queue is empty, which indicates that there is no solution to the puzzle (and we report that).
+
+\subsubsection*{Completeness, Speed and Efficiency}
+We believe that our planner is complete as well as fast. We discuss more about this in the questions sections (Questions 3 and 4).
+The state representation is pretty compact and really small in size. The processing on the input is also pretty fast since we cache the entire world state into a hash map. The maximum space complexity for the problem is $O(MXN)$ with $M$ rows and $N$ columns. However, this representation is pretty specific to the Sokoban domain. The only ``strong'' action in this domain is the \textsc{Push} action which we have incorporated into the state-space search. Our domain has nicely captured fluents such as \textsc{Location}, \textsc{Box-At} and so on within the grid representation.
+
+\subsubsection*{Miscellaneous Pieces of Information}
+We were able to capture most of the necessary pieces of information. We used a breadth-first search to explore the states, but we have not logged the explored states. So we are unable to report the number of states explored.
+\begin{enumerate}
+\item \textbf{Language Used}: C++
+\item \textbf{Number of steps in plan}: We calculate the number of steps, assuming the man is adjacent to the box (which we have reported below). So we might have to add the steps it takes for the man to move near the box.
+\begin{itemize}
+\item Problem 1: 4
+\item Problem 2: 11
+\item Problem 3: 21
+\item Challenge Problem: 18
+\end{itemize}
+\item \textbf{Computation Time}: We have compared our planner against FF (which was only able to produce the solution for all the 4 problems). Both planners were executed on the same system and the computation time is shown in Table \ref{tab1}.
+
+\begin{table}[htbp]
+\caption{Comparison of Computation Times}
+\centering
+\begin{tabular}{|r|r|r|}
+\hline
+\multicolumn{1}{|l|}{Problem} & \multicolumn{1}{l|}{FF Time (in s)} & \multicolumn{1}{l|}{Our Planner Time (in s)} \\ \hline
+\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \hline
+1 & 0.005 & 0.004 \\ \hline
+2 & 0.007 & 0.008 \\ \hline
+3 & 0.021 & 0.022 \\ \hline
+Sokoban Challenge & 0.043 & 0.070 \\ \hline
+\end{tabular}
+\label{tab1}
+\end{table}
+This might not be a totally fair comparison, since we do not take into account the man moving adjacent to the box.
+\item \textbf{Machine Vitals}: The input representation for each of the problems was very small (of the order of 50-60 bytes), and the output was also suitably compact. Our program can compile and run on any C++ compiler conforming to ANSI standard, and does not require too much of memory to run. The only memory constraints are the fact that we are loading the entire world onto a hash map, but again this is not very significant for the Sokoban domain as well as the BFS which explores every possible reachable state.
+\end{enumerate}
 \subsection{Questions}
+
 \subsubsection*{1. Give successful plans from your planner on the Sokoban problems in Figure \ref{fig2} and any others}
+The plans as per our domain representation, for the 4 Sokoban problems (including the challenge) is presented in Figures \ref{sokoans1}, \ref{sokoans2}, \ref{sokoans3} and \ref{sokoansC} respectively.
+\begin{figure} [h!]
+\centering
+	\includegraphics[scale = 0.35]{images/sokoban1-ans}
+\caption{Sokoban Problem 2.1's Plan}
+\label{sokoans1}
+\end{figure}
+
+\begin{figure} [h!]
+\centering
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[scale = 0.35]{images/sokoban2-ans1}
+\end{subfigure}%
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[scale = 0.35]{images/sokoban2-ans2}
+\end{subfigure}%
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[scale = 0.35]{images/sokoban2-ans3}
+\end{subfigure}%
+\caption{Sokoban Problem 2.2's Plan}
+\label{sokoans2}
+\end{figure}
+
+\begin{figure} [h!]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[scale = 0.35]{images/sokoban3-ans1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[scale = 0.35]{images/sokoban3-ans2}
+\end{subfigure}\\
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[scale = 0.35]{images/sokoban3-ans3}
+\end{subfigure}%
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[scale = 0.35]{images/sokoban3-ans4}
+\end{subfigure}%
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[scale = 0.35]{images/sokoban3-ans5}
+\end{subfigure}%
+\caption{Sokoban Problem 2.3's Plan}
+\label{sokoans3}
+\end{figure}
+
+\begin{figure} [h!]
+\centering
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[scale = 0.35]{images/sokobanC-ans1}
+\end{subfigure}%
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[scale = 0.35]{images/sokobanC-ans2}
+\end{subfigure}%
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[scale = 0.35]{images/sokobanC-ans3}
+\end{subfigure}\\
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[scale = 0.35]{images/sokobanC-ans4}
+\end{subfigure}%
+\caption{Sokoban Challenge Problem's Plan}
+\label{sokoansC}
+\end{figure}
+
 \subsubsection*{2. Compare the performance of your planner to the PDDL planners you used in the previous
 problem. Which was faster? Why?}
+As mentioned earlier, our planner was able to be almost as fast as the FF planner. Especially in the case of the Sokoban Challenge problem, our planner was clearly faster. However, this is not strictly a fair comparison, since our planner assumes that man starts of adjacent to one of the boxes. FF is clearly going to be fast, since it uses enforced hill climbing optimized with \textsc{GraphPlan}'s heuristics, whereas our algorithm is a simple Breadth-First Seach.
+
 \subsubsection*{3. Prove that your planner was complete. Your instructor has a math background: a proof ``is
 a convincing argument.'' Make sure you address each aspect of completeness and why your
 planner satisfies it. Pictures are always welcome.}
-Basicly our approach is BFS with a little bit branch optimization, and it's easy to prove that it is complete.
+Basically our approach is Breadth First Search (BFS) with a little bit branch optimization, and it's easy to prove that it is complete.
 The state is represented by several arguments: the position of every box and the position of the person.
 And all these arguments are combined in one integer.
 We use shift operations in C++ to set and get a specific argument (For example, the position of the person), which saves a lot of space.
