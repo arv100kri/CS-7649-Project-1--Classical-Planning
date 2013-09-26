@@ -33,14 +33,14 @@ CS 4649/7649: RIP - Robot Intelligence - Planning}
 
 \section{Administrative}
 \begin{itemize}
-	\item This is a comprehensive report, with all the plans incorporated into it. The plans are also available separately.
+	\item This is a comprehensive report, with some plans incorporated into it. The plans are also available separately in the ``\textit{src/resources}`` directory.
 	\item We have a \textit{README} file, which lists the directory structure of the attached \textit{zip} file. It also has the instructions for running the program.
 	\item We also have outlined the participation of each of the members in the README file. Here is a brief summary of them.
 		\begin{enumerate}
 			\item \textbf{Luis}: PDDL definitions for Sokoban Part I for both the domain and each problem scenario. Also ensured that the planners work correctly on Windows.
 			\item \textbf{Zheng}: Implemented the planning algorithm for Sokoban Part II, focusing on Branch optimization.
 			\item \textbf{Zhengyi}: Implemented the planning algorithm for Sokoban Part II, focusing on state space compression and caching states into a hash map.
-			\item \textbf{Arvind}: PDDL definitions for 3, 6, 10 disk Towers of Hanoi. Definition of input domain in Sokoban Part II. All time metrics taken by running planners Arvind's machine.
+			\item \textbf{Arvind}: PDDL definitions for 3, 6, 10 disk Towers of Hanoi. Representation of domain and some minor fix-up to Sokoban Part II algorithm.
 		\end{enumerate}
 	Each of us have constructed the corresponding parts of this report. We have all read and reviewed each other's contribution to the report as well as the code.
 \end{itemize}
@@ -330,12 +330,12 @@ The state representation is pretty compact and really small in size. The process
 We were able to capture most of the necessary pieces of information. We used a breadth-first search to explore the states, but we have not logged the explored states. So we are unable to report the number of states explored.
 \begin{enumerate}
 \item \textbf{Language Used}: C++
-\item \textbf{Number of steps in plan}: We calculate the number of steps, assuming the man is adjacent to the box (which we have reported below). So we might have to add the steps it takes for the man to move near the box.
+\item \textbf{Number of steps in plan}: We calculate the total number of steps it takes for every box to be moved to the target boxes. If there are $N$ steps, then our plan would correspond to $N$ world configurations, where the grid is represented as per the definitions stated above. There are currently some bugs in the printing logic, where in some steps, the man might make two or more movements as part of one step. After counting these mis-steps, our algorithm seems to take the same number of steps as FF. However, for transparency, we have the actual steps as reported by our algorithm below.
 \begin{itemize}
-\item Problem 1: \textbf{??}
-\item Problem 2: \textbf{??}
-\item Problem 3: \textbf{??}
-\item Challenge Problem: \textbf{??}
+\item Problem 1: \textbf{14} (FF was 14)
+\item Problem 2: \textbf{29} (FF was 32)
+\item Problem 3: \textbf{91} (FF was 115)
+\item Challenge Problem: \textbf{48} (FF was 79)
 \end{itemize}
 \item \textbf{Computation Time}: We have compared our planner against FF (which was only able to produce the solution for all the 4 problems). Both planners were executed on the same system and the computation time is shown in Table \ref{tab1}.
 
@@ -346,97 +346,59 @@ We were able to capture most of the necessary pieces of information. We used a b
 \hline
 \multicolumn{1}{|l|}{Problem} & \multicolumn{1}{l|}{FF Time (in s)} & \multicolumn{1}{l|}{Our Planner Time (in s)} \\ \hline
 \multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \hline
-1 & 0.005 & \textbf{??} \\ \hline
-2 & 0.007 & \textbf{??} \\ \hline
-3 & 0.021 & \textbf{??} \\ \hline
-Sokoban Challenge & 0.043 & \textbf{??} \\ \hline
+1 & 0.005 & \textbf{0.004} \\ \hline
+
+2 & 0.007 & \textbf{0.007} \\ \hline
+3 & 0.021 & \textbf{0.019} \\ \hline
+Sokoban Challenge & 0.043 & \textbf{0.025} \\ \hline
 \end{tabular}
 \label{tab1}
 \end{table}
-%This might not be a totally fair comparison, since we do not take into account the man moving adjacent to the box.
+\textbf{Note}: Although it appears that our algorithm is ``faster'' than FF, that might not necesarily be the case, since our algorithm prints to a file, whereas FF prints to console. Due to the length of the plans, which need to be printed to the terminal, FF takes more time. FF has a self-reporting ``time spent'' parameter, but for all the 4 problems, it reports as 0.00 seconds. We obtained the above time comparison, using linux's \textit{time} utility.
 
 \item \textbf{Machine Vitals}: The input representation for each of the problems was very small (of the order of 50-60 bytes), and the output was also suitably compact. Our program can compile and run on any C++ compiler conforming to ANSI standard, and does not require too much of memory to run. The only memory constraints are the fact that we are loading the entire world onto a hash map, but again this is not very significant for the Sokoban domain as well as the BFS which explores every possible reachable state.
+
+\item \textbf{States explored}: While performing the BFS, there were a number of states which were explored during the course of finding a valid plan. For each of the problems, the number of states explored are shown below:
+\begin{itemize}
+\item Problem 1: \textbf{14}
+\item Problem 2: \textbf{77}
+\item Problem 3: \textbf{344}
+\item Challenge Problem: \textbf{954}
+\end{itemize}
 \end{enumerate}
 \subsection{Questions}
 
 \subsubsection*{1. Give successful plans from your planner on the Sokoban problems in Figure \ref{fig2} and any others}
-The plans as per our domain representation, for the 4 Sokoban problems (including the challenge) is presented in Figures \ref{sokoans1}, \ref{sokoans2}, \ref{sokoans3} and \ref{sokoansC} respectively. Note that each step shows the world configuration with the position of the boxes, the man and ``empty space'' marked appropriately.
+We have a successful plan for the first Sokoban problem depicted in Figure \ref{sokoans1}. The format for the solutions of all the Sokoban problems are the same as in the Figure. But for lack of space, we do not include all the plans here. However, the plans for all the problems (1, 2, 3 and the challenge problem) can be found in the ``\textit{resources/Our\_Planner\_Solutions}'' directory.
+
+Note that each step shows the world configuration with the position of the boxes, the man and ``empty space'' marked appropriately. We have an ``accomplished'' state, in which the boxes $B$ need to be present where the the target squares $D$ were present in the problem representation.
+%-------------------Soko1------------------------
 \begin{figure} [h!]
 \centering
-	\includegraphics[scale = 0.35]{images/sokoban1-ans}
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[scale = 0.35]{images/sokoban1-ans1}
+\end{subfigure}%
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[scale = 0.35]{images/sokoban1-ans2}
+\end{subfigure}%
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[scale = 0.35]{images/sokoban1-ans3}
+\end{subfigure}\\
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[scale = 0.35]{images/sokoban1-ans4}
+\end{subfigure}%
 \caption{Sokoban Problem 2.1's Plan}
 \label{sokoans1}
 \end{figure}
-
-\begin{figure} [h!]
-\centering
-\begin{subfigure}{.3\textwidth}
-  \centering
-  \includegraphics[scale = 0.35]{images/sokoban2-ans1}
-\end{subfigure}%
-\begin{subfigure}{.3\textwidth}
-  \centering
-  \includegraphics[scale = 0.35]{images/sokoban2-ans2}
-\end{subfigure}%
-\begin{subfigure}{.3\textwidth}
-  \centering
-  \includegraphics[scale = 0.35]{images/sokoban2-ans3}
-\end{subfigure}%
-\caption{Sokoban Problem 2.2's Plan}
-\label{sokoans2}
-\end{figure}
-
-\begin{figure} [h!]
-\centering
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[scale = 0.35]{images/sokoban3-ans1}
-\end{subfigure}%
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[scale = 0.35]{images/sokoban3-ans2}
-\end{subfigure}\\
-\begin{subfigure}{.3\textwidth}
-  \centering
-  \includegraphics[scale = 0.35]{images/sokoban3-ans3}
-\end{subfigure}%
-\begin{subfigure}{.3\textwidth}
-  \centering
-  \includegraphics[scale = 0.35]{images/sokoban3-ans4}
-\end{subfigure}%
-\begin{subfigure}{.3\textwidth}
-  \centering
-  \includegraphics[scale = 0.35]{images/sokoban3-ans5}
-\end{subfigure}%
-\caption{Sokoban Problem 2.3's Plan}
-\label{sokoans3}
-\end{figure}
-
-\begin{figure} [h!]
-\centering
-\begin{subfigure}{.3\textwidth}
-  \centering
-  \includegraphics[scale = 0.35]{images/sokobanC-ans1}
-\end{subfigure}%
-\begin{subfigure}{.3\textwidth}
-  \centering
-  \includegraphics[scale = 0.35]{images/sokobanC-ans2}
-\end{subfigure}%
-\begin{subfigure}{.3\textwidth}
-  \centering
-  \includegraphics[scale = 0.35]{images/sokobanC-ans3}
-\end{subfigure}\\
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[scale = 0.35]{images/sokobanC-ans4}
-\end{subfigure}%
-\caption{Sokoban Challenge Problem's Plan}
-\label{sokoansC}
-\end{figure}
+%-------------------Soko1------------------------
 
 \subsubsection*{2. Compare the performance of your planner to the PDDL planners you used in the previous
 problem. Which was faster? Why?}
-As mentioned earlier, our planner was able to be almost as fast as the FF planner. Especially in the case of the Sokoban Challenge problem, our planner was clearly faster. However, this is not strictly a fair comparison, since our planner assumes that man starts of adjacent to one of the boxes. FF is clearly going to be fast, since it uses enforced hill climbing optimized with \textsc{GraphPlan}'s heuristics, whereas our algorithm is a simple Breadth-First Seach.
+As mentioned earlier, our planner was able to be almost as fast as the FF planner. Of course as mentioned earlier, the time measure from Linux's \textit{time} utility may not be a fair comparison, since FF prints a ton of output to the console. Taking FF's internal time metric into account, every Sokoban problem gave a solution in 0.00s (Note that their level of precision is two digits, whereas \textit{time} has three digits of precision). However, we suspect FF might be faster in general, especially in case of a more complex Sokoban world, due to the difference in the underlying search algorithm (enforced hill climbing vs. BFS).
 
 \subsubsection*{3. Prove that your planner was complete. Your instructor has a math background: a proof ``is
 a convincing argument.'' Make sure you address each aspect of completeness and why your
@@ -452,7 +414,15 @@ If we hit the final state (with all boxes in designated positions), our algorith
 If the set of states is empty and we still don't find a solution, the algorithm also terminates with no solution.
 Since BFS searches for every possible state that is reachable from the original state, if there exists a solution, we can always find it.
 If there is no solution, since our algorithm only search for possible states, it will terminate with no solution.
-\\Also our algorithm is optimal in terms of box moves. This is because every time we add a new state, it is a state that is one box-move away from the previous state.
+
+Now there are two conditions for BFS to be complete \cite{cormen1996} and our definition of Sokoban domain satisfies both those conditions, namely
+\begin{enumerate}
+	\item Finite branching factor: The Sokoban world is clearly finite, and there can only be a finite number of possible states which we can explore with respect to any given state. Since the domain has a finite branching factor, the first condition is satisfied.
+	\item Finite number of states: Clearly the Sokoban world has finite states. So there is no way for BFS to not converge to an answer if one exists (and will definitely report if one does not exist).
+\end{enumerate}
+
+Also our algorithm is optimal in terms of box moves (i.e., every step of moving the box to a square has the same cost). 
+This is because every time we add a new state, it is a state that is one box-move away from the previous state.
 Since we are using Breadth First Search, we can guarantee that our solution uses the least box moves.
 
 \subsubsection*{4. What methods did you use to speed up the planning? Give a short description of each method

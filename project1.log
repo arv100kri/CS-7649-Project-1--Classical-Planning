@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.29)  26 SEP 2013 14:13
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.29)  26 SEP 2013 18:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -734,161 +734,84 @@ an.png> <./images/sokobanC.png> <./images/sokobanC-plan.png>]
 
 Package xcolor Warning: Incompatible color definition on input line 340.
 
+[10]
 
-Package xcolor Warning: Incompatible color definition on input line 362.
-
-
-Package xcolor Warning: Incompatible color definition on input line 363.
+Package xcolor Warning: Incompatible color definition on input line 371.
 
 
-Package xcolor Warning: Incompatible color definition on input line 363.
+Package xcolor Warning: Incompatible color definition on input line 372.
 
+<images/sokoban1-ans1.png, id=179, 309.155pt x 635.37375pt>
+File: images/sokoban1-ans1.png Graphic file (type png)
 
-Package xcolor Warning: Incompatible color definition on input line 363.
+<use images/sokoban1-ans1.png>
+Package pdftex.def Info: images/sokoban1-ans1.png used on input line 380.
+(pdftex.def)             Requested size: 108.20586pt x 222.38414pt.
 
+<images/sokoban1-ans2.png, id=180, 121.45375pt x 723.70375pt>
+File: images/sokoban1-ans2.png Graphic file (type png)
 
-Package xcolor Warning: Incompatible color definition on input line 363.
+<use images/sokoban1-ans2.png>
+Package pdftex.def Info: images/sokoban1-ans2.png used on input line 384.
+(pdftex.def)             Requested size: 42.50943pt x 253.30011pt.
 
-<images/sokoban1-ans.png, id=171, 177.66376pt x 744.7825pt>
-File: images/sokoban1-ans.png Graphic file (type png)
+<images/sokoban1-ans3.png, id=181, 89.33376pt x 723.70375pt>
+File: images/sokoban1-ans3.png Graphic file (type png)
 
-<use images/sokoban1-ans.png>
-Package pdftex.def Info: images/sokoban1-ans.png used on input line 366.
-(pdftex.def)             Requested size: 62.18324pt x 260.67778pt.
- [10]
-<images/sokoban2-ans1.png, id=188, 142.5325pt x 667.49374pt>
-File: images/sokoban2-ans1.png Graphic file (type png)
+<use images/sokoban1-ans3.png>
+Package pdftex.def Info: images/sokoban1-ans3.png used on input line 388.
+(pdftex.def)             Requested size: 31.26727pt x 253.30011pt.
 
-<use images/sokoban2-ans1.png>
-Package pdftex.def Info: images/sokoban2-ans1.png used on input line 375.
-(pdftex.def)             Requested size: 49.88712pt x 233.62631pt.
+<images/sokoban1-ans4.png, id=182, 298.11375pt x 180.675pt>
+File: images/sokoban1-ans4.png Graphic file (type png)
 
-<images/sokoban2-ans2.png, id=189, 101.37875pt x 653.44125pt>
-File: images/sokoban2-ans2.png Graphic file (type png)
+<use images/sokoban1-ans4.png>
+Package pdftex.def Info: images/sokoban1-ans4.png used on input line 392.
+(pdftex.def)             Requested size: 104.34137pt x 63.23718pt.
+ [11 <./images/sokoban1-ans1.png> <./images/sokoban1-ans2.png> <./images/sokoba
+n1-ans3.png> <./images/sokoban1-ans4.png>]
 
-<use images/sokoban2-ans2.png>
-Package pdftex.def Info: images/sokoban2-ans2.png used on input line 379.
-(pdftex.def)             Requested size: 35.48308pt x 228.70786pt.
+Package xcolor Warning: Incompatible color definition on input line 418.
 
-<images/sokoban2-ans3.png, id=190, 89.33376pt x 652.4375pt>
-File: images/sokoban2-ans3.png Graphic file (type png)
+[12]
 
-<use images/sokoban2-ans3.png>
-Package pdftex.def Info: images/sokoban2-ans3.png used on input line 383.
-(pdftex.def)             Requested size: 31.26727pt x 228.35654pt.
+Package xcolor Warning: Incompatible color definition on input line 460.
 
-<images/sokoban3-ans1.png, id=191, 140.525pt x 672.5125pt>
-File: images/sokoban3-ans1.png Graphic file (type png)
-
-<use images/sokoban3-ans1.png>
-Package pdftex.def Info: images/sokoban3-ans1.png used on input line 393.
-(pdftex.def)             Requested size: 49.18448pt x 235.38289pt.
-
-<images/sokoban3-ans2.png, id=192, 109.40875pt x 653.44125pt>
-File: images/sokoban3-ans2.png Graphic file (type png)
-
-<use images/sokoban3-ans2.png>
-Package pdftex.def Info: images/sokoban3-ans2.png used on input line 397.
-(pdftex.def)             Requested size: 38.29362pt x 228.70786pt.
-
-<images/sokoban3-ans3.png, id=193, 109.40875pt x 814.04124pt>
-File: images/sokoban3-ans3.png Graphic file (type png)
-
-<use images/sokoban3-ans3.png>
-Package pdftex.def Info: images/sokoban3-ans3.png used on input line 401.
-(pdftex.def)             Requested size: 38.29362pt x 284.9187pt.
-
-<images/sokoban3-ans4.png, id=194, 111.41624pt x 814.04124pt>
-File: images/sokoban3-ans4.png Graphic file (type png)
-
-<use images/sokoban3-ans4.png>
-Package pdftex.def Info: images/sokoban3-ans4.png used on input line 405.
-(pdftex.def)             Requested size: 38.99626pt x 284.9187pt.
-
-<images/sokoban3-ans5.png, id=195, 109.40875pt x 812.03375pt>
-File: images/sokoban3-ans5.png Graphic file (type png)
-
-<use images/sokoban3-ans5.png>
-Package pdftex.def Info: images/sokoban3-ans5.png used on input line 409.
-(pdftex.def)             Requested size: 38.29362pt x 284.21606pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/sokobanC-ans1.png, id=196, 143.53625pt x 832.10875pt>
-File: images/sokobanC-ans1.png Graphic file (type png)
-
-<use images/sokobanC-ans1.png>
-Package pdftex.def Info: images/sokobanC-ans1.png used on input line 419.
-(pdftex.def)             Requested size: 50.23843pt x 291.24242pt.
-
-<images/sokobanC-ans2.png, id=197, 92.345pt x 814.04124pt>
-File: images/sokobanC-ans2.png Graphic file (type png)
-
-<use images/sokobanC-ans2.png>
-Package pdftex.def Info: images/sokobanC-ans2.png used on input line 423.
-(pdftex.def)             Requested size: 32.32123pt x 284.9187pt.
-
-<images/sokobanC-ans3.png, id=198, 96.36pt x 814.04124pt>
-File: images/sokobanC-ans3.png Graphic file (type png)
-
-<use images/sokobanC-ans3.png>
-Package pdftex.def Info: images/sokobanC-ans3.png used on input line 427.
-(pdftex.def)             Requested size: 33.72649pt x 284.9187pt.
-
-<images/sokobanC-ans4.png, id=199, 108.405pt x 652.4375pt>
-File: images/sokobanC-ans4.png Graphic file (type png)
-
-<use images/sokobanC-ans4.png>
-Package pdftex.def Info: images/sokobanC-ans4.png used on input line 431.
-(pdftex.def)             Requested size: 37.9423pt x 228.35654pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[11 <./images/sokoban1-ans.png> <./images/sokoban2-ans1.png> <./images/sokoban2
--ans2.png> <./images/sokoban2-ans3.png>] [12 <./images/sokoban3-ans1.png> <./im
-ages/sokoban3-ans2.png> <./images/sokoban3-ans3.png> <./images/sokoban3-ans4.pn
-g> <./images/sokoban3-ans5.png>] [13 <./images/sokobanC-ans1.png> <./images/sok
-obanC-ans2.png> <./images/sokobanC-ans3.png> <./images/sokobanC-ans4.png>]
-
-Package xcolor Warning: Incompatible color definition on input line 490.
-
-<images/hanoi-6_1.png, id=215, 307.1475pt x 758.835pt>
+<images/hanoi-6_1.png, id=202, 307.1475pt x 758.835pt>
 File: images/hanoi-6_1.png Graphic file (type png)
 
 <use images/hanoi-6_1.png>
-Package pdftex.def Info: images/hanoi-6_1.png used on input line 496.
+Package pdftex.def Info: images/hanoi-6_1.png used on input line 466.
 (pdftex.def)             Requested size: 92.14496pt x 227.65225pt.
 
-<images/hanoi-6_2.png, id=216, 769.87625pt x 541.02126pt>
+<images/hanoi-6_2.png, id=203, 769.87625pt x 541.02126pt>
 File: images/hanoi-6_2.png Graphic file (type png)
 
 <use images/hanoi-6_2.png>
-Package pdftex.def Info: images/hanoi-6_2.png used on input line 500.
+Package pdftex.def Info: images/hanoi-6_2.png used on input line 470.
 (pdftex.def)             Requested size: 230.96466pt x 162.30762pt.
- [14]
+ [13 <./images/hanoi-6_1.png> <./images/hanoi-6_2.png>]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 516.
- [15 <./images/hanoi-6_1.png> <./images/hanoi-6_2.png>] (./project1.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 566.
- [16]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 566.
+put line 486.
+ [14] (./project1.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 536.
+ [15]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 536.
  (./project1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 566.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 566.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 536.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 536.
 Package rerunfilecheck Info: File `project1.out' has not changed.
 (rerunfilecheck)             Checksum: 59AA92A0F91E80D2BF23A620C5E614AB;548.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 566.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 536.
  ) 
 Here is how much of TeX's memory you used:
- 9266 strings out of 493485
- 138203 string characters out of 3143526
- 237912 words of memory out of 3000000
- 12336 multiletter control sequences out of 15000+200000
+ 9219 strings out of 493485
+ 136980 string characters out of 3143526
+ 238912 words of memory out of 3000000
+ 12298 multiletter control sequences out of 15000+200000
  17482 words of font info for 42 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 36i,9n,38p,836b,394s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,10n,38p,836b,410s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/
@@ -904,10 +827,10 @@ ic/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000
 .pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/tex
 mf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/publi
 c/cm-super/sftt1000.pfb>
-Output written on project1.pdf (16 pages, 941298 bytes).
+Output written on project1.pdf (15 pages, 876852 bytes).
 PDF statistics:
- 323 PDF objects out of 1000 (max. 8388607)
- 251 compressed objects within 3 object streams
+ 309 PDF objects out of 1000 (max. 8388607)
+ 247 compressed objects within 3 object streams
  86 named destinations out of 1000 (max. 500000)
- 243 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 198 words of extra memory for PDF output out of 10000 (max. 10000000)
 
