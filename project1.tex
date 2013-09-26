@@ -244,9 +244,12 @@ In this part of the project, we came up with our own representation of the Sokob
 	\item \textbf{Man}: This represents the starting square in which the man is present. Represented in the grid as $M$.
 	\item \textbf{Empty Squares}: These correspond to squares which are within the boundaries of the ``walls'' and can be occupied by a man or a box. Represented by $*$.
 \end{itemize}
+\begin{comment}
 \textbf{Note}: In our plans, we do not explicitly show the man. Instead we show one or more boxes changing their position with respect to the previous step. Since the man will be in one of the adjacent spaces of the box (left, right, top or bottom) we have effectively treated the man and the box as one ``logical'' unit. This can be verified in the plans as well by tracing the location change of the various boxes.
 
 In other words, we don't have actions such as \textsc{Push}, since we treat the box to be able to \textsc{Move} automatically based on the available white space. However we do respect the geometric constraints of the presence of the man (i.e., the box will not move to a location where a man should have been standing).
+\end{comment}
+sudo 
 \subsection*{Representation of the Domain}
 Now that we have defined the components of the representation, we have defined the Sokoban domain for each of the 4 problems. Each problem has a ``\textit{input}'' map file which has the following header:
 \begin{verbatim}
@@ -329,10 +332,10 @@ We were able to capture most of the necessary pieces of information. We used a b
 \item \textbf{Language Used}: C++
 \item \textbf{Number of steps in plan}: We calculate the number of steps, assuming the man is adjacent to the box (which we have reported below). So we might have to add the steps it takes for the man to move near the box.
 \begin{itemize}
-\item Problem 1: 4
-\item Problem 2: 11
-\item Problem 3: 21
-\item Challenge Problem: 18
+\item Problem 1: \textbf{??}
+\item Problem 2: \textbf{??}
+\item Problem 3: \textbf{??}
+\item Challenge Problem: \textbf{??}
 \end{itemize}
 \item \textbf{Computation Time}: We have compared our planner against FF (which was only able to produce the solution for all the 4 problems). Both planners were executed on the same system and the computation time is shown in Table \ref{tab1}.
 
@@ -343,20 +346,21 @@ We were able to capture most of the necessary pieces of information. We used a b
 \hline
 \multicolumn{1}{|l|}{Problem} & \multicolumn{1}{l|}{FF Time (in s)} & \multicolumn{1}{l|}{Our Planner Time (in s)} \\ \hline
 \multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \hline
-1 & 0.005 & 0.004 \\ \hline
-2 & 0.007 & 0.008 \\ \hline
-3 & 0.021 & 0.022 \\ \hline
-Sokoban Challenge & 0.043 & 0.070 \\ \hline
+1 & 0.005 & \textbf{??} \\ \hline
+2 & 0.007 & \textbf{??} \\ \hline
+3 & 0.021 & \textbf{??} \\ \hline
+Sokoban Challenge & 0.043 & \textbf{??} \\ \hline
 \end{tabular}
 \label{tab1}
 \end{table}
-This might not be a totally fair comparison, since we do not take into account the man moving adjacent to the box.
+%This might not be a totally fair comparison, since we do not take into account the man moving adjacent to the box.
+
 \item \textbf{Machine Vitals}: The input representation for each of the problems was very small (of the order of 50-60 bytes), and the output was also suitably compact. Our program can compile and run on any C++ compiler conforming to ANSI standard, and does not require too much of memory to run. The only memory constraints are the fact that we are loading the entire world onto a hash map, but again this is not very significant for the Sokoban domain as well as the BFS which explores every possible reachable state.
 \end{enumerate}
 \subsection{Questions}
 
 \subsubsection*{1. Give successful plans from your planner on the Sokoban problems in Figure \ref{fig2} and any others}
-The plans as per our domain representation, for the 4 Sokoban problems (including the challenge) is presented in Figures \ref{sokoans1}, \ref{sokoans2}, \ref{sokoans3} and \ref{sokoansC} respectively.
+The plans as per our domain representation, for the 4 Sokoban problems (including the challenge) is presented in Figures \ref{sokoans1}, \ref{sokoans2}, \ref{sokoans3} and \ref{sokoansC} respectively. Note that each step shows the world configuration with the position of the boxes, the man and ``empty space'' marked appropriately.
 \begin{figure} [h!]
 \centering
 	\includegraphics[scale = 0.35]{images/sokoban1-ans}
@@ -449,7 +453,7 @@ If the set of states is empty and we still don't find a solution, the algorithm 
 Since BFS searches for every possible state that is reachable from the original state, if there exists a solution, we can always find it.
 If there is no solution, since our algorithm only search for possible states, it will terminate with no solution.
 \\Also our algorithm is optimal in terms of box moves. This is because every time we add a new state, it is a state that is one box-move away from the previous state.
-Since we are using Breadth First Search, we can gaurantee that our solution uses the least box moves.
+Since we are using Breadth First Search, we can guarantee that our solution uses the least box moves.
 
 \subsubsection*{4. What methods did you use to speed up the planning? Give a short description of each method
 and explain why it did or didn't help on each relevant problem}
