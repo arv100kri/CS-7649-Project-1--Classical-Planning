@@ -1,5 +1,7 @@
-Total Step : 4
-Step : 0
+The number of states explored: 14
+The number of box movements: 4
+-------------------------------
+Step: 0
 WWWWWW
 W*D*WW
 WWMWWW
@@ -7,35 +9,117 @@ W****W
 W**B*W
 W**WWW
 WWWWWW
-Step : 1
+Step: 1
 WWWWWW
-W***WW
+W*D*WW
+WW*WWW
+W*M**W
+W**B*W
+W**WWW
+WWWWWW
+Step: 2
+WWWWWW
+W*D*WW
+WW*WWW
+W**M*W
+W**B*W
+W**WWW
+WWWWWW
+Step: 3
+WWWWWW
+W*D*WW
+WW*WWW
+W***MW
+W**B*W
+W**WWW
+WWWWWW
+Step: 4
+WWWWWW
+W*D*WW
 WW*WWW
 W****W
+W**BMW
+W**WWW
+WWWWWW
+Step: 5
+WWWWWW
+W*D*WW
+WW*WWW
+W****W
+W*BM*W
+W**WWW
+WWWWWW
+Step: 6
+WWWWWW
+W*D*WW
+WW*WWW
+W**M*W
 W*B**W
 W**WWW
 WWWWWW
-Step : 2
+Step: 7
 WWWWWW
-W***WW
+W*D*WW
 WW*WWW
+W*M**W
 W*B**W
-W****W
 W**WWW
 WWWWWW
-Step : 3
+Step: 8
 WWWWWW
-W***WW
+W*D*WW
+WW*WWW
+WM***W
+W*B**W
+W**WWW
+WWWWWW
+Step: 9
+WWWWWW
+W*D*WW
+WW*WWW
+W****W
+WMB**W
+W**WWW
+WWWWWW
+Step: 10
+WWWWWW
+W*D*WW
+WW*WWW
+W****W
+W*B**W
+WM*WWW
+WWWWWW
+Step: 11
+WWWWWW
+W*D*WW
+WW*WWW
+W****W
+W*B**W
+W*MWWW
+WWWWWW
+Step: 12
+WWWWWW
+W*D*WW
+WW*WWW
+W*B**W
+W*M**W
+W**WWW
+WWWWWW
+Step: 13
+WWWWWW
+W*D*WW
 WWBWWW
-W****W
+W*M**W
 W****W
 W**WWW
 WWWWWW
-Step : 4
+Step: 14
 WWWWWW
 W*B*WW
-WW*WWW
+WWMWWW
 W****W
 W****W
 W**WWW
 WWWWWW
+-------------------------------
+The number of man movements: 14
