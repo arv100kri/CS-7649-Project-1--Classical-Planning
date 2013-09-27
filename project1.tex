@@ -219,11 +219,13 @@ In order to make the solutions more readable and easier to verify, lets consider
 \subsubsection*{2. Compare the performance of two planners on this domain. Which one works better? Does this
 make sense, why?}
 
-As an overview, the \textit{FF}'s planner performed better than \textit{Blackbox}. The \textit{FF}'s planner was able to find results for all problems, including challenge, in few seconds. On the other hand, the \textit{Blackbox} only managed to find the results from the first two problems and stopped on the others after using all the hardware resources. These results were expected since, as stated in Section \ref{subsubsec_2}, the \textit{FF}'s planner have a lower asymptotic complexity and use an heuristic function to choose the best option of what expand next. Thus, is more likely to have better time and space complexities than the \textit{Blackbox}.
+As an overview, the \textit{FF}'s planner performed better than \textit{Blackbox}. The \textit{FF}'s planner was able to find results for all problems, including challenge, in few seconds. On the other hand, the \textit{Blackbox} planner only managed to find the results from the first two problems and stopped on the others after using all the hardware resources. These results were expected since, as stated in Section \ref{subsubsec_2}, the \textit{FF}'s planner have a lower asymptotic complexity and use an heuristic function to choose the best option of what expand next. Thus, is more likely to have better time and space complexities than the \textit{Blackbox}.
 
 \subsubsection*{3. Clearly PDDL was not intended for this sort of application. Discuss the challenges in expressing geometric constraints in semantic planning}
 
 While solving this problem is possible to notice that are two approaches. The first one requires a previous knowledge of a solution, and the developer states that a specific box goes to a specific location. The second approach, there is no kind of identification for the boxes, and this is the one we used as a solution. Independently of the approach, the domain contains a grid on which the robot should move. Thus, it is necessary to come up with a way to express when the robot can, or cannot, move between two locations if there is a wall or a box in between. Also, is necessary to express when the robot is allowed to do something, like moving between two empty adjacent squares. Thus, all these logic expressions were used to represent geometric constraints like collisions between the robot and the walls or boxes.
+
+Also, we had to clearly discretize the continuous space (into a set of boxes on a grid), which may then introduce resolution errors (not in this problem, but discretization may result in ``squares'' which are obstacles although in the continous domain there would have been space for navigation). 
 
 \subsubsection*{4. In many cases, geometric and dynamic planning are insufficient to describe a domain. Give
 an example of a problem that is best suited for semantic (classical) planning. Explain why a
@@ -235,6 +237,7 @@ The classical planners have a variety of best suited problems, like in logistics
 
 \section{Project Part II: Sokoban Planner}
 %Assigned to James and Stango%
+%Some by Arvind%
 In this part of the project, we came up with our own representation of the Sokoban domain. The domain has the following specifications:
 \begin{itemize}
 	\item \textbf{Geometry/Grid}: A world represented as a $M$ x $N$ grid. The Sokoban domain's geometry is defined by $M$ rows and $N$ columns, where each ``cell'' in the map has the same dimensions as the box.
@@ -244,12 +247,13 @@ In this part of the project, we came up with our own representation of the Sokob
 	\item \textbf{Man}: This represents the starting square in which the man is present. Represented in the grid as $M$.
 	\item \textbf{Empty Squares}: These correspond to squares which are within the boundaries of the ``walls'' and can be occupied by a man or a box. Represented by $*$.
 \end{itemize}
+
 \begin{comment}
 \textbf{Note}: In our plans, we do not explicitly show the man. Instead we show one or more boxes changing their position with respect to the previous step. Since the man will be in one of the adjacent spaces of the box (left, right, top or bottom) we have effectively treated the man and the box as one ``logical'' unit. This can be verified in the plans as well by tracing the location change of the various boxes.
 
 In other words, we don't have actions such as \textsc{Push}, since we treat the box to be able to \textsc{Move} automatically based on the available white space. However we do respect the geometric constraints of the presence of the man (i.e., the box will not move to a location where a man should have been standing).
 \end{comment}
-sudo 
+
 \subsection*{Representation of the Domain}
 Now that we have defined the components of the representation, we have defined the Sokoban domain for each of the 4 problems. Each problem has a ``\textit{input}'' map file which has the following header:
 \begin{verbatim}
@@ -354,16 +358,32 @@ Sokoban Challenge & 0.043 & \textbf{0.025} \\ \hline
 \end{tabular}
 \label{tab1}
 \end{table}
-\textbf{Note}: Although it appears that our algorithm is ``faster'' than FF, that might not necesarily be the case, since our algorithm prints to a file, whereas FF prints to console. Due to the length of the plans, which need to be printed to the terminal, FF takes more time. FF has a self-reporting ``time spent'' parameter, but for all the 4 problems, it reports as 0.00 seconds. We obtained the above time comparison, using linux's \textit{time} utility.
+\textbf{Note}: Although it appears that our algorithm is ``faster'' than FF, that might not necessarily be the case, since our algorithm prints to a file, whereas FF prints to console. Due to the length of the plans, which need to be printed to the terminal, FF takes more time. FF has a self-reporting ``time spent'' parameter, and by using that as a comparison, we get the comparison as shown in Table \ref{tab2}.
+
+\begin{table}[htbp]
+\caption{Comparison of Computation Times (FF self-reported)}
+\centering
+\begin{tabular}{|r|r|r|}
+\hline
+\multicolumn{1}{|l|}{Problem} & \multicolumn{1}{l|}{FF Time (in s)} & \multicolumn{1}{l|}{Our Planner Time (in s)} \\ \hline
+\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \hline
+1 & 0.00 & \textbf{0.004} \\ \hline
+
+2 & 0.00 & \textbf{0.007} \\ \hline
+3 & 0.00 & \textbf{0.019} \\ \hline
+Sokoban Challenge & 0.04 & \textbf{0.025} \\ \hline
+\end{tabular}
+\label{tab2}
+\end{table}
 
 \item \textbf{Machine Vitals}: The input representation for each of the problems was very small (of the order of 50-60 bytes), and the output was also suitably compact. Our program can compile and run on any C++ compiler conforming to ANSI standard, and does not require too much of memory to run. The only memory constraints are the fact that we are loading the entire world onto a hash map, but again this is not very significant for the Sokoban domain as well as the BFS which explores every possible reachable state.
 
 \item \textbf{States explored}: While performing the BFS, there were a number of states which were explored during the course of finding a valid plan. For each of the problems, the number of states explored are shown below:
 \begin{itemize}
-\item Problem 1: \textbf{14}
-\item Problem 2: \textbf{77}
-\item Problem 3: \textbf{344}
-\item Challenge Problem: \textbf{954}
+\item Problem 1: \textbf{14} (FF was 47)
+\item Problem 2: \textbf{77} (FF was 135)
+\item Problem 3: \textbf{344} (FF was 2104)
+\item Challenge Problem: \textbf{954} (FF was 10010)
 \end{itemize}
 \end{enumerate}
 \subsection{Questions}
@@ -398,7 +418,9 @@ Note that each step shows the world configuration with the position of the boxes
 
 \subsubsection*{2. Compare the performance of your planner to the PDDL planners you used in the previous
 problem. Which was faster? Why?}
-As mentioned earlier, our planner was able to be almost as fast as the FF planner. Of course as mentioned earlier, the time measure from Linux's \textit{time} utility may not be a fair comparison, since FF prints a ton of output to the console. Taking FF's internal time metric into account, every Sokoban problem gave a solution in 0.00s (Note that their level of precision is two digits, whereas \textit{time} has three digits of precision). However, we suspect FF might be faster in general, especially in case of a more complex Sokoban world, due to the difference in the underlying search algorithm (enforced hill climbing vs. BFS).
+As mentioned earlier, our planner was able to be almost as fast as the FF planner. Of course the time measure from Linux's \textit{time} utility may not be a fair comparison, since FF prints a ton of output to the console, which will take more time than printing to a file, which is what we are doing in our algorithm. Taking FF's internal time metric into account, most Sokoban problem gave a solution as 0.00s (Note that their level of precision is two digits, whereas \textit{time} has three digits of precision), except the last challenge problem, which FF reported to have taken 0.04s in total. However, we suspect FF might be not be as fast as our ``specialized'' Sokoban planner, since we have defined walls in the domain for this problem (as opposed to the case of FF where we did not). This definition enables our BFS to explore a lot less states than those explored by FF. 
+
+Of course, we did not try to define a fluent called \textsc{Wall} along with its effects and pre-conditions in the PDDL definition for FF. Had we done that, FF might have possibly been faster, but that would have bloated the domain definition more that what it is right now!
 
 \subsubsection*{3. Prove that your planner was complete. Your instructor has a math background: a proof ``is
 a convincing argument.'' Make sure you address each aspect of completeness and why your
@@ -512,6 +534,7 @@ A general recursive algorithm takes advantage of whenever there is a possibility
 			\State \Call{Terminal-Operation}{$Prob_1$} \Comment{Some constant terminal operation}
 		\EndIf
 		\State \Call{Recursive-Planner}{$Subset(Prob_N)$}
+		\Comment{$Subset(Prob_N)$ might be $Prob_{N-1}$, $Prob_{\frac{N}{2}}$ etc,..}
     \EndFunction
   \end{algorithmic}
 \end{algorithm}
@@ -527,7 +550,7 @@ However, it is possible that even though the entire problem has a solution, one 
 \item \textbf{Reports that there is no plan if there is none}: The same sub-problem non-termination issue exists here as well. In case one of the sub-problems gets ``stuck'', there is no way for the original problem to terminate reporting that there is no plan. 
 \end{enumerate}
 
-However, if some sort of a terminating ``\textit{parameter}'' can be used to force the sub-problems to halt/report no solution. In such a case the ``stack overflow'' issue will be resolved and both the conditions of completeness will be met. Basically, we need to ensure that the sub-problems will be forcibly terminated which will ensure that the main problem will always terminate as well!
+However, if some sort of a terminating ``\textit{parameter}'' can be used to force the sub-problems to halt/report no solution, then we can guarantee completeness. In such a case the ``stack overflow'' issue will be resolved and both the conditions of completeness will be met. Basically, we need to ensure that the sub-problems will be forcibly terminated which will ensure that the main problem will always terminate as well! (Can almost be viewed as a ``stack unrolling'' limited algorithm, much like depth-limited search).
 
 %----------------------------------End of Problem 4 ----------------------------------------------------%
 
